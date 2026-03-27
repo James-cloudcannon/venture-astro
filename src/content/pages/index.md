@@ -68,17 +68,17 @@ pageSections:
     eyebrow: a simple gallery
     heading: Image Gallery
     images:
-      - source: /src/assets/images/24wk6smwSc-400.jpeg
+      - source: /src/assets/images/24wk6smwSc-1600.jpeg
         alt: three people laughing while working on laptops
-      - source: /src/assets/images/NW1Yy2Ujuv-400.jpeg
+      - source: /src/assets/images/NW1Yy2Ujuv-1600.jpeg
         alt: People in a busy café
-      - source: /src/assets/images/kwLhxDdvFt-400.jpeg
+      - source: /src/assets/images/kwLhxDdvFt-1600.jpeg
         alt: Person making a drink at a bar
-      - source: /src/assets/images/p1QmOm45eu-400.jpeg
+      - source: /src/assets/images/p1QmOm45eu-1600.jpeg
         alt: Person smiling and wearing glasses making a coffee
-      - source: /src/assets/images/zKYozt5NEm-400.jpeg
+      - source: /src/assets/images/zKYozt5NEm-1600.jpeg
         alt: Person sitting getting a haircut
-      - source: /src/assets/images/YFM_NmeWPi-400.jpeg
+      - source: /src/assets/images/YFM_NmeWPi-1600.jpeg
         alt: Milk being poured into a coffee in a café
     buttonSections: []
     colorScheme: inherit
@@ -96,7 +96,7 @@ pageSections:
     buttonText: Book Now
     buttonLink: /booking/
     image:
-      source: /src/assets/images/a-rhUUAz0z-400.jpeg
+      source: /src/assets/images/a-rhUUAz0z-800.jpeg
       alt: Barber shop bench with many hairdresser tools sitting on it
     colorScheme: inherit
     backgroundColor: none
