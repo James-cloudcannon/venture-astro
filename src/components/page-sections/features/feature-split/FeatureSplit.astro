@@ -1,11 +1,11 @@
 ---
 import CustomSection from "@builders/custom-section/CustomSection.astro";
-import Split from "@wrappers/split/Split.astro";
-import Card from "@wrappers/card/Card.astro";
 import Heading from "@core-elements/heading/Heading.astro";
+import Image from "@core-elements/image/Image.astro";
 import Text from "@core-elements/text/Text.astro";
 import ButtonGroup from "@wrappers/button-group/ButtonGroup.astro";
-import Image from "@core-elements/image/Image.astro";
+import Card from "@wrappers/card/Card.astro";
+import Split from "@wrappers/split/Split.astro";
 
 const {
   eyebrow = "Tag or label headline",
@@ -71,8 +71,15 @@ const buttonSections = [
       >
         {eyebrow}
       </Heading>
-      <Heading level="h2" data-prop="heading">{heading}</Heading>
-      <Text data-prop="description" text={description} />
+      <Heading
+        level="h2"
+        data-prop="heading"
+        >{heading}</Heading
+      >
+      <Text
+        data-prop="description"
+        text={description}
+      />
       <ButtonGroup
         alignX="start"
         buttonSections={buttonSections}
@@ -100,14 +107,15 @@ const buttonSections = [
 
         > .card-inner {
           height: 100%;
+          display: flex;
+          flex-direction: column;
         }
 
         > .card-inner > .card-outer-content {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          min-height: 550px;
-          height: 100%;
+          flex: 1;
 
           > .card-content {
             width: 100%;
@@ -124,7 +132,8 @@ const buttonSections = [
       }
 
       .split-inner .pane {
-        &.first, &.second {
+        &.first,
+        &.second {
           position: relative;
           min-height: 550px;
         }

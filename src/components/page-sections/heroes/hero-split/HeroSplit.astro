@@ -1,11 +1,11 @@
 ---
 import CustomSection from "@builders/custom-section/CustomSection.astro";
-import Split from "@wrappers/split/Split.astro";
-import Card from "@wrappers/card/Card.astro";
 import Heading from "@core-elements/heading/Heading.astro";
+import Image from "@core-elements/image/Image.astro";
 import Text from "@core-elements/text/Text.astro";
 import ButtonGroup from "@wrappers/button-group/ButtonGroup.astro";
-import Image from "@core-elements/image/Image.astro";
+import Card from "@wrappers/card/Card.astro";
+import Split from "@wrappers/split/Split.astro";
 
 const {
   eyebrow = "Eyebrow Heading",
@@ -68,8 +68,16 @@ const buttonSections = [
       >
         {eyebrow}
       </Heading>
-      <Heading level="h1" size="2xl" data-prop="heading">{heading}</Heading>
-      <Text data-prop="description" text={description} />
+      <Heading
+        level="h1"
+        size="2xl"
+        data-prop="heading"
+        >{heading}</Heading
+      >
+      <Text
+        data-prop="description"
+        text={description}
+      />
       <ButtonGroup
         alignX="start"
         buttonSections={buttonSections}
@@ -91,32 +99,43 @@ const buttonSections = [
         margin-top: 0;
       }
 
-      .hero-split__card {
-        margin-top: 0;
-
-        > .card-inner > .card-outer-content {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          min-height: calc(100svh - var(--nav-height));
-
-          > .card-content {
-            width: 100%;
-          }
-        }
-      }
-
-      .hero-split__eyebrow {
-        > .heading-inner {
-          text-transform: uppercase;
-          letter-spacing: 4px;
-          font-weight: var(--font-weight-semibold);
-        }
-      }
-
+      .split-inner .pane.first,
       .split-inner .pane.second {
         position: relative;
-        min-height: 500px;
+        min-height: calc(100svh - var(--nav-height));
+      }
+
+      .hero-split__card {
+        margin-top: 0 !important;
+      }
+
+      .hero-split__card .card-content {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        padding-inline: 6rem !important;
+        padding-block: 4rem !important;
+      }
+
+      .hero-split__card .card-content > * {
+        max-width: 500px;
+      }
+
+      .hero-split__card .card-content::before {
+        content: "";
+        position: absolute;
+        left: 4.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 40%;
+        width: 2px;
+        background-color: var(--color-border);
+      }
+
+      .hero-split__eyebrow .heading-inner {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-weight: var(--font-weight-semibold);
       }
     }
   }

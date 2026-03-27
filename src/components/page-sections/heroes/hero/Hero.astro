@@ -1,8 +1,8 @@
 ---
 import CustomSection from "@builders/custom-section/CustomSection.astro";
+import Button from "@core-elements/button/Button.astro";
 import Heading from "@core-elements/heading/Heading.astro";
 import ButtonGroup from "@wrappers/button-group/ButtonGroup.astro";
-import Button from "@core-elements/button/Button.astro";
 
 const {
   eyebrow = "A Small Business Template",
@@ -32,16 +32,18 @@ const {
   {...htmlAttributes}
 >
   <div class="hero__content">
-    {eyebrow && (
-      <Heading
-        level="h3"
-        size="xs"
-        alignX="start"
-        class="hero__eyebrow"
-        data-prop="eyebrow"
-        text={eyebrow}
-      />
-    )}
+    {
+      eyebrow && (
+        <Heading
+          level="h3"
+          size="xs"
+          alignX="start"
+          class="hero__eyebrow"
+          data-prop="eyebrow"
+          text={eyebrow}
+        />
+      )
+    }
     <Heading
       level="h1"
       size="2xl"
@@ -88,7 +90,7 @@ const {
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: center;
         flex: 1;
       }
 
