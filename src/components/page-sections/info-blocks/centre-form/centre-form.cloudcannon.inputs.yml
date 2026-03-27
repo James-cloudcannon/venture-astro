@@ -1,0 +1,49 @@
+eyebrow:
+  type: text
+  comment: Small uppercase text above the heading.
+
+heading:
+  type: text
+  comment: Main heading for the form section.
+
+description:
+  type: markdown
+  comment: Optional description text below the heading.
+  options:
+    bold: true
+    italic: true
+    link: true
+
+formFields:
+  type: array
+  comment: Form input fields and submit button.
+  options:
+    structures: _structures.formBlocks
+
+formAction:
+  type: text
+  comment: Form action URL (where the form data is sent).
+
+colorScheme:
+  type: select
+  options:
+    values:
+      - id: inherit
+        name: Inherit
+      - id: dark
+        name: Dark
+
+backgroundColor:
+  type: select
+  options:
+    values:
+      - id: none
+        name: None
+      - id: base
+        name: Base
+      - id: surface
+        name: Surface
+      - id: accent
+        name: Accent
+      - id: highlight
+        name: Highlight

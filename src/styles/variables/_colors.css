@@ -1,17 +1,27 @@
 :where(:root) {
-  --gray-0: #fff;
-  --gray-1: #eaeaea;
-  --gray-2: #d4d4d4;
-  --gray-3: #bfbfbf;
-  --gray-4: #aaa;
-  --gray-5: #949494;
-  --gray-6: #7f7f7f;
-  --gray-7: #6a6a6a;
-  --gray-8: #555;
-  --gray-9: #404040;
-  --gray-10: #2a2a2a;
-  --gray-11: #151515;
-  --gray-12: #000;
+  --gray-0: #f9f9fb;
+  --gray-1: #e8e8ea;
+  --gray-2: #d9d9dc;
+  --gray-3: #bfbfc2;
+  --gray-4: #a5a5a8;
+  --gray-5: #8b8b8e;
+  --gray-6: #717174;
+  --gray-7: #57575a;
+  --gray-8: #3b3b3d;
+  --gray-9: #2b2b2d;
+  --gray-10: #1b1b1d;
+  --gray-11: #111113;
+  --gray-12: #0a0a0c;
+
+  --brand-primary: #1b1b1d;
+  --brand-primary-light: rgba(27, 27, 29, 0.85);
+  --brand-primary-dark: #111113;
+  --brand-secondary: #3b3b3d;
+  --brand-secondary-light: rgba(59, 59, 61, 0.85);
+  --brand-secondary-dark: #2b2b2d;
+  --brand-accent: #0078a8;
+  --brand-accent-light: rgba(0, 120, 168, 0.15);
+  --brand-accent-dark: #005c82;
 
   --blue-light: #e8f4fd;
   --blue-dark: #3b82f6;

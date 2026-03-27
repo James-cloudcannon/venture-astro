@@ -1,0 +1,51 @@
+eyebrow:
+  type: text
+  comment: Small uppercase text above the heading (e.g., "A Small Business Template").
+
+heading:
+  type: text
+  comment: Main hero heading text.
+
+backgroundImage:
+  type: object
+  comment: Full-bleed background image for the hero section.
+
+backgroundImage.source:
+  type: image
+  comment: Image file path.
+
+backgroundImage.alt:
+  type: text
+  comment: Alt text for the background image.
+
+buttonText:
+  type: text
+  comment: CTA button label text.
+
+buttonLink:
+  type: url
+  comment: CTA button link URL.
+
+colorScheme:
+  type: select
+  options:
+    values:
+      - id: inherit
+        name: Inherit
+      - id: dark
+        name: Dark
+
+backgroundColor:
+  type: select
+  options:
+    values:
+      - id: none
+        name: None
+      - id: base
+        name: Base
+      - id: surface
+        name: Surface
+      - id: accent
+        name: Accent
+      - id: highlight
+        name: Highlight

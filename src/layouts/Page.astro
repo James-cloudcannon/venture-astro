@@ -2,6 +2,7 @@
 import Footer from "@components/navigation/footer/Footer.astro";
 import MainNavigation from "@components/navigation/main-nav/MainNav.astro";
 import MainComponent from "@components/utils/MainComponent.astro";
+import Icon from "@core-elements/icon/Icon.astro";
 import footerData from "@data/footer.json";
 import mainNavData from "@data/mainNav.json";
 import Layout from "@layouts/BaseLayout.astro";
@@ -52,6 +53,15 @@ const sections = frontmatter?.pageSections ?? [];
   image={image}
   canonical={canonical}
 >
+  <div class="social-top-bar">
+    <div class="social-top-bar__inner">
+      {footerData.socials.map((social) => (
+        <a class="social-top-bar__link" href={social.link} target="_blank" rel="noopener noreferrer">
+          <Icon name={social.icon} size="none" aria-hidden="true" />
+        </a>
+      ))}
+    </div>
+  </div>
   <MainNavigation {...mainNav} />
 
   <main>
@@ -70,3 +80,52 @@ const sections = frontmatter?.pageSections ?? [];
   </main>
   <Footer {...footer} />
 </Layout>
+
+<style is:global>
+  @layer page-sections {
+    :root {
+      --social-bar-height: 2.5rem;
+      --nav-height: calc(var(--social-bar-height) + 3.5rem);
+    }
+
+    .social-top-bar {
+      background-color: var(--color-bg);
+      display: flex;
+      justify-content: center;
+      height: var(--social-bar-height);
+      align-items: center;
+    }
+
+    .social-top-bar__inner {
+      display: flex;
+      gap: var(--spacing-md);
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+      max-width: var(--content-width-2xl);
+      padding-inline: var(--spacing-lg);
+    }
+
+    .social-top-bar__link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-text);
+      text-decoration: none;
+      transition: color 200ms ease-in-out;
+    }
+
+    .social-top-bar__link:hover {
+      color: var(--color-text-strong);
+    }
+
+    .social-top-bar__link .icon {
+      margin-top: 0;
+    }
+
+    .social-top-bar__link .icon-inner {
+      width: 1.125rem;
+      height: 1.125rem;
+    }
+  }
+</style>

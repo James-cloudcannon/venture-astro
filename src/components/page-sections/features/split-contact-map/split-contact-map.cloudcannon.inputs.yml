@@ -1,0 +1,57 @@
+heading:
+  type: text
+  comment: Section heading text.
+
+description:
+  type: markdown
+  comment: Supporting text below the heading.
+  options:
+    bold: true
+    italic: true
+    link: true
+
+mapEmbed:
+  type: html
+  comment: Map embed HTML code (e.g., an iframe from Google Maps or OpenStreetMap).
+
+socialLinks:
+  type: array
+  comment: Social media icon links displayed in a horizontal row.
+  options:
+    structures: _structures.socialLink
+
+contactItems:
+  type: array
+  comment: Contact information items with icon and text.
+  options:
+    structures: _structures.contactItem
+
+buttonSections:
+  type: array
+  comment: Optional CTA button(s) below the contact items.
+  options:
+    structures: _structures.buttonSections
+
+colorScheme:
+  type: select
+  options:
+    values:
+      - id: inherit
+        name: Inherit
+      - id: dark
+        name: Dark
+
+backgroundColor:
+  type: select
+  options:
+    values:
+      - id: none
+        name: None
+      - id: base
+        name: Base
+      - id: surface
+        name: Surface
+      - id: accent
+        name: Accent
+      - id: highlight
+        name: Highlight

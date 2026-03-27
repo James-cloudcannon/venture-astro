@@ -1,0 +1,21 @@
+label: Hero Banner
+icon: panorama_wide_angle
+description: Simple centered banner with eyebrow, heading, and description text.
+value:
+  _component: page-sections/heroes/hero-banner
+  eyebrow: Eyebrow Heading
+  heading: Terms and conditions
+  description: Description text to complement the block.
+  colorScheme: dark
+  backgroundColor: base
+preview:
+  text:
+    - Hero Banner
+  subtext:
+    - key: heading
+  icon: panorama_wide_angle
+picker_preview:
+  text: Hero Banner
+  subtext: Simple centered banner with eyebrow, heading, and description text.
+_inputs_from_glob:
+  - /src/components/page-sections/heroes/hero-banner/hero-banner.cloudcannon.inputs.yml

@@ -1,0 +1,25 @@
+{
+  "total_components": 18,
+  "skeletons_extracted": 18,
+  "null_skeletons": 0,
+  "screenshot_missing": 0,
+  "json_corrupted": 0,
+  "layout_distribution": {
+    "hero-image": 1,
+    "split": 7,
+    "full-width-centered": 10
+  },
+  "background_distribution": {
+    "dark_solid": 17,
+    "dark_image": 1
+  },
+  "interactive_components": {
+    "form": 2
+  },
+  "grid_components": 3,
+  "repeating_components": 8,
+  "components_with_buttons": 12,
+  "quality_notes": "All 18 components analyzed from screenshots and HTML. Site uses a consistent dark theme (dark charcoal/near-black backgrounds) with light text throughout. All buttons are white outline style with arrow icons. Lato font family used consistently. Split layouts use 50/50 ratio. The site is a small business template with coffee shop / barber shop imagery.",
+  "pages_processed": ["index", "terms-and-conditions", "contact", "booking"],
+  "extraction_timestamp": "2026-03-27"
+}

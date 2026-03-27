@@ -1,0 +1,39 @@
+eyebrow:
+  type: text
+  comment: Small uppercase text above the main heading.
+
+heading:
+  type: text
+  comment: Main heading text for the banner.
+
+description:
+  type: markdown
+  comment: Supporting description text below the heading.
+  options:
+    bold: true
+    italic: true
+    link: true
+
+colorScheme:
+  type: select
+  options:
+    values:
+      - id: inherit
+        name: Inherit
+      - id: dark
+        name: Dark
+
+backgroundColor:
+  type: select
+  options:
+    values:
+      - id: none
+        name: None
+      - id: base
+        name: Base
+      - id: surface
+        name: Surface
+      - id: accent
+        name: Accent
+      - id: highlight
+        name: Highlight

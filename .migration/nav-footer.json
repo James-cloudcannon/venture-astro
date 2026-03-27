@@ -1,0 +1,34 @@
+{
+  "nav": {
+    "logoSource": "../assets/images/TG0B_CUbyG-346.svg",
+    "logoAlt": "Site logo",
+    "navData": [
+      { "name": "Our Services", "path": "/#services" },
+      { "name": "Book Now", "path": "/booking" },
+      { "name": "Contact Us", "path": "/contact" }
+    ],
+    "buttonSections": []
+  },
+  "footer": {
+    "logoSource": "../assets/images/TG0B_CUbyG-346.svg",
+    "logoAlt": "Site logo",
+    "links": [
+      { "name": "Our Services", "path": "/#services" },
+      { "name": "Book Now", "path": "/booking" },
+      { "name": "Contact Us", "path": "/contact" },
+      { "name": "Terms and Conditions", "path": "/terms-and-conditions/" }
+    ],
+    "socials": [
+      { "platform": "YouTube", "url": "https://www.youtube.com/" },
+      { "platform": "Facebook", "url": "https://www.facebook.com/" },
+      { "platform": "LinkedIn", "url": "https://www.linkedin.com/" },
+      { "platform": "Twitter", "url": "https://www.twitter.com/" }
+    ],
+    "footerText": "\u00a9 Enter your copyright and terms and conditions."
+  },
+  "seo": {
+    "name": "Venture",
+    "url": "https://spiky-polar.cloudvent.net",
+    "description": "An Eleventy template for businesses."
+  }
+}

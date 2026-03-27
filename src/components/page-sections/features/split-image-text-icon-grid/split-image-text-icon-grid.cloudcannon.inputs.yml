@@ -1,0 +1,57 @@
+eyebrow:
+  type: text
+  comment: Small uppercase label above the heading.
+
+heading:
+  type: text
+  comment: Main heading text for the content side.
+
+items:
+  type: array
+  comment: Icon feature items displayed in a horizontal row (recommended 3 items).
+  options:
+    structures: _structures.featureItem
+
+buttonText:
+  type: text
+  comment: Text label for the CTA button.
+
+buttonLink:
+  type: text
+  comment: URL the CTA button links to.
+
+image:
+  type: object
+  comment: Image displayed on the right side of the split.
+
+image.source:
+  type: image
+  comment: Image file path.
+
+image.alt:
+  type: text
+  comment: Alt text for the image.
+
+colorScheme:
+  type: select
+  options:
+    values:
+      - id: inherit
+        name: Inherit
+      - id: dark
+        name: Dark
+
+backgroundColor:
+  type: select
+  options:
+    values:
+      - id: none
+        name: None
+      - id: base
+        name: Base
+      - id: surface
+        name: Surface
+      - id: accent
+        name: Accent
+      - id: highlight
+        name: Highlight

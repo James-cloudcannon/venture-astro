@@ -1,0 +1,87 @@
+---
+import CustomSection from "@builders/custom-section/CustomSection.astro";
+import Heading from "@core-elements/heading/Heading.astro";
+import Image from "@core-elements/image/Image.astro";
+import ButtonGroup from "@wrappers/button-group/ButtonGroup.astro";
+
+const {
+  eyebrow = "",
+  heading = "",
+  images = [],
+  buttonSections = [],
+
+  colorScheme = "inherit",
+  backgroundColor,
+  class: className,
+  useDefaultEditableBinding = false,
+  _component,
+  ...htmlAttributes
+} = Astro.props;
+---
+
+<CustomSection
+  class:list={["image-gallery", className]}
+  maxContentWidth="2xl"
+  paddingHorizontal="xl"
+  paddingVertical="5xl"
+  colorScheme={colorScheme}
+  backgroundColor={backgroundColor}
+  useDefaultEditableBinding={useDefaultEditableBinding}
+  {...htmlAttributes}
+>
+  <Heading level="h3" size="xs" alignX="center" class="image-gallery__eyebrow" data-prop="eyebrow">{eyebrow}</Heading>
+  <Heading level="h2" alignX="center" data-prop="heading">{heading}</Heading>
+
+  <div class="image-gallery__grid" data-editable="array" data-prop="images">
+    {images.map((image) => (
+      <div class="image-gallery__item" data-editable="array-item" data-id="page-sections/features/image-gallery/galleryImage">
+        <Image
+          source={image.source}
+          alt={image.alt}
+          aspectRatio="portrait"
+          rounded={true}
+        />
+      </div>
+    ))}
+  </div>
+
+  <ButtonGroup
+    alignX="center"
+    buttonSections={buttonSections}
+    data-children-prop="buttonSections"
+  />
+</CustomSection>
+
+<style is:global>
+  @layer page-sections {
+    .image-gallery__eyebrow > .heading-inner {
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-weight: var(--font-weight-semibold);
+    }
+
+    .image-gallery__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--spacing-md);
+      width: 100%;
+      margin-top: var(--spacing-lg);
+    }
+
+    .image-gallery__item > .image {
+      margin-top: 0;
+    }
+
+    @media (max-width: 768px) {
+      .image-gallery__grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .image-gallery__grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+</style>

@@ -1,119 +1,134 @@
 ---
 import CustomSection from "@builders/custom-section/CustomSection.astro";
+import Split from "@wrappers/split/Split.astro";
+import Card from "@wrappers/card/Card.astro";
 import Heading from "@core-elements/heading/Heading.astro";
-import Image from "@core-elements/image/Image.astro";
-import SimpleText from "@core-elements/simple-text/SimpleText.astro";
 import Text from "@core-elements/text/Text.astro";
 import ButtonGroup from "@wrappers/button-group/ButtonGroup.astro";
-import Split from "@wrappers/split/Split.astro";
+import Image from "@core-elements/image/Image.astro";
 
 const {
-  eyebrow = "",
-  heading = "",
-  subtext = "",
-  buttonSections = [],
-  imageSource = "",
-  imageAlt = "",
-  imageAspectRatio = "portrait",
-  imageRounded = true,
+  eyebrow = "Tag or label headline",
+  heading = "A component to showcase your brand",
+  description = "",
+  buttonText = "Book now",
+  buttonLink = "/booking/",
+  image = {},
   reverse = false,
+
   colorScheme = "inherit",
   backgroundColor,
-  paddingVertical = "4xl",
   class: className,
   useDefaultEditableBinding = false,
   _component,
   ...htmlAttributes
 } = Astro.props;
 
-const minSplitWidth = 720;
-const featureSplitId = `feature-split-${crypto.randomUUID()}`;
+const buttonSections = [
+  {
+    _component: "building-blocks/core-elements/button",
+    text: buttonText,
+    link: buttonLink,
+    variant: "tertiary",
+    iconName: "arrow-right",
+    iconPosition: "after",
+    hideText: false,
+    size: "md",
+  },
+];
 ---
 
 <CustomSection
   class:list={["feature-split", className]}
-  maxContentWidth="xl"
-  paddingHorizontal="lg"
-  paddingVertical={paddingVertical}
+  paddingVertical="none"
+  paddingHorizontal="none"
+  maxContentWidth="2xl"
   colorScheme={colorScheme}
   backgroundColor={backgroundColor}
-  data-feature-split-id={featureSplitId}
   useDefaultEditableBinding={useDefaultEditableBinding}
   {...htmlAttributes}
 >
   <Split
-    class="feature-split-layout"
-    distributionMode="flexible-fixed"
-    fixedWidth="400"
-    minSplitWidth={minSplitWidth}
+    distributionMode="half"
+    verticalAlignment="stretch"
+    gap="none"
     reverse={reverse}
-    verticalAlignment="center"
-    gap="2xl"
-    reverseOrderOnMobile={true}
+    minSplitWidth={0}
   >
-    <Fragment slot="first">
-      <SimpleText
-        class="eyebrow"
-        data-prop="eyebrow"
-        text={eyebrow}
-      />
+    <Card
+      slot="first"
+      colorScheme="dark"
+      backgroundColor="base"
+      paddingHorizontal="2xl"
+      paddingVertical="2xl"
+      class="feature-split__card"
+    >
       <Heading
-        level="h2"
-        size="lg"
-        data-prop="heading"
+        level="h3"
+        size="xs"
+        class="feature-split__eyebrow"
+        data-prop="eyebrow"
       >
-        {heading}
+        {eyebrow}
       </Heading>
-      <Text
-        class="subtext"
-        data-prop="subtext"
-        text={subtext}
-      />
+      <Heading level="h2" data-prop="heading">{heading}</Heading>
+      <Text data-prop="description" text={description} />
       <ButtonGroup
-        class="feature-buttons"
-        buttonSections={buttonSections}
-        direction="row"
         alignX="start"
-        data-children-prop="buttonSections"
+        buttonSections={buttonSections}
       />
-    </Fragment>
+    </Card>
     <Image
       slot="second"
-      class:list={["feature-split-image", reverse && "reverse"]}
-      source={imageSource}
-      alt={imageAlt}
-      rounded={imageRounded}
-      aspectRatio={imageAspectRatio}
-      data-prop-src="imageSource"
-      data-prop-alt="imageAlt"
+      source={image.source}
+      alt={image.alt}
+      background={true}
     />
   </Split>
 </CustomSection>
 
-{
-  imageAspectRatio == "portrait" && (
-    <style
-      is:inline
-      set:html={`
-        @container feature-split-layout (min-width: ${minSplitWidth}px) {
-        .feature-split-image.image.rounded.reverse {
-            border-top-right-radius: 0;
-            border-bottom-right-radius: 0;
-        }
-        .feature-split-image.image.rounded:not(.reverse) {
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0;
-        }
-        }
-    `}
-    />
-  )
-}
-
-<style>
+<style is:global>
   @layer page-sections {
-    :global(.feature-split-layout) {
-      container-type: inline-size;
+    .feature-split {
+      > .outer-content > .content > .split {
+        margin-top: 0;
+      }
+
+      .feature-split__card {
+        margin-top: 0;
+        height: 100%;
+
+        > .card-inner {
+          height: 100%;
+        }
+
+        > .card-inner > .card-outer-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          min-height: 550px;
+          height: 100%;
+
+          > .card-content {
+            width: 100%;
+          }
+        }
+      }
+
+      .feature-split__eyebrow {
+        > .heading-inner {
+          text-transform: uppercase;
+          letter-spacing: 4px;
+          font-weight: var(--font-weight-semibold);
+        }
+      }
+
+      .split-inner .pane {
+        &.first, &.second {
+          position: relative;
+          min-height: 550px;
+        }
+      }
     }
   }
 </style>

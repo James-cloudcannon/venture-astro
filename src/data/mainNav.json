@@ -1,33 +1,22 @@
 {
   "logoSource": "/images/logo.svg",
-  "logoAlt": "Logo",
+  "logoAlt": "Venture logo",
   "navData": [
     {
-      "name": "Home",
-      "path": "/",
+      "name": "Our Services",
+      "path": "/#services",
       "children": []
     },
     {
-      "name": "Why",
-      "path": "/why/",
+      "name": "Book Now",
+      "path": "/booking/",
       "children": []
     },
     {
-      "name": "Blog",
-      "path": "/blog/",
+      "name": "Contact Us",
+      "path": "/contact/",
       "children": []
     }
   ],
-  "buttonSections": [
-    {
-      "_component": "building-blocks/core-elements/button",
-      "text": "Search",
-      "hideText": true,
-      "link": "/search/",
-      "iconName": "magnifying-glass",
-      "iconPosition": "before",
-      "variant": "ghost",
-      "size": "lg"
-    }
-  ]
+  "buttonSections": []
 }

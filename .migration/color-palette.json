@@ -1,0 +1,67 @@
+{
+  "primary": {
+    "hex": "#1b1b1d",
+    "name": "charcoal",
+    "role": "Primary brand color / main background",
+    "source": "discovery: background role, count 21, contexts: navigation+container; confirmed by all screenshots"
+  },
+  "secondary": {
+    "hex": "#3b3b3d",
+    "name": "dark-gray",
+    "role": "Secondary background for alternate sections",
+    "source": "discovery: background role, count 18, context: container; confirmed by contact form screenshot"
+  },
+  "accent": {
+    "hex": "#0078a8",
+    "name": "teal",
+    "role": "Accent/link color (used sparingly)",
+    "source": "discovery: link role, count 4"
+  },
+  "text": {
+    "hex": "#d9d9dc",
+    "name": "silver",
+    "role": "Body text on dark backgrounds",
+    "source": "discovery: text role, count 66; confirmed in screenshots as paragraph/secondary text"
+  },
+  "text_strong": {
+    "hex": "#f9f9fb",
+    "name": "off-white",
+    "role": "Headings and primary text on dark backgrounds",
+    "source": "discovery: text role, count 78 + heading role, count 24; confirmed in all screenshots as heading color"
+  },
+  "text_light": {
+    "hex": "#f9f9fb",
+    "name": "off-white",
+    "role": "Text on dark backgrounds (same as strong — dark-themed site)",
+    "source": "discovery: text role, count 78"
+  },
+  "link": {
+    "hex": "#d9d9dc",
+    "name": "silver",
+    "role": "Link color (nav links, footer links)",
+    "source": "discovery: link role, count 48; screenshots show light gray links, #0000ee is default/unstyled"
+  },
+  "background_light": {
+    "hex": "#dddddd",
+    "name": "light-gray",
+    "role": "Light background accent (rare)",
+    "source": "discovery: background role, count 2"
+  },
+  "variants": {
+    "primary_light": "rgba(27, 27, 29, 0.85)",
+    "primary_dark": "#111113",
+    "secondary_light": "rgba(59, 59, 61, 0.85)",
+    "secondary_dark": "#2b2b2d",
+    "accent_light": "rgba(0, 120, 168, 0.15)",
+    "accent_dark": "#005c82"
+  },
+  "notes": {
+    "theme": "Dark monochromatic design. Nearly all sections use dark backgrounds (#1b1b1d or #3b3b3d) with light text. No bold accent colors — buttons are outline/bordered style with white text. The #0000ee blue in discovery data is an unoverridden browser default, not a design choice — screenshots show no blue elements.",
+    "fonts": {
+      "primary": "Lato",
+      "primary_weight": "700",
+      "secondary": "Lato",
+      "secondary_weight": "400"
+    }
+  }
+}

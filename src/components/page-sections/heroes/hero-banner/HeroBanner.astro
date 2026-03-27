@@ -1,0 +1,61 @@
+---
+import CustomSection from "@builders/custom-section/CustomSection.astro";
+import Heading from "@core-elements/heading/Heading.astro";
+import SimpleText from "@core-elements/simple-text/SimpleText.astro";
+
+const {
+  eyebrow = "Eyebrow Heading",
+  heading = "Terms and conditions",
+  description = "Description text to complement the block.",
+
+  colorScheme = "dark",
+  backgroundColor = "base",
+  class: className,
+  useDefaultEditableBinding = false,
+  _component,
+  ...htmlAttributes
+} = Astro.props;
+---
+
+<CustomSection
+  class:list={["hero-banner", className]}
+  maxContentWidth="2xl"
+  paddingHorizontal="xl"
+  paddingVertical="5xl"
+  colorScheme={colorScheme}
+  backgroundColor={backgroundColor}
+  useDefaultEditableBinding={useDefaultEditableBinding}
+  {...htmlAttributes}
+>
+  <Heading
+    level="h3"
+    size="xs"
+    alignX="center"
+    class="hero-banner__eyebrow"
+    data-prop="eyebrow"
+    text={eyebrow}
+  />
+  <Heading
+    level="h1"
+    size="2xl"
+    alignX="center"
+    data-prop="heading"
+    text={heading}
+  />
+  <SimpleText
+    text={description}
+    size="lg"
+    alignX="center"
+    data-prop="description"
+  />
+</CustomSection>
+
+<style is:global>
+  @layer page-sections {
+    .hero-banner__eyebrow > .heading-inner {
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-weight: normal;
+    }
+  }
+</style>

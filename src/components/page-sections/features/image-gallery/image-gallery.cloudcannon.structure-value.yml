@@ -1,0 +1,60 @@
+label: Image Gallery
+icon: photo_library
+description: Grid of images with eyebrow, heading, and load-more button.
+value:
+  _component: page-sections/features/image-gallery
+  eyebrow: "A Simple Gallery"
+  heading: "Image Gallery"
+  images:
+    - source: ""
+      alt: ""
+    - source: ""
+      alt: ""
+    - source: ""
+      alt: ""
+    - source: ""
+      alt: ""
+    - source: ""
+      alt: ""
+    - source: ""
+      alt: ""
+  buttonSections:
+    - _component: building-blocks/core-elements/button
+      text: "Load more"
+      hideText: false
+      link: "#"
+      iconName: "arrow-down"
+      iconPosition: after
+      variant: tertiary
+      size: md
+  colorScheme: dark
+  backgroundColor: surface
+preview:
+  text:
+    - Image Gallery
+  subtext:
+    - key: heading
+  icon: photo_library
+picker_preview:
+  text: Image Gallery
+  subtext: Grid of images with eyebrow, heading, and load-more button.
+_inputs_from_glob:
+  - /src/components/page-sections/features/image-gallery/image-gallery.cloudcannon.inputs.yml
+_structures:
+  galleryImage:
+    values:
+      - label: Image
+        value:
+          source: ""
+          alt: ""
+        preview:
+          text:
+            - key: alt
+          icon: image
+        _inputs:
+          source:
+            type: image
+            comment: Image file path.
+          alt:
+            type: text
+            comment: Alt text for accessibility.

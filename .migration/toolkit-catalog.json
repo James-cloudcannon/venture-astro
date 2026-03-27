@@ -1,0 +1,2734 @@
+{
+  "style_system": {
+    "spacing": {
+      "none": "0",
+      "xs": "0.25rem",
+      "sm": "0.5rem",
+      "md": "1rem",
+      "lg": "1.5rem",
+      "xl": "2rem",
+      "2xl": "3rem",
+      "3xl": "4rem",
+      "4xl": "5rem",
+      "5xl": "6rem",
+      "6xl": "7rem"
+    },
+    "spacing_em": {
+      "xs": "0.25em",
+      "sm": "0.5em",
+      "md": "1em",
+      "lg": "1.5em",
+      "xl": "2em",
+      "2xl": "3em",
+      "3xl": "4em"
+    },
+    "content_widths": {
+      "xs": "350px",
+      "sm": "480px",
+      "md": "640px",
+      "lg": "768px",
+      "xl": "1024px",
+      "2xl": "1280px",
+      "3xl": "1536px"
+    },
+    "heading_sizes": {
+      "xs": { "desktop": "1.125rem", "mobile": "1rem" },
+      "sm": { "desktop": "1.375rem", "mobile": "1.25rem" },
+      "md": { "desktop": "1.75rem", "mobile": "1.5rem" },
+      "lg": { "desktop": "2.25rem", "mobile": "1.875rem" },
+      "xl": { "desktop": "2.875rem", "mobile": "2.375rem" },
+      "2xl": { "desktop": "3.75rem", "mobile": "3rem" },
+      "3xl": { "desktop": "4.625rem", "mobile": "3.75rem" },
+      "4xl": { "desktop": "5.5rem", "mobile": "4.25rem" }
+    },
+    "body_sizes": {
+      "xs": { "desktop": "0.75rem", "mobile": "0.625rem" },
+      "sm": { "desktop": "0.875rem", "mobile": "0.75rem" },
+      "md": { "desktop": "1rem", "mobile": "0.875rem" },
+      "lg": { "desktop": "1.125rem", "mobile": "1rem" },
+      "xl": { "desktop": "1.375rem", "mobile": "1.125rem" },
+      "2xl": { "desktop": "1.625rem", "mobile": "1.375rem" },
+      "3xl": { "desktop": "1.875rem", "mobile": "1.625rem" },
+      "4xl": { "desktop": "2.25rem", "mobile": "1.875rem" },
+      "5xl": { "desktop": "2.625rem", "mobile": null }
+    },
+    "radius": {
+      "none": "0",
+      "xs": "4px",
+      "sm": "8px",
+      "md": "12px",
+      "lg": "16px",
+      "xl": "24px",
+      "2xl": "32px",
+      "3xl": "48px",
+      "4xl": "64px",
+      "full": "9999px"
+    },
+    "layers": {
+      "layer-0": 0,
+      "layer-1": 10,
+      "layer-2": 20,
+      "layer-3": 30,
+      "layer-4": 40,
+      "layer-5": 50,
+      "layer-6": 60,
+      "layer-7": 100,
+      "layer-8": 1000
+    },
+    "animations": {
+      "fast": "100ms",
+      "normal": "200ms",
+      "slow": "500ms"
+    },
+    "aspect_ratios": {
+      "square": "1 / 1",
+      "landscape": "4 / 3",
+      "portrait": "3 / 4",
+      "widescreen": "16 / 9",
+      "horizontal-strip": "16 / 5"
+    },
+    "colors_gray_scale": {
+      "gray-0": "#fff",
+      "gray-1": "#eaeaea",
+      "gray-2": "#d4d4d4",
+      "gray-3": "#bfbfbf",
+      "gray-4": "#aaa",
+      "gray-5": "#949494",
+      "gray-6": "#7f7f7f",
+      "gray-7": "#6a6a6a",
+      "gray-8": "#555",
+      "gray-9": "#404040",
+      "gray-10": "#2a2a2a",
+      "gray-11": "#151515",
+      "gray-12": "#000"
+    },
+    "colors_semantic": {
+      "blue": { "light": "#e8f4fd", "dark": "#3b82f6" },
+      "green": { "light": "#e8fce9", "dark": "#10b981" },
+      "yellow": { "light": "#fef9e7", "dark": "#fbbf24" },
+      "orange": { "light": "#fef3e7", "dark": "#f97316" },
+      "red": { "light": "#fee8e8", "dark": "#ef4444" },
+      "purple": { "light": "#f3e8ff", "dark": "#a855f7" },
+      "pink": { "light": "#fde8f2", "dark": "#ec4899" },
+      "cyan": { "light": "#e8fffe", "dark": "#06b6d4" }
+    },
+    "theme_light": {
+      "--color-brand": "var(--gray-12) = #000",
+      "--color-brand-muted": "var(--gray-9) = #404040",
+      "--color-text": "var(--gray-10) = #2a2a2a",
+      "--color-text-strong": "var(--gray-12) = #000",
+      "--color-text-muted": "var(--gray-8) = #555",
+      "--color-text-on-brand": "var(--gray-0) = #fff",
+      "--color-bg": "var(--gray-0) = #fff",
+      "--color-bg-surface": "var(--gray-1) = #eaeaea",
+      "--color-bg-muted": "var(--gray-2) = #d4d4d4",
+      "--color-bg-accent": "#d5fdff",
+      "--color-bg-highlight": "#fff9d6",
+      "--color-bg-brand": "var(--color-brand)",
+      "--color-border": "var(--gray-4) = #aaa",
+      "--color-border-strong": "var(--gray-10) = #2a2a2a",
+      "--color-border-subtle": "var(--gray-1) = #eaeaea",
+      "--color-border-inputs": "var(--gray-7) = #6a6a6a"
+    },
+    "theme_dark": {
+      "--color-brand": "var(--gray-0) = #fff",
+      "--color-brand-muted": "var(--gray-3) = #bfbfbf",
+      "--color-text": "var(--gray-1) = #eaeaea",
+      "--color-text-strong": "var(--gray-0) = #fff",
+      "--color-text-muted": "var(--gray-0) = #fff",
+      "--color-text-on-brand": "var(--gray-12) = #000",
+      "--color-bg": "var(--gray-12) = #000",
+      "--color-bg-surface": "var(--gray-11) = #151515",
+      "--color-bg-muted": "var(--gray-10) = #2a2a2a",
+      "--color-bg-accent": "rgb(35, 54, 98)",
+      "--color-bg-highlight": "rgb(94, 65, 28)",
+      "--color-border": "var(--gray-8) = #555",
+      "--color-border-strong": "var(--gray-4) = #aaa",
+      "--color-border-subtle": "var(--gray-8) = #555"
+    },
+    "background_colors": {
+      "base": "--color-bg",
+      "surface": "--color-bg-surface",
+      "accent": "--color-bg-accent",
+      "highlight": "--color-bg-highlight"
+    },
+    "typography": {
+      "body_font": "Inter (Google Fonts), --font-body",
+      "heading_font": "Raleway (Google Fonts), --font-headings",
+      "font_weights": { "normal": 400, "semibold": 600, "bold": 700 },
+      "heading_default_weight": "var(--font-weight-bold) = 700",
+      "heading_h1_h3_text_wrap": "balance",
+      "base_body_font_size": "var(--font-size-md) = 1rem",
+      "body_line_height": "1.6"
+    },
+    "mobile_breakpoint": "640px"
+  },
+
+  "components": {
+    "Heading": {
+      "import": "@core-elements/heading/Heading.astro",
+      "source_path": "src/components/building-blocks/core-elements/heading/Heading.astro",
+      "category": "core-elements",
+      "purpose": "Renders a heading element (h1-h6) with optional icon, inline markdown support, and size/alignment controls.",
+
+      "props": [
+        { "name": "text", "type": "string", "default": "undefined", "description": "Heading text content, supports inline markdown" },
+        { "name": "level", "type": "string", "default": "h2", "description": "HTML heading level (h1-h6)" },
+        { "name": "size", "type": "string", "default": "undefined (inherits from level)", "description": "Override font size token: xs|sm|md|lg|xl|2xl|3xl|4xl" },
+        { "name": "alignX", "type": "string", "default": "start", "description": "Horizontal alignment: start|center|end" },
+        { "name": "iconName", "type": "string", "default": "undefined", "description": "Icon name to display alongside heading text" },
+        { "name": "iconPosition", "type": "string", "default": "before", "description": "Icon position: before|after" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "useDefaultEditableBinding", "type": "boolean", "default": "false", "description": "Enable CloudCannon editable binding" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier for rendering system" }
+      ],
+
+      "prop_value_maps": {
+        "size": {
+          "xs": "font-size: 1.125rem (desktop) / 1rem (mobile)",
+          "sm": "font-size: 1.375rem / 1.25rem",
+          "md": "font-size: 1.75rem / 1.5rem",
+          "lg": "font-size: 2.25rem / 1.875rem",
+          "xl": "font-size: 2.875rem / 2.375rem",
+          "2xl": "font-size: 3.75rem / 3rem",
+          "3xl": "font-size: 4.625rem / 3.75rem",
+          "4xl": "font-size: 5.5rem / 4.25rem"
+        },
+        "alignX": {
+          "start": "text-align: start",
+          "center": "text-align: center",
+          "end": "text-align: end"
+        },
+        "level": {
+          "h1": "font-size: var(--font-size-heading-2xl) = 3.75rem, line-height: 1.2",
+          "h2": "font-size: var(--font-size-heading-xl) = 2.875rem, line-height: 1.25",
+          "h3": "font-size: var(--font-size-heading-lg) = 2.25rem, line-height: 1.3",
+          "h4": "font-size: var(--font-size-heading-md) = 1.75rem, line-height: 1.35, font-weight: normal",
+          "h5": "font-size: var(--font-size-heading-sm) = 1.375rem, line-height: 1.4, font-weight: normal",
+          "h6": "font-size: var(--font-size-heading-xs) = 1.125rem, line-height: 1.45, font-weight: normal"
+        }
+      },
+
+      "slots": [
+        "Default: Alternative content instead of text prop"
+      ],
+
+      "dom_structure": [
+        "{Tag}.heading",
+        "  span.heading-inner.size-{size}.align-{alignX}",
+        "    Icon.heading-icon (if iconPosition='before' and iconName set)",
+        "    span.heading-text",
+        "      {text content or slot}",
+        "    Icon.heading-icon.heading-icon-after (if iconPosition='after')"
+      ],
+
+      "css_selectors": {
+        ".heading": "outer element (h1-h6 tag), has margin-top: var(--spacing-lg)",
+        ".heading-inner": "inner span controlling font-size and alignment",
+        ".heading-inner.size-{xs..4xl}": "size override classes",
+        ".heading-inner.align-{start|center|end}": "alignment classes",
+        ".heading-text": "inner span wrapping the actual text content",
+        ".heading-icon": "icon element (inline-block, 0.9em size)"
+      },
+
+      "default_styles": {
+        "margin-top": "var(--spacing-lg) = 1.5rem",
+        "font-family": "var(--font-headings) = Raleway",
+        "font-weight": "var(--font-weight-bold) = 700 (h1-h3), normal (h4-h6)",
+        "color": "var(--color-text-strong) = #000",
+        "text-wrap": "balance (h1-h3 only)"
+      },
+
+      "gaps": [],
+      "gotchas": [
+        "When size prop is set, it overrides the native heading level's font-size from _typography.css",
+        "Without a size prop, the heading size comes from base _typography.css styles for the Tag level, NOT from any component class",
+        "Returns nothing (empty render) if no text, no slot content, and no _component prop"
+      ],
+      "visual_behavior": "Renders as a block-level heading element with the specified level. Default is an h2 with no explicit size class (inherits from base typography). Has 1.5rem top margin. Supports inline markdown in text prop (bold, italic, links). Icon displays inline at 0.9em of heading font size."
+    },
+
+    "Text": {
+      "import": "@core-elements/text/Text.astro",
+      "source_path": "src/components/building-blocks/core-elements/text/Text.astro",
+      "category": "core-elements",
+      "purpose": "Renders block-level markdown content (paragraphs, lists, headings) from a text prop or slot, with alignment control.",
+
+      "props": [
+        { "name": "text", "type": "string", "default": "\"\"", "description": "Markdown content rendered as block-level HTML" },
+        { "name": "alignX", "type": "string", "default": "start", "description": "Horizontal alignment: start|center|end" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "useDefaultEditableBinding", "type": "boolean", "default": "false", "description": "Enable CloudCannon editable binding" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {
+        "alignX": {
+          "start": "text-align: start",
+          "center": "text-align: center",
+          "end": "text-align: end"
+        }
+      },
+
+      "slots": [
+        "Default: Alternative content instead of text prop"
+      ],
+
+      "dom_structure": [
+        "div.text",
+        "  div.text-inner.align-{alignX}",
+        "    {rendered markdown or slot}"
+      ],
+
+      "css_selectors": {
+        ".text": "outer wrapper, has margin-top: var(--spacing-lg)",
+        ".text-inner": "inner div with alignment",
+        ".text-inner.align-{start|center|end}": "alignment classes"
+      },
+
+      "default_styles": {
+        "margin-top": "var(--spacing-lg) = 1.5rem",
+        "font-size": "var(--font-size-md) = 1rem (from base p style)",
+        "line-height": "1.6 (from base p style)",
+        "color": "var(--color-text) = #2a2a2a"
+      },
+
+      "gaps": [
+        "NO size prop - cannot control font size directly (use SimpleText for sized text)"
+      ],
+      "gotchas": [
+        "Uses md.render() (block-level) not md.renderInline() - produces <p> tags around content",
+        "Returns nothing if no text and no slot content and no _component"
+      ],
+      "visual_behavior": "Renders markdown as block-level HTML (paragraphs, lists, etc.) inside a div. Default is left-aligned body text at 1rem. Has 1.5rem top margin. Good for rich text content with multiple paragraphs."
+    },
+
+    "SimpleText": {
+      "import": "@core-elements/simple-text/SimpleText.astro",
+      "source_path": "src/components/building-blocks/core-elements/simple-text/SimpleText.astro",
+      "category": "core-elements",
+      "purpose": "Renders a single paragraph of inline markdown text with size and alignment controls.",
+
+      "props": [
+        { "name": "text", "type": "string", "default": "undefined", "description": "Inline markdown text content" },
+        { "name": "size", "type": "string", "default": "md", "description": "Font size token: xs|sm|md|lg|xl|2xl|3xl|4xl" },
+        { "name": "alignX", "type": "string", "default": "start", "description": "Horizontal alignment: start|center|end" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "useDefaultEditableBinding", "type": "boolean", "default": "false", "description": "Enable CloudCannon editable binding" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {
+        "size": {
+          "xs": "font-size: 0.75rem / 0.625rem",
+          "sm": "font-size: 0.875rem / 0.75rem",
+          "md": "font-size: 1rem / 0.875rem",
+          "lg": "font-size: 1.125rem / 1rem",
+          "xl": "font-size: 1.375rem / 1.125rem",
+          "2xl": "font-size: 1.625rem / 1.375rem",
+          "3xl": "font-size: 1.875rem / 1.625rem",
+          "4xl": "font-size: 2.25rem / 1.875rem"
+        },
+        "alignX": {
+          "start": "text-align: start",
+          "center": "text-align: center",
+          "end": "text-align: end"
+        }
+      },
+
+      "slots": [
+        "Default: Alternative content instead of text prop"
+      ],
+
+      "dom_structure": [
+        "div.simple-text",
+        "  p.simple-text-content.size-{size}.align-{alignX}",
+        "    span.simple-text-inner",
+        "      {inline markdown or slot}"
+      ],
+
+      "css_selectors": {
+        ".simple-text": "outer wrapper, has margin-top: var(--spacing-lg)",
+        ".simple-text-content": "the <p> element with size and alignment classes",
+        ".simple-text-content.size-{xs..4xl}": "font-size control",
+        ".simple-text-content.align-{start|center|end}": "alignment classes",
+        ".simple-text-inner": "inner span wrapping editable text"
+      },
+
+      "default_styles": {
+        "margin-top": "var(--spacing-lg) = 1.5rem",
+        "font-size": "var(--font-size-md) = 1rem (default size=md)"
+      },
+
+      "gaps": [],
+      "gotchas": [
+        "Uses md.renderInline() - no block-level elements, just inline formatting",
+        "Newlines in text are converted to <br /> tags"
+      ],
+      "visual_behavior": "Renders a single paragraph with controllable font size. Uses inline markdown (bold, italic, links but no block elements). Has 1.5rem top margin. Good for subtitles or descriptive text that needs size control."
+    },
+
+    "Button": {
+      "import": "@core-elements/button/Button.astro",
+      "source_path": "src/components/building-blocks/core-elements/button/Button.astro",
+      "category": "core-elements",
+      "purpose": "Renders a styled button or link with text, optional icon, variant styling, and size control.",
+
+      "props": [
+        { "name": "text", "type": "string", "default": "undefined", "description": "Button label text" },
+        { "name": "iconName", "type": "string", "default": "undefined", "description": "Icon name to display" },
+        { "name": "iconPosition", "type": "string", "default": "before", "description": "Icon placement: before|after" },
+        { "name": "hideText", "type": "boolean", "default": "false", "description": "Show icon only, hide text label" },
+        { "name": "variant", "type": "string", "default": "primary", "description": "Visual style: primary|secondary|tertiary|ghost|text" },
+        { "name": "size", "type": "string", "default": "md", "description": "Button size: sm|md|lg" },
+        { "name": "link", "type": "string", "default": "undefined", "description": "URL for anchor element" },
+        { "name": "element", "type": "string", "default": "a", "description": "HTML element tag: a|button" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "popovertarget", "type": "string", "default": "undefined", "description": "ID of popover element to toggle" },
+        { "name": "popovertargetaction", "type": "string", "default": "undefined", "description": "Popover action: show|hide|toggle" },
+        { "name": "useDefaultEditableBinding", "type": "boolean", "default": "false", "description": "Enable CloudCannon editable binding" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {
+        "variant": {
+          "primary": "bg: var(--color-bg-brand)=#000, color: var(--color-text-on-brand)=#fff, border: transparent",
+          "secondary": "bg: var(--color-bg-muted)=#d4d4d4, color: var(--color-text-strong)=#000, border: transparent",
+          "tertiary": "bg: transparent, color: var(--color-text-strong)=#000, border: var(--color-border-strong)=#2a2a2a",
+          "ghost": "bg: transparent, color: var(--color-text-strong)=#000, border: transparent",
+          "text": "bg: transparent, color: var(--color-brand)=#000, border: transparent, padding: 0, font-size: var(--font-size-lg)"
+        },
+        "size": {
+          "sm": "font-size: var(--font-size-xs) = 0.75rem",
+          "md": "font-size: var(--font-size-md) = 1rem",
+          "lg": "font-size: var(--font-size-xl) = 1.375rem"
+        }
+      },
+
+      "slots": [
+        "Default: Alternative content for button label instead of text prop"
+      ],
+
+      "dom_structure": [
+        "span.button",
+        "  {Tag=a|button}.button-inner.variant-{variant}.size-{size}[.icon-after][.icon-only]",
+        "    Icon (if iconName set)",
+        "    span.label-text (if !hideText)",
+        "      {text or slot}"
+      ],
+
+      "css_selectors": {
+        ".button": "outer inline-flex wrapper",
+        ".button-inner": "the actual clickable element (a or button)",
+        ".button-inner.variant-{primary|secondary|tertiary|ghost|text}": "variant styles",
+        ".button-inner.size-{sm|md|lg}": "size classes",
+        ".button-inner.icon-only": "icon-only mode, reduced padding",
+        ".button-inner.icon-after": "flex-direction: row-reverse",
+        ".label-text": "text span inside button"
+      },
+
+      "default_styles": {
+        "display": "inline-flex",
+        "border-radius": "var(--radius-xs) = 4px",
+        "font-weight": "var(--font-weight-semibold) = 600",
+        "padding-block": "var(--spacing-em-sm) = 0.5em",
+        "padding-inline": "var(--spacing-em-sm) = 0.5em",
+        "gap": "0.15em",
+        "transition": "background-color, color, border-color 200ms ease-in-out"
+      },
+
+      "gaps": [],
+      "gotchas": [
+        "Outer element is a <span>, NOT the clickable element - the inner .button-inner is the actual link/button",
+        "Default element is 'a' (anchor) not 'button' - must set element='button' for non-link usage",
+        "Returns nothing if no text, no slot, no icon, and no _component"
+      ],
+      "visual_behavior": "Renders as an inline button with rounded corners (4px default). Primary variant has dark bg with white text. Has hover/focus states with transitions. Icon displays inline at same size as text with 0.15em gap. No top margin (inline element)."
+    },
+
+    "Image": {
+      "import": "@core-elements/image/Image.astro",
+      "source_path": "src/components/building-blocks/core-elements/image/Image.astro",
+      "category": "core-elements",
+      "purpose": "Renders an optimized responsive image with aspect ratio control, object-position, and background mode.",
+
+      "props": [
+        { "name": "source", "type": "string", "default": "undefined", "description": "Image URL or local /src/ path" },
+        { "name": "alt", "type": "string", "default": "undefined", "description": "Alt text for accessibility" },
+        { "name": "sizes", "type": "string", "default": "(max-width: 1280px) 100vw, 1280px", "description": "Responsive sizes attribute" },
+        { "name": "widths", "type": "number[]", "default": "[640, 1280, 2560]", "description": "Width breakpoints for srcset" },
+        { "name": "rounded", "type": "boolean", "default": "false", "description": "Apply border-radius to image" },
+        { "name": "priority", "type": "boolean", "default": "false", "description": "Eager loading (above the fold)" },
+        { "name": "aspectRatio", "type": "string", "default": "null", "description": "Aspect ratio: square|landscape|portrait|widescreen|horizontal-strip|none" },
+        { "name": "width", "type": "number", "default": "undefined", "description": "Explicit width" },
+        { "name": "height", "type": "number", "default": "undefined", "description": "Explicit height" },
+        { "name": "positionVertical", "type": "string", "default": "center", "description": "Object position vertical: top|center|bottom" },
+        { "name": "positionHorizontal", "type": "string", "default": "center", "description": "Object position horizontal: left|center|right" },
+        { "name": "background", "type": "boolean", "default": "false", "description": "Render as absolute-positioned background image" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "useDefaultEditableBinding", "type": "boolean", "default": "false", "description": "Enable CloudCannon editable binding" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {
+        "aspectRatio": {
+          "square": "aspect-ratio: 1 / 1",
+          "landscape": "aspect-ratio: 4 / 3",
+          "portrait": "aspect-ratio: 3 / 4",
+          "widescreen": "aspect-ratio: 16 / 9",
+          "horizontal-strip": "aspect-ratio: 16 / 5",
+          "none": "no aspect ratio constraint"
+        }
+      },
+
+      "slots": [],
+
+      "dom_structure": [
+        "div.image",
+        "  div.image-inner[.ratio][.ratio-{aspectRatio}][.position-{v}-{h}][.rounded][.background]",
+        "    picture (Astro Picture or plain <picture>)",
+        "      img"
+      ],
+
+      "css_selectors": {
+        ".image": "outer wrapper, display: block, margin-top: var(--spacing-lg), overflow: hidden",
+        ".image-inner": "inner div controlling aspect ratio and position",
+        ".image-inner.ratio-{square|landscape|portrait|widescreen|horizontal-strip}": "aspect ratio classes",
+        ".image-inner.rounded": "border-radius: var(--radius-lg) = 16px",
+        ".image-inner.background": "height: 100%, width: 100%, object-fit: cover on img",
+        ".image-inner.position-{v}-{h}": "object-position on img (9 combinations)",
+        ".image:has(> .image-inner.background)": "position: absolute, inset: 0, margin-top: 0"
+      },
+
+      "default_styles": {
+        "display": "block",
+        "margin-top": "var(--spacing-lg) = 1.5rem",
+        "overflow": "hidden",
+        "img_width": "100%",
+        "img_height": "auto",
+        "img_display": "block"
+      },
+
+      "gaps": [],
+      "gotchas": [
+        "When background=true, the .image element becomes position: absolute with inset: 0 and margin-top: 0",
+        "Local images (starting with /src/) are loaded via import.meta.glob and get Astro's image optimization (Picture component)",
+        "External images render as plain <img> without optimization",
+        "Returns nothing if no valid source and no _component"
+      ],
+      "visual_behavior": "Renders a responsive image that fills its container width. With aspect ratio set, the image is cropped with object-fit: cover. In background mode, it fills the parent container absolutely. Has 1.5rem top margin in normal mode. Rounded mode adds 16px border-radius."
+    },
+
+    "Icon": {
+      "import": "@core-elements/icon/Icon.astro",
+      "source_path": "src/components/building-blocks/core-elements/icon/Icon.astro",
+      "category": "core-elements",
+      "purpose": "Renders an SVG icon from the astro-icon library with size, color, and optional background.",
+
+      "props": [
+        { "name": "name", "type": "string", "default": "undefined", "description": "Icon name from the icon set" },
+        { "name": "size", "type": "string", "default": "lg", "description": "Icon size: sm|md|lg|xl|2xl|3xl|none" },
+        { "name": "color", "type": "string", "default": "default", "description": "Icon color: default|blue|green|yellow|orange|red|purple|pink|cyan" },
+        { "name": "background", "type": "boolean", "default": "false", "description": "Show background behind icon" },
+        { "name": "alignX", "type": "string", "default": "\"\" (empty)", "description": "Horizontal alignment: start|center|end" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {
+        "size": {
+          "sm": "font-size: var(--font-size-sm) = 0.875rem",
+          "md": "font-size: var(--font-size-xl) = 1.375rem",
+          "lg": "font-size: var(--font-size-2xl) = 1.625rem",
+          "xl": "font-size: var(--font-size-3xl) = 1.875rem",
+          "2xl": "font-size: var(--font-size-4xl) = 2.25rem",
+          "3xl": "font-size: var(--font-size-5xl) = 2.625rem",
+          "none": "no font-size set (inherits)"
+        },
+        "color": {
+          "default": "color: inherit",
+          "blue": "color: #3b82f6, bg: #e8f4fd",
+          "green": "color: #10b981, bg: #e8fce9",
+          "yellow": "color: #fbbf24, bg: #fef9e7",
+          "orange": "color: #f97316, bg: #fef3e7",
+          "red": "color: #ef4444, bg: #fee8e8",
+          "purple": "color: #a855f7, bg: #f3e8ff",
+          "pink": "color: #ec4899, bg: #fde8f2",
+          "cyan": "color: #06b6d4, bg: #e8fffe"
+        }
+      },
+
+      "slots": [],
+
+      "dom_structure": [
+        "span.icon",
+        "  span.icon-inner.size-{size}.color-{color}[.background][.align-{alignX}][.fill]",
+        "    AstroIcon[is:inline]"
+      ],
+
+      "css_selectors": {
+        ".icon": "outer span, display: block, line-height: 0",
+        ".icon-inner": "inner span with size/color/bg classes",
+        ".icon-inner.size-{sm|md|lg|xl|2xl|3xl}": "font-size control",
+        ".icon-inner.color-{color}": "icon color",
+        ".icon-inner.background": "adds bg-color and padding",
+        ".icon-inner.align-{start|center|end}": "horizontal alignment via margin",
+        ".icon-inner.fill": "fill: currentcolor (for social icons)"
+      },
+
+      "default_styles": {
+        "display": "block",
+        "line-height": "0",
+        "border-radius": "var(--radius-xs) = 4px",
+        "color": "inherit"
+      },
+
+      "gaps": [
+        "NO margin-top - unlike most other core elements"
+      ],
+      "gotchas": [
+        "size='none' is a special value used when Icon is embedded inside other components (Heading, Button) to inherit their font-size",
+        "Social icons (name contains 'social/') automatically get fill: currentcolor class",
+        "Background color only applies when background=true AND a color is set"
+      ],
+      "visual_behavior": "Renders an inline SVG icon. Default size is lg (1.625rem). With background=true, shows a rounded rectangle behind the icon with the color's light shade. No top margin - typically used inside other components."
+    },
+
+    "Spacer": {
+      "import": "@core-elements/spacer/Spacer.astro",
+      "source_path": "src/components/building-blocks/core-elements/spacer/Spacer.astro",
+      "category": "core-elements",
+      "purpose": "Renders an empty vertical space of a specified height.",
+
+      "props": [
+        { "name": "size", "type": "string", "default": "md", "description": "Spacer height: xs|sm|md|lg|xl|2xl|3xl" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {
+        "size": {
+          "xs": "height: var(--spacing-xs) = 0.25rem",
+          "sm": "height: var(--spacing-sm) = 0.5rem",
+          "md": "height: var(--spacing-md) = 1rem",
+          "lg": "height: var(--spacing-lg) = 1.5rem",
+          "xl": "height: var(--spacing-xl) = 2rem",
+          "2xl": "height: var(--spacing-2xl) = 3rem",
+          "3xl": "height: var(--spacing-3xl) = 4rem"
+        }
+      },
+
+      "slots": [],
+
+      "dom_structure": [
+        "div.spacer[aria-hidden=true]",
+        "  div.spacer-inner.size-{size}"
+      ],
+
+      "css_selectors": {
+        ".spacer": "outer wrapper",
+        ".spacer-inner": "height-generating div",
+        ".spacer-inner.size-{xs..3xl}": "height classes"
+      },
+
+      "default_styles": {
+        "height": "var(--spacing-md) = 1rem (default size=md)"
+      },
+
+      "gaps": [
+        "NO margin-top - spacer itself has no margin, just height"
+      ],
+      "gotchas": [],
+      "visual_behavior": "Renders an invisible block that takes up vertical space. aria-hidden=true so screen readers skip it. Default is 1rem tall."
+    },
+
+    "Divider": {
+      "import": "@core-elements/divider/Divider.astro",
+      "source_path": "src/components/building-blocks/core-elements/divider/Divider.astro",
+      "category": "core-elements",
+      "purpose": "Renders a horizontal rule with configurable vertical padding.",
+
+      "props": [
+        { "name": "paddingVertical", "type": "string", "default": "md", "description": "Vertical padding around the rule: none|xs|sm|md|lg|xl|2xl|3xl" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {
+        "paddingVertical": {
+          "none": "padding: 0",
+          "xs": "padding-block: 0.25rem",
+          "sm": "padding-block: 0.5rem",
+          "md": "padding-block: 1rem",
+          "lg": "padding-block: 1.5rem",
+          "xl": "padding-block: 2rem",
+          "2xl": "padding-block: 3rem",
+          "3xl": "padding-block: 4rem"
+        }
+      },
+
+      "slots": [],
+
+      "dom_structure": [
+        "div.divider[aria-hidden=true]",
+        "  div.divider-inner.padding-y-{paddingVertical}",
+        "    hr.rule"
+      ],
+
+      "css_selectors": {
+        ".divider": "outer wrapper",
+        ".divider-inner": "padding container",
+        ".divider-inner.padding-y-{none..3xl}": "padding-block classes",
+        ".rule": "the <hr> element itself"
+      },
+
+      "default_styles": {
+        "border": "0",
+        "border-top": "2px solid var(--color-border-subtle) = #eaeaea (light)",
+        "margin": "0"
+      },
+
+      "gaps": [
+        "NO margin-top - divider has no outer margin, only internal padding"
+      ],
+      "gotchas": [],
+      "visual_behavior": "Renders a subtle 2px horizontal line with configurable padding above and below. Default has 1rem padding on each side. Line color is very light (border-subtle)."
+    },
+
+    "List": {
+      "import": "@core-elements/list/List.astro",
+      "source_path": "src/components/building-blocks/core-elements/list/List.astro",
+      "category": "core-elements",
+      "purpose": "Renders a list (ul/ol) of items with optional icons, direction, size, and alignment control.",
+
+      "props": [
+        { "name": "items", "type": "array", "default": "[]", "description": "Array of ListItem props objects" },
+        { "name": "direction", "type": "string", "default": "vertical", "description": "Layout direction: vertical|horizontal" },
+        { "name": "alignX", "type": "string", "default": "start", "description": "Horizontal alignment: start|center|end" },
+        { "name": "size", "type": "string", "default": "md", "description": "Font size: xs|sm|md|lg|xl|2xl|3xl|4xl" },
+        { "name": "listType", "type": "string", "default": "icon", "description": "List type: icon|bullet|numbered" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "useDefaultEditableBinding", "type": "boolean", "default": "false", "description": "Enable CloudCannon editable binding" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {
+        "size": {
+          "xs": "font-size: 0.75rem / 0.625rem",
+          "sm": "font-size: 0.875rem / 0.75rem",
+          "md": "font-size: 1rem / 0.875rem",
+          "lg": "font-size: 1.125rem / 1rem",
+          "xl": "font-size: 1.375rem / 1.125rem",
+          "2xl": "font-size: 1.625rem / 1.375rem",
+          "3xl": "font-size: 1.875rem / 1.625rem",
+          "4xl": "font-size: 2.25rem / 1.875rem"
+        },
+        "listType": {
+          "icon": "list-style: none, padding: 0, uses Icon components",
+          "bullet": "list-style: disc",
+          "numbered": "list-style: decimal (renders as <ol>)"
+        },
+        "direction": {
+          "vertical": "flex-direction: column, gap: 0.5em",
+          "horizontal": "flex-flow: row wrap, gap: 1em (or 3em for bullet/numbered)"
+        }
+      },
+
+      "slots": [
+        "Default: Alternative content instead of items array"
+      ],
+
+      "dom_structure": [
+        "div.list",
+        "  {ul|ol}[role=list].size-{size}.direction-{direction}.alignment-{alignX}.type-{listType}",
+        "    ListItem (for each item in items array)"
+      ],
+
+      "css_selectors": {
+        ".list": "outer wrapper, margin-top: var(--spacing-lg)",
+        ".list > ul, .list > ol": "the list element with flex layout",
+        ".list .size-{xs..4xl}": "font-size classes",
+        ".list .type-icon": "no list-style, no padding",
+        ".list .type-bullet": "disc list-style",
+        ".list .type-numbered": "decimal list-style",
+        ".list .direction-horizontal": "row layout"
+      },
+
+      "default_styles": {
+        "margin-top": "var(--spacing-lg) = 1.5rem",
+        "display": "flex",
+        "flex-direction": "column",
+        "gap": "var(--spacing-em-sm) = 0.5em"
+      },
+
+      "gaps": [],
+      "gotchas": [
+        "listType='numbered' renders as <ol>, other types render as <ul>",
+        "listType='icon' removes all native list styling including padding-inline-start"
+      ],
+      "visual_behavior": "Renders a vertical or horizontal list of items. Default is a vertical icon list with 1rem font size and 0.5em gap between items. Has 1.5rem top margin."
+    },
+
+    "ListItem": {
+      "import": "@core-elements/list/ListItem.astro",
+      "source_path": "src/components/building-blocks/core-elements/list/ListItem.astro",
+      "category": "core-elements",
+      "purpose": "Renders a single list item with optional icon and inline markdown text.",
+
+      "props": [
+        { "name": "text", "type": "string", "default": "\"\"", "description": "Item text, supports inline markdown" },
+        { "name": "iconName", "type": "string", "default": "undefined", "description": "Icon to display before text" },
+        { "name": "iconColor", "type": "string", "default": "default", "description": "Icon color token" },
+        { "name": "showIcon", "type": "boolean", "default": "true", "description": "Whether to show the icon" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "useDefaultEditableBinding", "type": "boolean", "default": "false", "description": "Enable CloudCannon editable binding" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {},
+
+      "slots": [
+        "Default: Alternative content instead of text prop"
+      ],
+
+      "dom_structure": [
+        "li.item",
+        "  span.item-inner[.list-item-has-icon]",
+        "    Icon.list-icon (if showIcon and iconName set)",
+        "    p {text or slot}"
+      ],
+
+      "css_selectors": {
+        ".item": "the <li> element",
+        ".item-inner": "inner span",
+        ".item-inner.list-item-has-icon": "display: block when icon present",
+        ".list-icon": "icon element, inline-block, 1em square"
+      },
+
+      "default_styles": {
+        "font-size": "inherit"
+      },
+
+      "gaps": [],
+      "gotchas": [],
+      "visual_behavior": "Renders as a list item with optional icon inline before the text. Icon is 1em square, vertically aligned. Text wraps naturally."
+    },
+
+    "Embed": {
+      "import": "@core-elements/embed/Embed.astro",
+      "source_path": "src/components/building-blocks/core-elements/embed/Embed.astro",
+      "category": "core-elements",
+      "purpose": "Renders an HTML embed (iframe) with aspect ratio control.",
+
+      "props": [
+        { "name": "html", "type": "string", "default": "undefined", "description": "Raw HTML to embed (usually an iframe)" },
+        { "name": "aspectRatio", "type": "string", "default": "landscape", "description": "Aspect ratio: square|landscape|portrait|widescreen" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {
+        "aspectRatio": {
+          "square": "aspect-ratio: 1 / 1",
+          "landscape": "aspect-ratio: 4 / 3",
+          "portrait": "aspect-ratio: 3 / 4",
+          "widescreen": "aspect-ratio: 16 / 9"
+        }
+      },
+
+      "slots": [
+        "Default: Alternative HTML content instead of html prop"
+      ],
+
+      "dom_structure": [
+        "div.embed-wrapper",
+        "  div.embed-content.ratio-{aspectRatio}",
+        "    {raw HTML (set:html)}"
+      ],
+
+      "css_selectors": {
+        ".embed-wrapper": "outer wrapper, margin-top: var(--spacing-lg)",
+        ".embed-content": "inner div with aspect ratio",
+        ".embed-content.ratio-{square|landscape|portrait|widescreen}": "aspect ratio classes",
+        ".embed-content > iframe": "full width/height, no border"
+      },
+
+      "default_styles": {
+        "margin-top": "var(--spacing-lg) = 1.5rem"
+      },
+
+      "gaps": [
+        "NO horizontal-strip aspect ratio option (unlike Image)"
+      ],
+      "gotchas": [
+        "Content is rendered with set:html - raw HTML injection, no sanitization"
+      ],
+      "visual_behavior": "Renders an embed container with aspect ratio constraint. Default is landscape (4:3). Iframes inside fill the full width and height."
+    },
+
+    "Video": {
+      "import": "@core-elements/video/Video.astro",
+      "source_path": "src/components/building-blocks/core-elements/video/Video.astro",
+      "category": "core-elements",
+      "purpose": "Renders a video player supporting YouTube (lite-youtube), Vimeo (lite-vimeo), or native HTML5 video.",
+
+      "props": [
+        { "name": "type", "type": "string", "default": "undefined", "description": "Video type: vimeo|youtube|<other for native>" },
+        { "name": "id", "type": "string", "default": "undefined", "description": "Video ID for YouTube or Vimeo" },
+        { "name": "title", "type": "string", "default": "undefined", "description": "Video title for accessibility" },
+        { "name": "source", "type": "string", "default": "undefined", "description": "Video URL for native HTML5 video" },
+        { "name": "thumbnail", "type": "string", "default": "undefined", "description": "Poster image for native video" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {},
+
+      "slots": [],
+
+      "dom_structure": [
+        "lite-vimeo.video (if type='vimeo')",
+        "  OR lite-youtube.video (if type='youtube')",
+        "  OR video.video[controls] (native)"
+      ],
+
+      "css_selectors": {
+        ".video": "the video element, display: block, margin-top: var(--spacing-lg)"
+      },
+
+      "default_styles": {
+        "display": "block",
+        "margin-top": "var(--spacing-lg) = 1.5rem"
+      },
+
+      "gaps": [],
+      "gotchas": [
+        "Uses lite-youtube and lite-vimeo web components for lazy loading third-party embeds",
+        "Native video type defaults to mp4"
+      ],
+      "visual_behavior": "Renders a video player. For YouTube/Vimeo uses lightweight facade components that only load the real player on click. For native video, renders an HTML5 video element with controls."
+    },
+
+    "Testimonial": {
+      "import": "@core-elements/testimonial/Testimonial.astro",
+      "source_path": "src/components/building-blocks/core-elements/testimonial/Testimonial.astro",
+      "category": "core-elements",
+      "purpose": "Renders a blockquote-style testimonial with author image, name, description, and quoted text.",
+
+      "props": [
+        { "name": "text", "type": "string", "default": "undefined", "description": "Quote text in markdown" },
+        { "name": "authorName", "type": "string", "default": "undefined", "description": "Author's name" },
+        { "name": "authorDescription", "type": "string", "default": "undefined", "description": "Author's title or description" },
+        { "name": "alignX", "type": "string", "default": "center", "description": "Horizontal alignment: start|center" },
+        { "name": "authorImage", "type": "string", "default": "\"\"", "description": "Author avatar image URL" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "useDefaultEditableBinding", "type": "boolean", "default": "false", "description": "Enable CloudCannon editable binding" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {
+        "alignX": {
+          "start": "default alignment (no special class)",
+          "center": "align-items: center, justify-content: center, text-align: center"
+        }
+      },
+
+      "slots": [
+        "Default: Alternative content for the quote text"
+      ],
+
+      "dom_structure": [
+        "blockquote.testimonial",
+        "  div.testimonial-inner.alignment-{alignX}",
+        "    div.quote",
+        "      {markdown text}",
+        "    div.author",
+        "      Image.author-image (80x80 circle)",
+        "      cite.author-content",
+        "        strong.name {authorName}",
+        "        br",
+        "        span.description {authorDescription}"
+      ],
+
+      "css_selectors": {
+        ".testimonial": "blockquote element, margin-top: var(--spacing-lg)",
+        ".testimonial-inner": "bordered card container with padding",
+        ".testimonial-inner.alignment-center": "centered layout",
+        ".quote": "quote text container, font-size: var(--font-size-2xl)",
+        ".author": "author section with flex row layout",
+        ".author-image": "80x80 circular avatar"
+      },
+
+      "default_styles": {
+        "margin-top": "var(--spacing-lg) = 1.5rem",
+        "background": "var(--color-bg) = #fff",
+        "border": "1px solid var(--color-border) = #aaa",
+        "border-radius": "var(--radius-md) = 12px",
+        "padding": "var(--spacing-md) = 1rem",
+        "quote_font_size": "var(--font-size-2xl) = 1.625rem"
+      },
+
+      "gaps": [],
+      "gotchas": [
+        "Quote text automatically gets curly quotes (Unicode 201C/201D) prepended/appended via CSS ::before/::after",
+        "Author image is rendered as a 80x80 circle with border-radius: 9999px"
+      ],
+      "visual_behavior": "Renders a bordered card with quote text at 1.625rem, followed by an author section with circular avatar (80px), name, and description. Default is centered. Quote has smart curly quotes added via CSS."
+    },
+
+    "Counter": {
+      "import": "@core-elements/counter/Counter.astro",
+      "source_path": "src/components/building-blocks/core-elements/counter/Counter.astro",
+      "category": "core-elements",
+      "purpose": "Renders an animated number counter that counts up when scrolled into view.",
+
+      "props": [
+        { "name": "number", "type": "number", "default": "0", "description": "Target number to count up to" },
+        { "name": "prefix", "type": "string", "default": "undefined", "description": "Text before the number (e.g. '$')" },
+        { "name": "suffix", "type": "string", "default": "undefined", "description": "Text after the number (e.g. '%')" },
+        { "name": "alignX", "type": "string", "default": "start", "description": "Horizontal alignment: start|center|end" },
+        { "name": "size", "type": "string", "default": "undefined (defaults to 2xl)", "description": "Font size: xs|sm|md|lg|xl|2xl|3xl|4xl" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {
+        "size": {
+          "xs": "font-size: 1.125rem / 1rem",
+          "sm": "font-size: 1.375rem / 1.25rem",
+          "md": "font-size: 1.75rem / 1.5rem",
+          "lg": "font-size: 2.25rem / 1.875rem",
+          "xl": "font-size: 2.875rem / 2.375rem",
+          "2xl": "font-size: 3.75rem / 3rem",
+          "3xl": "font-size: 4.625rem / 3.75rem",
+          "4xl": "font-size: 5.5rem / 4.25rem"
+        },
+        "alignX": {
+          "start": "default (flex-start)",
+          "center": "justify-content: center",
+          "end": "justify-content: flex-end"
+        }
+      },
+
+      "slots": [],
+
+      "dom_structure": [
+        "div.counter",
+        "  span.counter-inner.alignment-{alignX}[.size-{size}]",
+        "    span.prefix (if prefix set)",
+        "    span.number[data-target][data-start][data-duration]",
+        "    span.suffix (if suffix set)"
+      ],
+
+      "css_selectors": {
+        ".counter": "outer wrapper, margin-top: var(--spacing-lg)",
+        ".counter-inner": "flex container for prefix/number/suffix",
+        ".counter-inner.size-{xs..4xl}": "heading size classes",
+        ".counter-inner.alignment-{start|center|end}": "alignment classes",
+        ".number": "the animated number element"
+      },
+
+      "default_styles": {
+        "margin-top": "var(--spacing-lg) = 1.5rem",
+        "font-size": "var(--font-size-heading-2xl) = 3.75rem (no size prop)",
+        "font-weight": "var(--font-weight-bold) = 700",
+        "font-variant-numeric": "tabular-nums"
+      },
+
+      "gaps": [],
+      "gotchas": [
+        "Animation starts from 20% of the target number and runs for 500ms",
+        "Uses IntersectionObserver with 0.6 threshold - only triggers when 60% visible",
+        "Animation runs once and is never replayed (data-has-run flag)"
+      ],
+      "visual_behavior": "Renders a large number that animates counting up when scrolled into view. Default is very large (3.75rem heading size). Includes optional prefix and suffix text. Has 1.5rem top margin."
+    },
+
+    "DefinitionList": {
+      "import": "@core-elements/definition-list/DefinitionList.astro",
+      "source_path": "src/components/building-blocks/core-elements/definition-list/DefinitionList.astro",
+      "category": "core-elements",
+      "purpose": "Renders a definition list (<dl>) as a two-column grid of term/definition pairs.",
+
+      "props": [
+        { "name": "items", "type": "array", "default": "undefined", "description": "Array of DefinitionListItem props (title, text)" },
+        { "name": "alignX", "type": "string", "default": "start", "description": "Horizontal alignment: start|center|end" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "useDefaultEditableBinding", "type": "boolean", "default": "false", "description": "Enable CloudCannon editable binding" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {
+        "alignX": {
+          "start": "grid-template-columns: auto 1fr (default)",
+          "center": "grid-template-columns: 1fr 1fr, centered",
+          "end": "grid-template-columns: auto auto, justify-content: end"
+        }
+      },
+
+      "slots": [
+        "Default: Alternative content instead of items array"
+      ],
+
+      "dom_structure": [
+        "div.definition-list",
+        "  dl.alignment-{alignX}",
+        "    DefinitionListItem (for each item)"
+      ],
+
+      "css_selectors": {
+        ".definition-list": "outer wrapper, margin-top: var(--spacing-lg)",
+        ".definition-list > dl": "CSS grid with 2-column layout",
+        ".definition-list > dl.alignment-{start|center|end}": "alignment classes"
+      },
+
+      "default_styles": {
+        "margin-top": "var(--spacing-lg) = 1.5rem",
+        "display": "grid",
+        "grid-template-columns": "auto 1fr",
+        "gap": "var(--spacing-em-sm) var(--spacing-em-md)"
+      },
+
+      "gaps": [],
+      "gotchas": [],
+      "visual_behavior": "Renders a two-column grid of term/definition pairs. Terms are in the left column (auto width), definitions in the right (1fr). Has 1.5rem top margin."
+    },
+
+    "DefinitionListItem": {
+      "import": "@core-elements/definition-list/DefinitionListItem.astro",
+      "source_path": "src/components/building-blocks/core-elements/definition-list/DefinitionListItem.astro",
+      "category": "core-elements",
+      "purpose": "Renders a single term/definition pair inside a DefinitionList using CSS subgrid.",
+
+      "props": [
+        { "name": "title", "type": "string", "default": "undefined", "description": "The term (dt)" },
+        { "name": "text", "type": "string", "default": "undefined", "description": "The definition (dd)" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "useDefaultEditableBinding", "type": "boolean", "default": "false", "description": "Enable CloudCannon editable binding" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {},
+
+      "slots": [
+        "Default: Alternative content for the definition (dd)",
+        "title: Alternative content for the term (dt)"
+      ],
+
+      "dom_structure": [
+        "div.definition-list-item",
+        "  dt.title[role=term]",
+        "    span {title or title slot}",
+        "  dd.content[role=definition]",
+        "    span {text or default slot}"
+      ],
+
+      "css_selectors": {
+        ".definition-list-item": "grid subgrid spanning full row",
+        ".title": "font-weight: bold term",
+        ".content": "definition text"
+      },
+
+      "default_styles": {
+        "display": "grid",
+        "grid-column": "1 / -1",
+        "grid-template-columns": "subgrid",
+        "title_font-weight": "var(--font-weight-bold) = 700"
+      },
+
+      "gaps": [],
+      "gotchas": [
+        "Returns nothing if either title or text is missing (both required)"
+      ],
+      "visual_behavior": "Renders a row in the definition list grid using CSS subgrid to align with the parent's column structure. Title is bold on the left, text on the right."
+    },
+
+    "Pagination": {
+      "import": "@core-elements/pagination/Pagination.astro",
+      "source_path": "src/components/building-blocks/core-elements/pagination/Pagination.astro",
+      "category": "core-elements",
+      "purpose": "Renders a page navigation component with numbered links, ellipsis, and optional prev/next arrows.",
+
+      "props": [
+        { "name": "page", "type": "object", "default": "undefined", "description": "Astro pagination object with currentPage, lastPage, url properties" },
+        { "name": "showArrows", "type": "boolean", "default": "false", "description": "Show prev/next arrow buttons" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {},
+
+      "slots": [],
+
+      "dom_structure": [
+        "nav.pagination[aria-label='Pagination Navigation']",
+        "  a.pagination-arrow.pagination-prev (if showArrows and not first page)",
+        "  a/span (page numbers with .current for active page)",
+        "  a.pagination-arrow.pagination-next (if showArrows and not last page)"
+      ],
+
+      "css_selectors": {
+        ".pagination": "flex wrapper, centered, margin-top: var(--spacing-lg)",
+        ".pagination a, .pagination span": "bordered page number links",
+        ".pagination .current": "active page with brand background"
+      },
+
+      "default_styles": {
+        "display": "flex",
+        "justify-content": "center",
+        "margin-top": "var(--spacing-lg) = 1.5rem"
+      },
+
+      "gaps": [],
+      "gotchas": [
+        "Returns null if page is undefined or lastPage <= 1",
+        "Max 5 visible page numbers at a time"
+      ],
+      "visual_behavior": "Renders a horizontal strip of page number links with borders. Current page has brand-colored background. Shows ellipsis (...) when pages are truncated. Optional prev/next arrows on the ends."
+    },
+
+    "Split": {
+      "import": "@wrappers/split/Split.astro",
+      "source_path": "src/components/building-blocks/wrappers/split/Split.astro",
+      "category": "wrappers",
+      "purpose": "Renders a two-column layout with configurable width distribution, vertical alignment, gap, and mobile behavior.",
+
+      "props": [
+        { "name": "firstColumnContentSections", "type": "array", "default": "[]", "description": "Content blocks for the first column" },
+        { "name": "secondColumnContentSections", "type": "array", "default": "[]", "description": "Content blocks for the second column" },
+        { "name": "distributionMode", "type": "string", "default": "half", "description": "Column width ratio: half|third-two-thirds|two-thirds-third|quarter-three-quarters|three-quarters-quarter|fixed-flexible|flexible-fixed" },
+        { "name": "verticalAlignment", "type": "string", "default": "top", "description": "Vertical alignment: top|center|bottom|stretch" },
+        { "name": "reverse", "type": "boolean", "default": "false", "description": "Swap column order" },
+        { "name": "reverseOrderOnMobile", "type": "boolean", "default": "true", "description": "Reverse order when stacked on mobile" },
+        { "name": "fixedWidth", "type": "number", "default": "undefined", "description": "Fixed width in px for fixed-flexible mode" },
+        { "name": "minSplitWidth", "type": "number", "default": "700", "description": "Container width below which columns stack to 1fr" },
+        { "name": "gap", "type": "string", "default": "lg", "description": "Gap between columns: none|xs|sm|md|lg|xl|2xl|3xl" },
+        { "name": "label", "type": "string", "default": "undefined", "description": "Label for auto-generated id attribute" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "useDefaultEditableBinding", "type": "boolean", "default": "false", "description": "Enable CloudCannon editable binding" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {
+        "distributionMode": {
+          "half": "grid-template-columns: 1fr 1fr",
+          "third-two-thirds": "grid-template-columns: 1fr 2fr",
+          "two-thirds-third": "grid-template-columns: 2fr 1fr",
+          "quarter-three-quarters": "grid-template-columns: 1fr 3fr",
+          "three-quarters-quarter": "grid-template-columns: 3fr 1fr",
+          "fixed-flexible": "grid-template-columns: var(--split-fixed-width) 1fr",
+          "flexible-fixed": "grid-template-columns: 1fr var(--split-fixed-width)"
+        },
+        "verticalAlignment": {
+          "top": "align-items: start",
+          "center": "align-items: center",
+          "bottom": "align-items: end",
+          "stretch": "align-items: stretch (children fill height)"
+        },
+        "gap": {
+          "none": "gap: 0 (mobile: 0)",
+          "xs": "gap: 0.25rem (mobile: 0.25rem)",
+          "sm": "gap: 0.5rem (mobile: 0.25rem)",
+          "md": "gap: 1rem (mobile: 0.5rem)",
+          "lg": "gap: 1.5rem (mobile: 1rem)",
+          "xl": "gap: 2rem (mobile: 1rem)",
+          "2xl": "gap: 3rem (mobile: 1.5rem)",
+          "3xl": "gap: 4rem (mobile: 2rem)"
+        }
+      },
+
+      "slots": [
+        "first: Content for the first column",
+        "second: Content for the second column"
+      ],
+
+      "dom_structure": [
+        "section.split",
+        "  div.split-inner.align-{verticalAlignment}.{distributionMode}.gap-{gap}[.reversed]",
+        "    div.pane.first",
+        "      {slot name='first' or firstColumnContentSections}",
+        "    div.pane.second",
+        "      {slot name='second' or secondColumnContentSections}"
+      ],
+
+      "css_selectors": {
+        ".split": "outer section, margin-top: var(--spacing-lg)",
+        ".split-inner": "CSS grid container",
+        ".split-inner.{distributionMode}": "column distribution",
+        ".split-inner.align-{top|center|bottom|stretch}": "vertical alignment",
+        ".split-inner.gap-{none..3xl}": "gap between columns",
+        ".split-inner.reversed": "marks reversed order for mobile behavior",
+        ".pane": "column container, container-type: inline-size",
+        ".pane > :first-child": "margin-top: 0 !important (strips first child margin)"
+      },
+
+      "default_styles": {
+        "display": "grid",
+        "margin-top": "var(--spacing-lg) = 1.5rem",
+        "grid-template-columns": "1fr 1fr (default half)",
+        "gap": "var(--spacing-lg) = 1.5rem",
+        "mobile_columns": "1fr (stacks at container width < 700px)"
+      },
+
+      "gaps": [],
+      "gotchas": [
+        "Uses container query (@container max-width: {minSplitWidth}px) NOT viewport media query for responsive stacking",
+        "When reverse=true, the distribution mode is also reversed (e.g., third-two-thirds becomes two-thirds-third)",
+        "reverseOrderOnMobile=true causes the reversed first pane to have order: 2 on mobile",
+        "Each pane has container-type: inline-size for nested container queries",
+        "First child in each pane gets margin-top: 0 !important"
+      ],
+      "visual_behavior": "Renders a two-column grid layout. Default is 50/50 with 1.5rem gap, top-aligned. Stacks to single column at container width below 700px (not viewport width). Each column is a container query scope."
+    },
+
+    "Grid": {
+      "import": "@wrappers/grid/Grid.astro",
+      "source_path": "src/components/building-blocks/wrappers/grid/Grid.astro",
+      "category": "wrappers",
+      "purpose": "Renders a responsive grid of items with configurable min/max item width, gap, and layout mode.",
+
+      "props": [
+        { "name": "layout", "type": "string", "default": "center", "description": "Layout mode: center|start" },
+        { "name": "minItemWidth", "type": "number", "default": "200", "description": "Minimum item width in px" },
+        { "name": "maxItemWidth", "type": "number", "default": "320", "description": "Maximum item width in px (center layout only)" },
+        { "name": "items", "type": "array", "default": "[]", "description": "Array of GridItem props" },
+        { "name": "label", "type": "string", "default": "undefined", "description": "Label for auto-generated id" },
+        { "name": "gap", "type": "string", "default": "md", "description": "Gap between items: xs|sm|md|lg|xl|2xl|3xl" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "useDefaultEditableBinding", "type": "boolean", "default": "false", "description": "Enable CloudCannon editable binding" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {
+        "layout": {
+          "center": "display: flex, flex-wrap: wrap, justify-content: center, items flex between min/max widths",
+          "start": "display: grid, auto-fill columns with minmax(minItemWidth, 1fr), left-aligned"
+        },
+        "gap": {
+          "xs": "0.25rem",
+          "sm": "0.5rem",
+          "md": "1rem",
+          "lg": "1.5rem",
+          "xl": "2rem",
+          "2xl": "3rem",
+          "3xl": "4rem"
+        }
+      },
+
+      "slots": [
+        "Default: Alternative content instead of items array"
+      ],
+
+      "dom_structure": [
+        "div.grid",
+        "  div.grid-inner.layout-{layout}[style='--min/--max/--grid-spacing']",
+        "    GridItem (for each item)"
+      ],
+
+      "css_selectors": {
+        ".grid": "outer wrapper, margin-top: var(--spacing-lg), width: 100%",
+        ".grid-inner.layout-center": "flexbox, centered, items have min/max width",
+        ".grid-inner.layout-start": "CSS grid, auto-fill columns",
+        ".grid-item": "individual grid cell"
+      },
+
+      "default_styles": {
+        "margin-top": "var(--spacing-lg) = 1.5rem",
+        "width": "100%",
+        "gap": "var(--spacing-md) = 1rem (default gap=md)"
+      },
+
+      "gaps": [],
+      "gotchas": [
+        "layout='center' uses flexbox with max-width constraint on items - items center in the container and wrap",
+        "layout='start' uses CSS grid with auto-fill - items fill left-to-right, last row may have empty space",
+        "min/max item widths are passed via CSS custom properties"
+      ],
+      "visual_behavior": "Renders a responsive grid of items. Default is centered flexbox layout with items between 200-320px wide and 1rem gap. Items wrap to new rows automatically. Has 1.5rem top margin."
+    },
+
+    "GridItem": {
+      "import": "@wrappers/grid/GridItem.astro",
+      "source_path": "src/components/building-blocks/wrappers/grid/GridItem.astro",
+      "category": "wrappers",
+      "purpose": "Renders a single cell in a Grid with nested content sections.",
+
+      "props": [
+        { "name": "contentSections", "type": "array", "default": "undefined", "description": "Content blocks to render inside this grid cell" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "useDefaultEditableBinding", "type": "boolean", "default": "false", "description": "Enable CloudCannon editable binding" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {},
+
+      "slots": [
+        "Default: Alternative content instead of contentSections"
+      ],
+
+      "dom_structure": [
+        "div.grid-item",
+        "  div.grid-item-content",
+        "    {contentSections or slot}"
+      ],
+
+      "css_selectors": {
+        ".grid-item": "cell container, container-type: inline-size",
+        ".grid-item-content": "height: 100%",
+        ".grid-item-content > :first-child": "margin-top: 0 !important",
+        ".grid-item-content > :only-child": "height: 100% (stretch single child)"
+      },
+
+      "default_styles": {
+        "container-type": "inline-size"
+      },
+
+      "gaps": [],
+      "gotchas": [
+        "First child gets margin-top: 0 forced",
+        "Only-child gets height: 100% to fill the grid cell"
+      ],
+      "visual_behavior": "A container for content within a grid. Fills available height and width. Each grid item is a container query scope."
+    },
+
+    "Card": {
+      "import": "@wrappers/card/Card.astro",
+      "source_path": "src/components/building-blocks/wrappers/card/Card.astro",
+      "category": "wrappers",
+      "purpose": "Renders a card container with optional background image/color, before/after content slots, padding, max-width, border, rounded corners, link wrapping, and color scheme.",
+
+      "props": [
+        { "name": "label", "type": "string", "default": "undefined", "description": "Label for auto-generated id" },
+        { "name": "contentSections", "type": "array", "default": "undefined", "description": "Main content blocks" },
+        { "name": "beforeContentSections", "type": "array", "default": "undefined", "description": "Content before main content (e.g., image above text)" },
+        { "name": "afterContentSections", "type": "array", "default": "undefined", "description": "Content after main content" },
+        { "name": "maxContentWidth", "type": "string", "default": "undefined", "description": "Max width: xs|sm|md|lg|xl|2xl|3xl" },
+        { "name": "paddingHorizontal", "type": "string", "default": "undefined", "description": "Horizontal padding: xs|sm|md|lg|xl|2xl" },
+        { "name": "paddingVertical", "type": "string", "default": "undefined", "description": "Vertical padding: xs|sm|md|lg|xl|2xl" },
+        { "name": "colorScheme", "type": "string", "default": "inherit", "description": "Color scheme: light|dark|inherit" },
+        { "name": "backgroundColor", "type": "string", "default": "undefined", "description": "Background color: base|surface|accent|highlight" },
+        { "name": "backgroundImage", "type": "object", "default": "undefined", "description": "Background image config {source, alt, positionVertical, positionHorizontal}" },
+        { "name": "link", "type": "string", "default": "undefined", "description": "URL to make entire card clickable" },
+        { "name": "showBeforeAfter", "type": "boolean", "default": "true", "description": "Show before/after content sections" },
+        { "name": "rounded", "type": "boolean", "default": "false", "description": "Apply border-radius" },
+        { "name": "border", "type": "boolean", "default": "false", "description": "Show border" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "useDefaultEditableBinding", "type": "boolean", "default": "false", "description": "Enable CloudCannon editable binding" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {
+        "backgroundColor": {
+          "base": "var(--color-bg) = #fff",
+          "surface": "var(--color-bg-surface) = #eaeaea",
+          "accent": "var(--color-bg-accent) = #d5fdff",
+          "highlight": "var(--color-bg-highlight) = #fff9d6"
+        },
+        "paddingHorizontal": {
+          "xs": "padding-inline: 0.25rem",
+          "sm": "padding-inline: 0.5rem",
+          "md": "padding-inline: 1rem",
+          "lg": "padding-inline: 1.5rem",
+          "xl": "padding-inline: 2rem",
+          "2xl": "padding-inline: 3rem"
+        },
+        "paddingVertical": {
+          "xs": "padding-block: 0.25rem (mobile: 0.25rem)",
+          "sm": "padding-block: 0.5rem (mobile: 0.25rem)",
+          "md": "padding-block: 1rem (mobile: 0.5rem)",
+          "lg": "padding-block: 1.5rem (mobile: 1rem)",
+          "xl": "padding-block: 2rem (mobile: 1rem)",
+          "2xl": "padding-block: 3rem (mobile: 1.5rem)"
+        },
+        "maxContentWidth": {
+          "xs": "max-width: 350px",
+          "sm": "max-width: 480px",
+          "md": "max-width: 640px",
+          "lg": "max-width: 768px",
+          "xl": "max-width: 1024px",
+          "2xl": "max-width: 1280px",
+          "3xl": "max-width: 1536px"
+        }
+      },
+
+      "slots": [
+        "Default: Main content area",
+        "before: Content before the main content",
+        "after: Content after the main content"
+      ],
+
+      "dom_structure": [
+        "div.card",
+        "  {div|a}.card-inner[.rounded][.border][data-theme]",
+        "    Image.background-image (if backgroundImage set)",
+        "    div.background.bg-{backgroundColor} (if backgroundColor set)",
+        "    div.before-content (if before content exists)",
+        "      {beforeContentSections or slot:before}",
+        "    div.card-outer-content",
+        "      div.card-content[.pad-x-{px}][.pad-y-{py}][.max-width-{mw}]",
+        "        {contentSections or slot}",
+        "    div.after-content (if after content exists)",
+        "      {afterContentSections or slot:after}"
+      ],
+
+      "css_selectors": {
+        ".card": "outer wrapper, display: block, margin-top: var(--spacing-lg)",
+        ".card-inner": "inner container, height: 100%, position: relative, overflow: hidden",
+        ".card-inner.rounded": "border-radius: var(--radius-md) = 12px",
+        ".card-inner.border": "border: 1px solid var(--color-border)",
+        "a.card-inner:hover": "transform: scale(1.05) on hover when card is a link",
+        ".card-content": "main content area with padding/max-width",
+        ".card-content.pad-x-{xs..2xl}": "horizontal padding classes",
+        ".card-content.pad-y-{xs..2xl}": "vertical padding classes (responsive)",
+        ".card-content.max-width-{xs..3xl}": "max-width constraint classes",
+        ".before-content": "content before main area",
+        ".after-content": "content after main area",
+        ".background": "absolute positioned background layer",
+        ".bg-{base|surface|accent|highlight}": "background color classes"
+      },
+
+      "default_styles": {
+        "display": "block",
+        "margin-top": "var(--spacing-lg) = 1.5rem",
+        "height": "100% (inner fills parent)",
+        "overflow": "hidden",
+        "transition": "transform 0.2s ease, box-shadow 0.2s ease"
+      },
+
+      "gaps": [],
+      "gotchas": [
+        "When link is set, card-inner renders as <a> and gets hover scale transform",
+        "Background image and background color are separate - image is rendered as an Image component with background=true, color is a separate div",
+        "colorScheme sets data-theme attribute to switch between light/dark",
+        "First and last children in content areas get margin stripped",
+        "Card has position: relative with z-index layering: background < background-image < content"
+      ],
+      "visual_behavior": "Renders a card container that fills its parent height. Can have a background image/color behind the content. With border and rounded, looks like a traditional card. Link mode makes the entire card clickable with a hover scale effect. Has 1.5rem top margin."
+    },
+
+    "ButtonGroup": {
+      "import": "@wrappers/button-group/ButtonGroup.astro",
+      "source_path": "src/components/building-blocks/wrappers/button-group/ButtonGroup.astro",
+      "category": "wrappers",
+      "purpose": "Renders a group of buttons in a row or column layout with alignment control.",
+
+      "props": [
+        { "name": "direction", "type": "string", "default": "row", "description": "Layout direction: row|column" },
+        { "name": "alignX", "type": "string", "default": "start", "description": "Horizontal alignment: start|center|end" },
+        { "name": "buttonSections", "type": "array", "default": "undefined", "description": "Array of button content sections" },
+        { "name": "label", "type": "string", "default": "undefined", "description": "Label for auto-generated id" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "useDefaultEditableBinding", "type": "boolean", "default": "false", "description": "Enable CloudCannon editable binding" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {
+        "direction": {
+          "row": "flex-direction: row, items wrap",
+          "column": "flex-direction: column"
+        },
+        "alignX": {
+          "start": "row: justify-content: flex-start, column: align-items: flex-start",
+          "center": "row: justify-content: center, column: align-items: center",
+          "end": "row: justify-content: flex-end, column: align-items: flex-end"
+        }
+      },
+
+      "slots": [
+        "Default: Alternative content instead of buttonSections"
+      ],
+
+      "dom_structure": [
+        "div.button-group",
+        "  div.button-group__items.{row|column}.align-{alignX}",
+        "    {Button components or slot}"
+      ],
+
+      "css_selectors": {
+        ".button-group": "outer wrapper, margin-top: var(--spacing-lg), width: 100%",
+        ".button-group__items": "flex container for buttons",
+        ".button-group__items.row": "horizontal layout",
+        ".button-group__items.column": "vertical layout",
+        ".button-group__items.align-{start|center|end}": "alignment classes"
+      },
+
+      "default_styles": {
+        "margin-top": "var(--spacing-lg) = 1.5rem",
+        "display": "flex",
+        "flex-wrap": "wrap",
+        "gap": "var(--spacing-sm) = 0.5rem",
+        "width": "100%"
+      },
+
+      "gaps": [],
+      "gotchas": [
+        "Uses is:global style - classes are NOT scoped to the component"
+      ],
+      "visual_behavior": "Renders buttons in a horizontal row (default) or vertical column with 0.5rem gap. Buttons wrap to new lines in row mode. Has 1.5rem top margin."
+    },
+
+    "Accordion": {
+      "import": "@wrappers/accordion/Accordion.astro",
+      "source_path": "src/components/building-blocks/wrappers/accordion/Accordion.astro",
+      "category": "wrappers",
+      "purpose": "Renders a collapsible accordion with multiple items, optional single-open mode.",
+
+      "props": [
+        { "name": "items", "type": "array", "default": "undefined", "description": "Array of AccordionItem props (title, contentSections)" },
+        { "name": "openFirst", "type": "boolean", "default": "undefined", "description": "Open the first item by default" },
+        { "name": "singleOpen", "type": "boolean", "default": "false", "description": "Only allow one item open at a time (uses HTML name attribute)" },
+        { "name": "label", "type": "string", "default": "undefined", "description": "Label for auto-generated id" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "useDefaultEditableBinding", "type": "boolean", "default": "false", "description": "Enable CloudCannon editable binding" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {},
+
+      "slots": [
+        "Default: Alternative content instead of items array"
+      ],
+
+      "dom_structure": [
+        "div.accordion",
+        "  div",
+        "    AccordionItem (for each item)"
+      ],
+
+      "css_selectors": {
+        ".accordion": "outer wrapper, margin-top: var(--spacing-lg)"
+      },
+
+      "default_styles": {
+        "margin-top": "var(--spacing-lg) = 1.5rem"
+      },
+
+      "gaps": [],
+      "gotchas": [
+        "singleOpen=true uses the HTML <details> name attribute to create exclusive accordion behavior (native browser feature)"
+      ],
+      "visual_behavior": "Renders a vertical stack of collapsible sections. Each item shows a title with chevron icon. Has 1.5rem top margin."
+    },
+
+    "AccordionItem": {
+      "import": "@wrappers/accordion/AccordionItem.astro",
+      "source_path": "src/components/building-blocks/wrappers/accordion/AccordionItem.astro",
+      "category": "wrappers",
+      "purpose": "Renders a single collapsible accordion item using the native <details>/<summary> pattern.",
+
+      "props": [
+        { "name": "title", "type": "string", "default": "undefined", "description": "Title text shown in the summary" },
+        { "name": "contentSections", "type": "array", "default": "undefined", "description": "Content blocks shown when expanded" },
+        { "name": "isOpen", "type": "boolean", "default": "false", "description": "Start in open state" },
+        { "name": "accordionName", "type": "string", "default": "undefined", "description": "Name for single-open behavior" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "useDefaultEditableBinding", "type": "boolean", "default": "false", "description": "Enable CloudCannon editable binding" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {},
+
+      "slots": [
+        "Default: Alternative content for the expanded area"
+      ],
+
+      "dom_structure": [
+        "details.accordion-item[open?][name?]",
+        "  summary.accordion-item-title",
+        "    span.accordion-item-title-text {title}",
+        "    Icon.accordion-item-icon (chevron-down)",
+        "  div.accordion-item-detail",
+        "    {contentSections or slot}"
+      ],
+
+      "css_selectors": {
+        ".accordion-item": "details element, border-bottom: 1px solid subtle",
+        ".accordion-item-title": "summary element, flex row, bold text, clickable",
+        ".accordion-item-icon": "chevron icon, rotates 180deg when open",
+        ".accordion-item-detail": "expanded content area with padding",
+        ".accordion-item[open] .accordion-item-icon": "rotated state"
+      },
+
+      "default_styles": {
+        "border-bottom": "1px solid var(--color-border-subtle) = #eaeaea",
+        "title_font-size": "var(--font-size-xl) = 1.375rem",
+        "title_font-weight": "var(--font-weight-bold) = 700",
+        "title_padding": "var(--spacing-md) = 1rem",
+        "detail_padding": "0 1rem 1rem"
+      },
+
+      "gaps": [],
+      "gotchas": [
+        "First child in detail area gets margin-top: 0 forced"
+      ],
+      "visual_behavior": "Renders a <details> element with a clickable summary that shows a title and chevron. The chevron rotates 180 degrees when expanded. Opening animates with a grow-out animation. Has a subtle border on the bottom."
+    },
+
+    "Carousel": {
+      "import": "@wrappers/carousel/Carousel.astro",
+      "source_path": "src/components/building-blocks/wrappers/carousel/Carousel.astro",
+      "category": "wrappers",
+      "purpose": "Renders a carousel/slider powered by Embla Carousel with slides, navigation arrows, and dot indicators.",
+
+      "props": [
+        { "name": "slides", "type": "array", "default": "[]", "description": "Array of CarouselSlide props" },
+        { "name": "autoPlay", "type": "boolean", "default": "false", "description": "Auto-advance slides every 3 seconds" },
+        { "name": "autoScroll", "type": "boolean", "default": "false", "description": "Continuous scroll mode" },
+        { "name": "showIndicators", "type": "boolean", "default": "true", "description": "Show dot indicators" },
+        { "name": "showArrows", "type": "boolean", "default": "true", "description": "Show prev/next arrow buttons" },
+        { "name": "loop", "type": "boolean", "default": "true", "description": "Loop slides infinitely" },
+        { "name": "align", "type": "string", "default": "center", "description": "Slide alignment: start|center|end" },
+        { "name": "slidesToScroll", "type": "string|number", "default": "auto", "description": "Number of slides to scroll at once" },
+        { "name": "slideWidthPercent", "type": "number", "default": "100", "description": "Width of each slide as percentage of viewport" },
+        { "name": "minSlideWidth", "type": "number", "default": "0", "description": "Minimum slide width in px" },
+        { "name": "label", "type": "string", "default": "undefined", "description": "Label for auto-generated id" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "useDefaultEditableBinding", "type": "boolean", "default": "false", "description": "Enable CloudCannon editable binding" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {
+        "align": {
+          "start": "slides align to start of viewport",
+          "center": "slides align to center of viewport",
+          "end": "slides align to end of viewport"
+        }
+      },
+
+      "slots": [
+        "Default: Alternative content instead of slides array"
+      ],
+
+      "dom_structure": [
+        "section.carousel[role=region][aria-label='Carousel']",
+        "  div.carousel-inner[data-*]",
+        "    div.viewport",
+        "      div.track",
+        "        CarouselSlide (for each slide)",
+        "    div.controls-wrapper",
+        "      Button.prev (arrow-left)",
+        "      div.indicators",
+        "      Button.next (arrow-right)"
+      ],
+
+      "css_selectors": {
+        ".carousel": "outer section, margin-top: var(--spacing-lg), width: 100%",
+        ".carousel-inner": "position: relative, contains CSS vars for slide sizing",
+        ".viewport": "overflow: hidden",
+        ".track": "flex row, nowrap",
+        ".slide": "flex-basis from CSS var, flex-shrink: 0",
+        ".controls-wrapper": "flex row, centered, contains prev/next/indicators",
+        ".indicator": "8px dot, border-radius: full, scale(1.2) when selected"
+      },
+
+      "default_styles": {
+        "margin-top": "var(--spacing-lg) = 1.5rem",
+        "width": "100%",
+        "--slide-width": "100%",
+        "--min-slide-width": "0px"
+      },
+
+      "gaps": [],
+      "gotchas": [
+        "Uses Embla Carousel library (initialized via client-side JS)",
+        "autoScroll mode automatically hides indicators and arrows",
+        "Arrow buttons get border-radius: 9999px forced via JS",
+        "Slide width is controlled by CSS vars, not direct sizing"
+      ],
+      "visual_behavior": "Renders a horizontal slider with navigation. Default shows one full-width slide at a time with prev/next arrows and dot indicators below. Supports partial slides (slideWidthPercent < 100) for peek/gallery effects."
+    },
+
+    "CarouselSlide": {
+      "import": "@wrappers/carousel/CarouselSlide.astro",
+      "source_path": "src/components/building-blocks/wrappers/carousel/CarouselSlide.astro",
+      "category": "wrappers",
+      "purpose": "Renders a single slide within a Carousel.",
+
+      "props": [
+        { "name": "contentSections", "type": "array", "default": "[]", "description": "Content blocks for this slide" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "useDefaultEditableBinding", "type": "boolean", "default": "false", "description": "Enable CloudCannon editable binding" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {},
+
+      "slots": [
+        "Default: Alternative content instead of contentSections"
+      ],
+
+      "dom_structure": [
+        "div.slide[role=group]",
+        "  div.slide__content",
+        "    {contentSections or slot}"
+      ],
+
+      "css_selectors": {
+        ".slide": "flex-basis from CSS var, flex-shrink: 0, container-type: inline-size",
+        ".slide__content > :first-child": "margin-top: 0 !important"
+      },
+
+      "default_styles": {
+        "container-type": "inline-size",
+        "flex-shrink": "0"
+      },
+
+      "gaps": [],
+      "gotchas": [],
+      "visual_behavior": "A container for slide content. Takes its width from the parent carousel's CSS variables."
+    },
+
+    "ContentSelector": {
+      "import": "@wrappers/content-selector/ContentSelector.astro",
+      "source_path": "src/components/building-blocks/wrappers/content-selector/ContentSelector.astro",
+      "category": "wrappers",
+      "purpose": "Renders a tabbed content selector with configurable navigation position (side or top).",
+
+      "props": [
+        { "name": "items", "type": "array", "default": "[]", "description": "Array of ContentSelectorItem objects (title, subtext, iconName, contentSections)" },
+        { "name": "navigationPosition", "type": "string", "default": "start", "description": "Navigation position: start|top" },
+        { "name": "label", "type": "string", "default": "undefined", "description": "Label for auto-generated id" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "useDefaultEditableBinding", "type": "boolean", "default": "false", "description": "Enable CloudCannon editable binding" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {
+        "navigationPosition": {
+          "start": "Side navigation: CSS grid with 2 columns (minmax(10rem,20rem) + 1fr), tabs on left",
+          "top": "Top navigation: flex layout, tabs flow horizontally above content"
+        }
+      },
+
+      "slots": [
+        "Default: Alternative content instead of items array"
+      ],
+
+      "dom_structure": [
+        "section.content-selector",
+        "  div.content-selector-items.nav-{navigationPosition}[role=tablist]",
+        "    ContentSelectorPanel (for each item)"
+      ],
+
+      "css_selectors": {
+        ".content-selector": "outer section, margin-top: var(--spacing-lg)",
+        ".content-selector-items": "container for tabs and panels",
+        ".content-selector-items.nav-start": "grid layout with side navigation",
+        ".content-selector-items.nav-top": "flex layout with top navigation"
+      },
+
+      "default_styles": {
+        "margin-top": "var(--spacing-lg) = 1.5rem",
+        "--content-selector-border-width": "1px"
+      },
+
+      "gaps": [],
+      "gotchas": [
+        "Uses CSS :has() and :checked pseudo-classes for tab selection - no JS needed for visual state",
+        "If no tab is checked, first tab's content is shown via CSS fallback",
+        "JS is used only for ARIA attribute updates, not for visual switching"
+      ],
+      "visual_behavior": "Renders a tabbed interface. Default is side navigation: tabs on the left (10-20rem wide) with content on the right. Top mode shows tabs horizontally above the content panel. Selected tab has a strong border indicator."
+    },
+
+    "ContentSelectorPanel": {
+      "import": "@wrappers/content-selector/ContentSelectorPanel.astro",
+      "source_path": "src/components/building-blocks/wrappers/content-selector/ContentSelectorPanel.astro",
+      "category": "wrappers",
+      "purpose": "Renders a single tab/panel pair within a ContentSelector.",
+
+      "props": [
+        { "name": "title", "type": "string", "default": "undefined", "description": "Tab title text" },
+        { "name": "subtext", "type": "string", "default": "undefined", "description": "Optional subtitle under tab title" },
+        { "name": "iconName", "type": "string", "default": "undefined", "description": "Optional icon for the tab heading" },
+        { "name": "contentSections", "type": "array", "default": "undefined", "description": "Content blocks for the panel" },
+        { "name": "checked", "type": "boolean", "default": "false", "description": "Whether this tab is initially selected" },
+        { "name": "groupName", "type": "string", "default": "content-selector-tabs", "description": "Radio group name for exclusive selection" },
+        { "name": "navigationPosition", "type": "string", "default": "start", "description": "Navigation position: start|top" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "useDefaultEditableBinding", "type": "boolean", "default": "false", "description": "Enable CloudCannon editable binding" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {},
+
+      "slots": [
+        "Default: Alternative content for the panel"
+      ],
+
+      "dom_structure": [
+        "div.content-selector-item (display: contents)",
+        "  input.content-selector-input[type=radio][name=groupName]",
+        "  label.content-selector-tab[role=tab]",
+        "    Heading.content-selector-tab-heading (h3)",
+        "    span.content-selector-tab-subtext (if subtext)",
+        "  div.content-selector-panel[role=tabpanel]",
+        "    div.content-selector-panel-content",
+        "      {contentSections or slot}"
+      ],
+
+      "css_selectors": {
+        ".content-selector-item": "display: contents (no box)",
+        ".content-selector-input": "hidden radio input",
+        ".content-selector-tab": "clickable tab label with hover state",
+        ".content-selector-tab::before": "active indicator line",
+        ".content-selector-panel": "hidden by default, shown when input:checked",
+        ".content-selector-input:checked + .content-selector-tab + .content-selector-panel": "shows panel"
+      },
+
+      "default_styles": {
+        "tab_padding": "var(--spacing-md) = 1rem",
+        "tab_hover": "background: var(--color-state-hover)",
+        "panel_animation": "fade-in 500ms ease-in-out"
+      },
+
+      "gaps": [],
+      "gotchas": [
+        "Uses hidden radio inputs + CSS :checked for show/hide - progressive enhancement pattern",
+        "Tab heading is rendered as an h3 regardless of context"
+      ],
+      "visual_behavior": "Each panel consists of a hidden radio input, a clickable tab label with heading and optional subtext, and a content panel that shows when the tab is selected. Panel appears with a fade-in animation."
+    },
+
+    "BentoBox": {
+      "import": "@wrappers/bento-box/BentoBox.astro",
+      "source_path": "src/components/building-blocks/wrappers/bento-box/BentoBox.astro",
+      "category": "wrappers",
+      "purpose": "Renders a bento-style grid layout with items that can span multiple columns and rows.",
+
+      "props": [
+        { "name": "columns", "type": "number", "default": "3", "description": "Number of grid columns: 2|3|4" },
+        { "name": "minRowHeight", "type": "number", "default": "200", "description": "Minimum row height in px" },
+        { "name": "gap", "type": "string", "default": "md", "description": "Gap between items: xs|sm|md|lg|xl|2xl|3xl" },
+        { "name": "label", "type": "string", "default": "undefined", "description": "Label for auto-generated id" },
+        { "name": "items", "type": "array", "default": "[]", "description": "Array of BentoBoxItem props" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "useDefaultEditableBinding", "type": "boolean", "default": "false", "description": "Enable CloudCannon editable binding" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {
+        "columns": {
+          "2": "grid-template-columns: repeat(2, 1fr)",
+          "3": "grid-template-columns: repeat(3, 1fr)",
+          "4": "grid-template-columns: repeat(4, 1fr)"
+        },
+        "gap": {
+          "xs": "0.25rem",
+          "sm": "0.5rem",
+          "md": "1rem",
+          "lg": "1.5rem",
+          "xl": "2rem",
+          "2xl": "3rem",
+          "3xl": "4rem"
+        }
+      },
+
+      "slots": [
+        "Default: Alternative content instead of items array"
+      ],
+
+      "dom_structure": [
+        "div.bento-box",
+        "  div.bento-box-inner.columns-{columns}.gap-{gap}[style='--min-row-height']",
+        "    BentoBoxItem (for each item)"
+      ],
+
+      "css_selectors": {
+        ".bento-box": "outer wrapper, container-type: inline-size, margin-top: var(--spacing-lg)",
+        ".bento-box-inner": "CSS grid with dense auto-flow",
+        ".bento-box-inner.columns-{2|3|4}": "column count classes",
+        ".bento-box-inner.gap-{xs..3xl}": "gap classes"
+      },
+
+      "default_styles": {
+        "margin-top": "var(--spacing-lg) = 1.5rem",
+        "display": "grid",
+        "grid-auto-flow": "dense",
+        "grid-auto-rows": "minmax(200px, auto)"
+      },
+
+      "gaps": [],
+      "gotchas": [
+        "At container width < 700px: 3 and 4 column layouts collapse to 2 columns, all items forced to span 1",
+        "At container width < 450px: all layouts collapse to 1 column",
+        "Uses grid-auto-flow: dense - items may reorder to fill gaps"
+      ],
+      "visual_behavior": "Renders a bento-style grid where items can span multiple rows/columns. Default is 3 columns with 200px minimum row height and 1rem gap. Items are densely packed. Collapses to fewer columns at smaller container widths."
+    },
+
+    "BentoBoxItem": {
+      "import": "@wrappers/bento-box/BentoBoxItem.astro",
+      "source_path": "src/components/building-blocks/wrappers/bento-box/BentoBoxItem.astro",
+      "category": "wrappers",
+      "purpose": "Renders a single cell in a BentoBox that can span multiple columns and rows.",
+
+      "props": [
+        { "name": "colSpan", "type": "number", "default": "1", "description": "Number of columns to span" },
+        { "name": "rowSpan", "type": "number", "default": "1", "description": "Number of rows to span" },
+        { "name": "contentSections", "type": "array", "default": "undefined", "description": "Content blocks for this cell" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "useDefaultEditableBinding", "type": "boolean", "default": "false", "description": "Enable CloudCannon editable binding" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {},
+
+      "slots": [
+        "Default: Alternative content instead of contentSections"
+      ],
+
+      "dom_structure": [
+        "div.bento-box-item[style='grid-column: span N; grid-row: span N']",
+        "  div.bento-box-item-content",
+        "    {contentSections or slot}"
+      ],
+
+      "css_selectors": {
+        ".bento-box-item": "grid cell, container-type: inline-size",
+        ".bento-box-item-content": "height: 100%",
+        ".bento-box-item-content > :only-child": "height: 100%",
+        ".bento-box-item-content > :first-child": "margin-top: 0 !important"
+      },
+
+      "default_styles": {
+        "container-type": "inline-size",
+        "grid-column": "span 1 (default)",
+        "grid-row": "span 1 (default)"
+      },
+
+      "gaps": [],
+      "gotchas": [
+        "colSpan/rowSpan are applied via inline style, not CSS classes",
+        "At small container widths, spans are forced to 1 via !important"
+      ],
+      "visual_behavior": "A grid cell that can span multiple columns and rows in the BentoBox. Content fills the full cell height. Single child stretches to fill."
+    },
+
+    "Modal": {
+      "import": "@wrappers/modal/Modal.astro",
+      "source_path": "src/components/building-blocks/wrappers/modal/Modal.astro",
+      "category": "wrappers",
+      "purpose": "Renders a popover modal dialog with a trigger button, backdrop, and content area.",
+
+      "props": [
+        { "name": "label", "type": "string", "default": "undefined", "description": "Modal label for accessibility and id generation" },
+        { "name": "triggerText", "type": "string", "default": "undefined", "description": "Text for the trigger button" },
+        { "name": "triggerVariant", "type": "string", "default": "primary", "description": "Trigger button variant: primary|secondary|tertiary|ghost|text" },
+        { "name": "triggerSize", "type": "string", "default": "md", "description": "Trigger button size: sm|md|lg" },
+        { "name": "triggerIconName", "type": "string", "default": "undefined", "description": "Icon for the trigger button" },
+        { "name": "size", "type": "string", "default": "md", "description": "Modal max-width: sm|md|lg|xl" },
+        { "name": "contentSections", "type": "array", "default": "undefined", "description": "Content blocks inside the modal" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "useDefaultEditableBinding", "type": "boolean", "default": "false", "description": "Enable CloudCannon editable binding" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {
+        "size": {
+          "sm": "max-width: var(--content-width-sm) = 480px",
+          "md": "max-width: var(--content-width-md) = 640px",
+          "lg": "max-width: var(--content-width-lg) = 768px",
+          "xl": "max-width: var(--content-width-xl) = 1024px"
+        }
+      },
+
+      "slots": [
+        "Default: Alternative content for the modal body"
+      ],
+
+      "dom_structure": [
+        "div.modal",
+        "  Button.modal-trigger (if triggerText or triggerIconName set)",
+        "  div.modal-popover.size-{size}[popover=auto][role=dialog]",
+        "    div.modal-header",
+        "      Button.modal-close (x-mark icon, ghost variant)",
+        "    div.modal-body",
+        "      {contentSections or slot}"
+      ],
+
+      "css_selectors": {
+        ".modal": "inline-flex wrapper, margin-top: var(--spacing-lg)",
+        ".modal-popover": "the popover dialog, centered, max-height: 85vh",
+        ".modal-popover.size-{sm|md|lg|xl}": "max-width classes",
+        ".modal-popover:popover-open": "opacity: 1, translateY(0)",
+        ".modal-popover::backdrop": "dark overlay",
+        ".modal-header": "sticky top with close button",
+        ".modal-body": "padded content area"
+      },
+
+      "default_styles": {
+        "display": "inline-flex",
+        "margin-top": "var(--spacing-lg) = 1.5rem",
+        "modal_bg": "var(--color-bg) = #fff",
+        "modal_border": "1px solid var(--color-border)",
+        "modal_border-radius": "var(--radius-xs) = 4px",
+        "modal_box-shadow": "0 16px 48px rgba(0,0,0,0.2)",
+        "modal_width": "90vw",
+        "modal_max-height": "85vh"
+      },
+
+      "gaps": [],
+      "gotchas": [
+        "Uses the native HTML popover API (popover='auto')",
+        "Modal has entrance/exit animations via CSS transitions",
+        "Close button is sticky at the top of the modal",
+        "Backdrop uses var(--color-overlay) for the dark overlay"
+      ],
+      "visual_behavior": "Renders a trigger button that opens a centered modal dialog with a dark backdrop. Modal slides up with fade-in animation. Has a sticky close button in the top-right. Content scrolls within the 85vh max-height."
+    },
+
+    "CustomSection": {
+      "import": "@builders/custom-section/CustomSection.astro",
+      "source_path": "src/components/page-sections/builders/custom-section/CustomSection.astro",
+      "category": "builders",
+      "purpose": "Renders a page-level section with optional background image/color, color scheme, padding, max-width, and rounded corners. This is the primary page-building block that wraps content blocks.",
+
+      "props": [
+        { "name": "label", "type": "string", "default": "undefined", "description": "Section label for auto-generated id and CMS" },
+        { "name": "contentSections", "type": "array", "default": "undefined", "description": "Content blocks to render inside the section" },
+        { "name": "maxContentWidth", "type": "string", "default": "undefined", "description": "Max content width: xs|sm|md|lg|xl|2xl|3xl" },
+        { "name": "paddingHorizontal", "type": "string", "default": "undefined", "description": "Horizontal padding: xs|sm|md|lg|xl|2xl|3xl|4xl|5xl|6xl" },
+        { "name": "paddingVertical", "type": "string", "default": "4xl", "description": "Vertical padding: xs|sm|md|lg|xl|2xl|3xl|4xl|5xl|6xl" },
+        { "name": "colorScheme", "type": "string", "default": "inherit", "description": "Color scheme: light|dark|inherit" },
+        { "name": "backgroundColor", "type": "string", "default": "undefined", "description": "Background color: base|surface|accent|highlight" },
+        { "name": "backgroundImage", "type": "object", "default": "undefined", "description": "Background image config {source, alt, positionVertical, positionHorizontal, priority}" },
+        { "name": "rounded", "type": "boolean", "default": "false", "description": "Apply border-radius: var(--radius-xl) = 24px" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "useDefaultEditableBinding", "type": "boolean", "default": "false", "description": "Enable CloudCannon editable binding" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {
+        "backgroundColor": {
+          "base": "var(--color-bg) = #fff",
+          "surface": "var(--color-bg-surface) = #eaeaea",
+          "accent": "var(--color-bg-accent) = #d5fdff",
+          "highlight": "var(--color-bg-highlight) = #fff9d6"
+        },
+        "paddingHorizontal": {
+          "xs": "padding-inline: 0.25rem",
+          "sm": "padding-inline: 0.5rem",
+          "md": "padding-inline: 1rem",
+          "lg": "padding-inline: 1.5rem",
+          "xl": "padding-inline: 2rem",
+          "2xl": "padding-inline: 3rem",
+          "3xl": "padding-inline: 4rem",
+          "4xl": "padding-inline: 5rem",
+          "5xl": "padding-inline: 6rem",
+          "6xl": "padding-inline: 7rem"
+        },
+        "paddingVertical": {
+          "xs": "padding-block: 0.25rem (mobile: 0.25rem)",
+          "sm": "padding-block: 0.5rem (mobile: 0.25rem)",
+          "md": "padding-block: 1rem (mobile: 0.5rem)",
+          "lg": "padding-block: 1.5rem (mobile: 1rem)",
+          "xl": "padding-block: 2rem (mobile: 1rem)",
+          "2xl": "padding-block: 3rem (mobile: 1.5rem)",
+          "3xl": "padding-block: 4rem (mobile: 2rem)",
+          "4xl": "padding-block: 5rem (mobile: 3rem)",
+          "5xl": "padding-block: 6rem (mobile: 4rem)",
+          "6xl": "padding-block: 7rem (mobile: 5rem)"
+        },
+        "maxContentWidth": {
+          "xs": "max-width: 350px",
+          "sm": "max-width: 480px",
+          "md": "max-width: 640px",
+          "lg": "max-width: 768px",
+          "xl": "max-width: 1024px",
+          "2xl": "max-width: 1280px",
+          "3xl": "max-width: 1536px"
+        }
+      },
+
+      "slots": [
+        "Default: Alternative content instead of contentSections"
+      ],
+
+      "dom_structure": [
+        "section.custom-section",
+        "  div.outer-content[.rounded][data-theme]",
+        "    Image.background-image (if backgroundImage.source set)",
+        "    div.background.bg-{backgroundColor} (if backgroundColor set)",
+        "    div.content[.pad-x-{px}][.pad-y-{py}][.max-width-{mw}]",
+        "      {contentSections or slot}"
+      ],
+
+      "css_selectors": {
+        ".custom-section": "outer section element",
+        ".outer-content": "position: relative, holds background layers",
+        ".outer-content.rounded": "border-radius: var(--radius-xl) = 24px, overflow: hidden",
+        ".content": "main content area, container-type: inline-size, margin-inline: auto, z-index: layer-1",
+        ".content.pad-x-{xs..6xl}": "horizontal padding classes",
+        ".content.pad-y-{xs..6xl}": "vertical padding classes (responsive on mobile)",
+        ".content.max-width-{xs..3xl}": "max-width constraint classes",
+        ".content > :first-child": "margin-top: 0 !important",
+        ".content > :last-child": "margin-bottom: 0 !important",
+        ".background": "absolute positioned background layer",
+        ".bg-{base|surface|accent|highlight}": "background color classes"
+      },
+
+      "default_styles": {
+        "paddingVertical": "var(--spacing-4xl) = 5rem (default), mobile: 3rem",
+        "content_container-type": "inline-size",
+        "content_margin-inline": "auto",
+        "content_z-index": "var(--layer-1) = 10"
+      },
+
+      "gaps": [
+        "NO border prop (unlike Card)",
+        "NO link prop (unlike Card)",
+        "NO before/after content sections (unlike Card)"
+      ],
+      "gotchas": [
+        "Default paddingVertical is '4xl' (5rem) - this is different from Card which has no default padding",
+        "Rounded uses --radius-xl (24px), larger than Card's --radius-md (12px)",
+        "Content area has container-type: inline-size for nested container queries",
+        "First and last children get margin stripped",
+        "Background layers stack: background color < background image < content (all use z-index)"
+      ],
+      "visual_behavior": "Renders a full-width page section with generous vertical padding (5rem default). Can have a background image or color behind the content. Content is horizontally centered with optional max-width constraint. This is the primary wrapper for page-level content blocks."
+    },
+
+    "Form": {
+      "import": "@forms/form/Form.astro",
+      "source_path": "src/components/building-blocks/forms/form/Form.astro",
+      "category": "forms",
+      "purpose": "Renders a form element with POST method and multipart encoding, containing form block components.",
+
+      "props": [
+        { "name": "action", "type": "string", "default": "undefined", "description": "Form action URL" },
+        { "name": "formBlocks", "type": "array", "default": "[]", "description": "Array of form block components to render" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "useDefaultEditableBinding", "type": "boolean", "default": "false", "description": "Enable CloudCannon editable binding" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {},
+
+      "slots": [
+        "Default: Alternative content instead of formBlocks"
+      ],
+
+      "dom_structure": [
+        "form.form[action][method=post][enctype=multipart/form-data]",
+        "  div",
+        "    {formBlocks or slot}"
+      ],
+
+      "css_selectors": {
+        ".form": "form element, margin-top: var(--spacing-lg), width: 100%"
+      },
+
+      "default_styles": {
+        "margin-top": "var(--spacing-lg) = 1.5rem",
+        "width": "100%"
+      },
+
+      "gaps": [],
+      "gotchas": [
+        "Always uses method=post and enctype=multipart/form-data"
+      ],
+      "visual_behavior": "Renders a form container with full width and 1.5rem top margin. Contains form field components."
+    },
+
+    "Input": {
+      "import": "@forms/input/Input.astro",
+      "source_path": "src/components/building-blocks/forms/input/Input.astro",
+      "category": "forms",
+      "purpose": "Renders a labeled text input field with optional icon, validation, and various input types.",
+
+      "props": [
+        { "name": "label", "type": "string", "default": "undefined", "description": "Field label text" },
+        { "name": "name", "type": "string", "default": "undefined", "description": "Input name attribute" },
+        { "name": "type", "type": "string", "default": "text", "description": "Input type: text|email|password|tel|url|number|search" },
+        { "name": "placeholder", "type": "string", "default": "undefined", "description": "Placeholder text" },
+        { "name": "required", "type": "boolean", "default": "false", "description": "Required field" },
+        { "name": "value", "type": "string", "default": "undefined", "description": "Default value" },
+        { "name": "iconName", "type": "string", "default": "undefined", "description": "Icon to display in the input" },
+        { "name": "iconPosition", "type": "string", "default": "before", "description": "Icon position: before|after" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {},
+
+      "slots": [],
+
+      "dom_structure": [
+        "div.input",
+        "  label.label[for=fieldId] (if label set)",
+        "    {label text}",
+        "    span.input-required (if required)",
+        "  span.field-shell[.icon-after] (if iconName set)",
+        "    Icon.input-icon",
+        "    input.field[type][name][id]",
+        "  OR input.field[type][name][id] (if no icon)"
+      ],
+
+      "css_selectors": {
+        ".input": "flex column container, gap: xs, margin-bottom: md",
+        ".field": "the input element (base styles from _forms.css)",
+        ".field-shell": "icon wrapper with border and focus styles",
+        ".field-shell.icon-after": "flex-direction: row-reverse",
+        ".input-icon": "icon inside field shell",
+        ".input-required": "red asterisk"
+      },
+
+      "default_styles": {
+        "display": "flex",
+        "flex-direction": "column",
+        "gap": "var(--spacing-xs) = 0.25rem",
+        "margin-bottom": "var(--spacing-md) = 1rem",
+        "width": "100%",
+        "input_border": "1px solid var(--color-border-inputs) = #6a6a6a",
+        "input_border-radius": "var(--radius-xs) = 4px",
+        "input_padding": "var(--spacing-em-sm) = 0.5em"
+      },
+
+      "gaps": [],
+      "gotchas": [
+        "When iconName is set, input is wrapped in a .field-shell span that provides the border instead of the input itself"
+      ],
+      "visual_behavior": "Renders a labeled text input with optional icon. Label is bold, above the input. Required fields show a red asterisk. Has 0.25rem gap between label and input, 1rem bottom margin."
+    },
+
+    "Textarea": {
+      "import": "@forms/textarea/Textarea.astro",
+      "source_path": "src/components/building-blocks/forms/textarea/Textarea.astro",
+      "category": "forms",
+      "purpose": "Renders a labeled multi-line text area input.",
+
+      "props": [
+        { "name": "label", "type": "string", "default": "undefined", "description": "Field label text" },
+        { "name": "name", "type": "string", "default": "undefined", "description": "Textarea name attribute" },
+        { "name": "placeholder", "type": "string", "default": "undefined", "description": "Placeholder text" },
+        { "name": "required", "type": "boolean", "default": "false", "description": "Required field" },
+        { "name": "value", "type": "string", "default": "undefined", "description": "Default value" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {},
+      "slots": [],
+
+      "dom_structure": [
+        "div.textarea",
+        "  label.label[for=fieldId] (if label set)",
+        "  textarea.field[name][id]"
+      ],
+
+      "css_selectors": {
+        ".textarea": "flex column, gap: xs, margin-bottom: md, width: 100%"
+      },
+
+      "default_styles": {
+        "display": "flex",
+        "flex-direction": "column",
+        "gap": "var(--spacing-xs) = 0.25rem",
+        "margin-bottom": "var(--spacing-md) = 1rem",
+        "width": "100%",
+        "textarea_min-height": "100px",
+        "textarea_resize": "vertical"
+      },
+
+      "gaps": [],
+      "gotchas": [],
+      "visual_behavior": "Renders a labeled textarea with minimum 100px height. Vertically resizable. Same spacing pattern as Input."
+    },
+
+    "Select": {
+      "import": "@forms/select/Select.astro",
+      "source_path": "src/components/building-blocks/forms/select/Select.astro",
+      "category": "forms",
+      "purpose": "Renders a labeled dropdown select field with options.",
+
+      "props": [
+        { "name": "label", "type": "string", "default": "undefined", "description": "Field label text" },
+        { "name": "name", "type": "string", "default": "undefined", "description": "Select name attribute" },
+        { "name": "options", "type": "array", "default": "[]", "description": "Array of {value, label} option objects" },
+        { "name": "placeholder", "type": "string", "default": "undefined", "description": "Placeholder option text (disabled)" },
+        { "name": "required", "type": "boolean", "default": "false", "description": "Required field" },
+        { "name": "value", "type": "string", "default": "undefined", "description": "Selected value" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {},
+
+      "slots": [
+        "Default: Alternative option elements when no options array"
+      ],
+
+      "dom_structure": [
+        "div.select",
+        "  label.label[for=fieldId] (if label set)",
+        "  select.field[name][id]",
+        "    option[disabled] (if placeholder set)",
+        "    SelectOption (for each option)"
+      ],
+
+      "css_selectors": {
+        ".select": "flex column, gap: xs, margin-bottom: md, width: 100%"
+      },
+
+      "default_styles": {
+        "display": "flex",
+        "flex-direction": "column",
+        "gap": "var(--spacing-xs) = 0.25rem",
+        "margin-bottom": "var(--spacing-md) = 1rem",
+        "width": "100%"
+      },
+
+      "gaps": [],
+      "gotchas": [],
+      "visual_behavior": "Renders a labeled dropdown select. Same spacing as other form fields."
+    },
+
+    "SelectOption": {
+      "import": "@forms/select/SelectOption.astro",
+      "source_path": "src/components/building-blocks/forms/select/SelectOption.astro",
+      "category": "forms",
+      "purpose": "Renders a single <option> element for a Select component.",
+
+      "props": [
+        { "name": "value", "type": "string", "default": "\"\"", "description": "Option value" },
+        { "name": "label", "type": "string", "default": "\"\"", "description": "Option display text" },
+        { "name": "selected", "type": "boolean", "default": "false", "description": "Pre-selected option" },
+        { "name": "disabled", "type": "boolean", "default": "false", "description": "Disabled option" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {},
+      "slots": ["Default: Additional content after label"],
+
+      "dom_structure": [
+        "option[value][selected?][disabled?]",
+        "  {label}{slot}"
+      ],
+
+      "css_selectors": {},
+      "default_styles": {},
+      "gaps": [],
+      "gotchas": [],
+      "visual_behavior": "A simple <option> element."
+    },
+
+    "Submit": {
+      "import": "@forms/submit/Submit.astro",
+      "source_path": "src/components/building-blocks/forms/submit/Submit.astro",
+      "category": "forms",
+      "purpose": "Renders a form submit button, wrapping the Button component with type=submit.",
+
+      "props": [
+        { "name": "text", "type": "string", "default": "Submit", "description": "Button text" },
+        { "name": "variant", "type": "string", "default": "primary", "description": "Button variant" },
+        { "name": "size", "type": "string", "default": "md", "description": "Button size" },
+        { "name": "iconName", "type": "string", "default": "undefined", "description": "Button icon" },
+        { "name": "iconPosition", "type": "string", "default": "before", "description": "Icon position" },
+        { "name": "hideText", "type": "boolean", "default": "false", "description": "Icon-only mode" },
+        { "name": "disabled", "type": "boolean", "default": "false", "description": "Disabled state" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {},
+
+      "slots": ["Default: Alternative button content"],
+
+      "dom_structure": [
+        "Button.submit[element=button][type=submit]"
+      ],
+
+      "css_selectors": {
+        ".submit": "margin-top: var(--spacing-md) = 1rem"
+      },
+
+      "default_styles": {
+        "margin-top": "var(--spacing-md) = 1rem"
+      },
+
+      "gaps": [],
+      "gotchas": [
+        "Wraps the Button component - all Button props/styles apply"
+      ],
+      "visual_behavior": "Renders a submit button with primary variant and 1rem top margin. Delegates to Button component."
+    },
+
+    "ChoiceGroup": {
+      "import": "@forms/choice-group/ChoiceGroup.astro",
+      "source_path": "src/components/building-blocks/forms/choice-group/ChoiceGroup.astro",
+      "category": "forms",
+      "purpose": "Renders a group of radio buttons or checkboxes in a fieldset.",
+
+      "props": [
+        { "name": "name", "type": "string", "default": "undefined", "description": "Input name attribute" },
+        { "name": "options", "type": "array", "default": "[]", "description": "Array of {value, label, checked} objects" },
+        { "name": "title", "type": "string", "default": "undefined", "description": "Legend text" },
+        { "name": "orientation", "type": "string", "default": "vertical", "description": "Layout: vertical|horizontal" },
+        { "name": "required", "type": "boolean", "default": "false", "description": "Required field" },
+        { "name": "multiple", "type": "boolean", "default": "false", "description": "Checkbox mode (multiple selections)" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {
+        "orientation": {
+          "vertical": "flex-direction: column",
+          "horizontal": "CSS grid with auto-fit columns (minmax 200px)"
+        }
+      },
+
+      "slots": [],
+
+      "dom_structure": [
+        "fieldset.choice-group[role=radiogroup|group]",
+        "  legend.legend (if title set)",
+        "  div.choice-group-options.orientation-{orientation}[.multiple]",
+        "    label.choice-group-option (for each option)",
+        "      input.choice-group-field[type=radio|checkbox]",
+        "      span.choice-group-label-text"
+      ],
+
+      "css_selectors": {
+        ".choice-group": "fieldset, flex column, gap: sm, padding: md",
+        ".choice-group-options": "flex container for options",
+        ".choice-group-options.orientation-horizontal": "CSS grid layout"
+      },
+
+      "default_styles": {
+        "display": "flex",
+        "flex-direction": "column",
+        "gap": "var(--spacing-sm) = 0.5rem",
+        "margin-bottom": "var(--spacing-md) = 1rem",
+        "padding": "var(--spacing-md) = 1rem"
+      },
+
+      "gaps": [],
+      "gotchas": [
+        "multiple=true renders checkboxes with name[] array syntax, false renders radio buttons"
+      ],
+      "visual_behavior": "Renders a group of radio or checkbox options in a bordered fieldset. Default is vertical layout. Horizontal mode uses a responsive grid."
+    },
+
+    "Hidden": {
+      "import": "@forms/hidden/Hidden.astro",
+      "source_path": "src/components/building-blocks/forms/hidden/Hidden.astro",
+      "category": "forms",
+      "purpose": "Renders a hidden form input.",
+
+      "props": [
+        { "name": "name", "type": "string", "default": "undefined", "description": "Input name" },
+        { "name": "value", "type": "string", "default": "undefined", "description": "Input value" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {},
+      "slots": [],
+
+      "dom_structure": [
+        "input.hidden[type=hidden][name][value]"
+      ],
+
+      "css_selectors": {},
+      "default_styles": {},
+      "gaps": [],
+      "gotchas": [],
+      "visual_behavior": "Invisible hidden input. No visual output."
+    },
+
+    "FileUpload": {
+      "import": "@forms/file-upload/FileUpload.astro",
+      "source_path": "src/components/building-blocks/forms/file-upload/FileUpload.astro",
+      "category": "forms",
+      "purpose": "Renders a labeled file upload input.",
+
+      "props": [
+        { "name": "label", "type": "string", "default": "undefined", "description": "Field label text" },
+        { "name": "name", "type": "string", "default": "undefined", "description": "Input name attribute" },
+        { "name": "required", "type": "boolean", "default": "false", "description": "Required field" },
+        { "name": "accept", "type": "string", "default": "undefined", "description": "Accepted file types" },
+        { "name": "multiple", "type": "boolean", "default": "false", "description": "Allow multiple files" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {},
+      "slots": [],
+
+      "dom_structure": [
+        "div.file-upload",
+        "  label.label[for=fieldId] (if label set)",
+        "  input.field[type=file][name][accept][multiple]"
+      ],
+
+      "css_selectors": {
+        ".file-upload": "flex column, gap: xs, margin-bottom: md, width: 100%"
+      },
+
+      "default_styles": {
+        "display": "flex",
+        "flex-direction": "column",
+        "gap": "var(--spacing-xs) = 0.25rem",
+        "margin-bottom": "var(--spacing-md) = 1rem",
+        "width": "100%"
+      },
+
+      "gaps": [],
+      "gotchas": [],
+      "visual_behavior": "Renders a labeled file input. Browser provides the native file picker UI."
+    },
+
+    "Segments": {
+      "import": "@forms/segments/Segments.astro",
+      "source_path": "src/components/building-blocks/forms/segments/Segments.astro",
+      "category": "forms",
+      "purpose": "Renders a segmented control (button-style radio/checkbox group) with optional icons.",
+
+      "props": [
+        { "name": "name", "type": "string", "default": "undefined", "description": "Input name attribute" },
+        { "name": "options", "type": "array", "default": "[]", "description": "Array of {value, label, icon, checked} objects" },
+        { "name": "title", "type": "string", "default": "undefined", "description": "Legend text" },
+        { "name": "required", "type": "boolean", "default": "false", "description": "Required field" },
+        { "name": "iconOnly", "type": "boolean", "default": "false", "description": "Show only icons, hide labels" },
+        { "name": "multiple", "type": "boolean", "default": "false", "description": "Checkbox mode (multiple selections)" },
+        { "name": "keepStateOnRefresh", "type": "boolean", "default": "false", "description": "Preserve selection on page refresh" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {},
+
+      "slots": [],
+
+      "dom_structure": [
+        "fieldset.segments[role=radiogroup|group]",
+        "  legend.legend (if title set)",
+        "  div.segments-options[.icon-only][.multiple]",
+        "    label.segments-option (for each option)",
+        "      input.segments-field[type=radio|checkbox]",
+        "      span.segment",
+        "        Icon.segment-icon (if option.icon set)",
+        "        span.segment-label (if !iconOnly)"
+      ],
+
+      "css_selectors": {
+        ".segments": "fieldset, flex column, no border, no padding",
+        ".segments-options": "flex row of segments",
+        ".segments-option": "individual segment button",
+        ".segment": "the visible button-like element",
+        ".segments-field:checked + .segment": "selected state with brand border"
+      },
+
+      "default_styles": {
+        "segment_bg": "var(--color-bg-surface) = #eaeaea",
+        "segment_border": "1px solid var(--color-border) = #aaa",
+        "segment_padding": "var(--spacing-xs) var(--spacing-sm)",
+        "first_segment_border-radius": "var(--radius-sm) = 8px (start side)",
+        "last_segment_border-radius": "var(--radius-sm) = 8px (end side)"
+      },
+
+      "gaps": [],
+      "gotchas": [
+        "First and last segments get rounded corners only on the outer edges",
+        "Adjacent segments share borders (inline-end border removed except last)"
+      ],
+      "visual_behavior": "Renders a horizontal row of button-like segments. Selected segment gets a brand-colored border. Segments share edges creating a pill-like group. Can show icons, text, or both."
+    },
+
+    "Date": {
+      "import": "@forms/date/Date.astro",
+      "source_path": "src/components/building-blocks/forms/date/Date.astro",
+      "category": "forms",
+      "purpose": "Renders a labeled date picker input.",
+
+      "props": [
+        { "name": "label", "type": "string", "default": "undefined", "description": "Field label text" },
+        { "name": "name", "type": "string", "default": "undefined", "description": "Input name attribute" },
+        { "name": "required", "type": "boolean", "default": "false", "description": "Required field" },
+        { "name": "value", "type": "string", "default": "undefined", "description": "Default date value" },
+        { "name": "min", "type": "string", "default": "undefined", "description": "Minimum date" },
+        { "name": "max", "type": "string", "default": "undefined", "description": "Maximum date" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {},
+      "slots": [],
+
+      "dom_structure": [
+        "div.date",
+        "  label.label[for=fieldId] (if label set)",
+        "  input.field[type=date][name][min][max]"
+      ],
+
+      "css_selectors": {
+        ".date": "flex column, gap: xs, margin-bottom: md, width: 100%"
+      },
+
+      "default_styles": {
+        "display": "flex",
+        "flex-direction": "column",
+        "gap": "var(--spacing-xs) = 0.25rem",
+        "margin-bottom": "var(--spacing-md) = 1rem",
+        "width": "100%"
+      },
+
+      "gaps": [],
+      "gotchas": [],
+      "visual_behavior": "Renders a labeled date input with browser-native date picker."
+    },
+
+    "Slider": {
+      "import": "@forms/slider/Slider.astro",
+      "source_path": "src/components/building-blocks/forms/slider/Slider.astro",
+      "category": "forms",
+      "purpose": "Renders a toggle switch (checkbox styled as a slider).",
+
+      "props": [
+        { "name": "label", "type": "string", "default": "undefined", "description": "Label text" },
+        { "name": "name", "type": "string", "default": "undefined", "description": "Input name attribute" },
+        { "name": "checked", "type": "boolean", "default": "false", "description": "Initial checked state" },
+        { "name": "required", "type": "boolean", "default": "false", "description": "Required field" },
+        { "name": "value", "type": "string", "default": "on", "description": "Checkbox value when checked" },
+        { "name": "class", "type": "string", "default": "undefined", "description": "Additional CSS classes" },
+        { "name": "_component", "type": "string", "default": "undefined", "description": "Component identifier" }
+      ],
+
+      "prop_value_maps": {},
+      "slots": [],
+
+      "dom_structure": [
+        "div.slider",
+        "  label.slider-container[for=fieldId]",
+        "    span.slider-switch",
+        "      input.slider-input[type=checkbox]",
+        "      span.slider-track",
+        "    span.slider-label (if label set)"
+      ],
+
+      "css_selectors": {
+        ".slider": "flex, margin-bottom: md",
+        ".slider-switch": "48x26px toggle container",
+        ".slider-track": "rounded track with sliding knob",
+        ".slider-input:checked + .slider-track": "dark background, knob slides right"
+      },
+
+      "default_styles": {
+        "margin-bottom": "var(--spacing-md) = 1rem",
+        "switch_width": "48px",
+        "switch_height": "26px",
+        "track_bg": "var(--color-border)",
+        "track_checked_bg": "var(--color-bg-inverse)",
+        "knob_size": "20px"
+      },
+
+      "gaps": [],
+      "gotchas": [
+        "The actual <input> is hidden (opacity: 0), the visual is the .slider-track pseudo-element"
+      ],
+      "visual_behavior": "Renders a toggle switch with a 48x26px track and 20px circular knob. Unchecked shows gray track, checked shows dark track with knob slid right. Label text appears to the right of the switch."
+    }
+  }
+}

@@ -1,34 +1,26 @@
 label: Hero Split
-icon: hero
-description: Prominent section block for landing pages.
+icon: panorama_wide_angle
+description: Split hero section with content on the left and a full-height image on the right.
 value:
   _component: page-sections/heroes/hero-split
-  eyebrow: Eyebrow text
-  heading: Heading text
-  subtext: Subtitle placeholder text that will be replaced with actual content.
-  imageSource: /src/assets/images/component-docs/dunedin-cliff.jpg
-  imageAlt: Hero image
-  imageAspectRatio: none
-  buttonSections:
-    - _component: building-blocks/core-elements/button
-      text: My Button
-      hideText: false
-      link: ""
-      iconName: ""
-      iconPosition: before
-      variant: primary
-      size: md
-  reverse: false
+  eyebrow: Eyebrow Heading
+  heading: Contact us
+  description: Add some description text to complement the block.
+  buttonText: Contact us
+  buttonLink: "#"
+  image:
+    source: ""
+    alt: ""
   colorScheme: inherit
-  backgroundColor: base
+  backgroundColor:
 preview:
   text:
     - Hero Split
   subtext:
     - key: heading
-  icon: hero
+  icon: panorama_wide_angle
 picker_preview:
   text: Hero Split
-  subtext: Prominent section block for landing pages.
+  subtext: Split hero with content and full-height image.
 _inputs_from_glob:
   - /src/components/page-sections/heroes/hero-split/hero-split.cloudcannon.inputs.yml

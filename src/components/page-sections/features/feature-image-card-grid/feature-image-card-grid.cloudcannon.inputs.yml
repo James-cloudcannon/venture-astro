@@ -1,0 +1,45 @@
+eyebrow:
+  type: text
+  comment: Small uppercase text above the heading.
+
+heading:
+  type: text
+  comment: Section heading text.
+
+description:
+  type: markdown
+  comment: Supporting text below the heading.
+  options:
+    bold: true
+    italic: true
+    link: true
+
+cards:
+  type: array
+  comment: Image cards displayed in a grid (recommended 3 items).
+  options:
+    structures: _structures.cardItem
+
+colorScheme:
+  type: select
+  options:
+    values:
+      - id: inherit
+        name: Inherit
+      - id: dark
+        name: Dark
+
+backgroundColor:
+  type: select
+  options:
+    values:
+      - id: none
+        name: None
+      - id: base
+        name: Base
+      - id: surface
+        name: Surface
+      - id: accent
+        name: Accent
+      - id: highlight
+        name: Highlight

@@ -1,83 +1,123 @@
 ---
 import CustomSection from "@builders/custom-section/CustomSection.astro";
+import Split from "@wrappers/split/Split.astro";
+import Card from "@wrappers/card/Card.astro";
 import Heading from "@core-elements/heading/Heading.astro";
-import Image from "@core-elements/image/Image.astro";
-import SimpleText from "@core-elements/simple-text/SimpleText.astro";
 import Text from "@core-elements/text/Text.astro";
 import ButtonGroup from "@wrappers/button-group/ButtonGroup.astro";
-import Split from "@wrappers/split/Split.astro";
+import Image from "@core-elements/image/Image.astro";
 
 const {
-  eyebrow = "",
-  heading = "",
-  subtext = "",
-  imageSource = "",
-  imageAlt = "",
-  imageAspectRatio = "none",
-  buttonSections = [],
-  reverse = false,
+  eyebrow = "Eyebrow Heading",
+  heading = "Contact us",
+  description = "Add some description text to complement the block.",
+  buttonText = "Contact us",
+  buttonLink = "#",
+  image = {},
+
   colorScheme = "inherit",
   backgroundColor,
-  paddingVertical = "4xl",
   class: className,
   useDefaultEditableBinding = false,
   _component,
   ...htmlAttributes
 } = Astro.props;
+
+const buttonSections = [
+  {
+    _component: "building-blocks/core-elements/button",
+    text: buttonText,
+    link: buttonLink,
+    variant: "tertiary",
+    iconName: "arrow-right",
+    iconPosition: "after",
+    hideText: false,
+    size: "md",
+  },
+];
 ---
 
 <CustomSection
-  maxContentWidth="xl"
-  paddingHorizontal="lg"
-  paddingVertical={paddingVertical}
+  class:list={["hero-split", className]}
+  paddingVertical="none"
+  paddingHorizontal="none"
   colorScheme={colorScheme}
   backgroundColor={backgroundColor}
-  class:list={["hero", className]}
   useDefaultEditableBinding={useDefaultEditableBinding}
   {...htmlAttributes}
 >
   <Split
-    distributionMode="flexible-fixed"
-    fixedWidth="400"
-    verticalAlignment="center"
-    reverse={reverse}
-    minSplitWidth={710}
-    gap="2xl"
-    class="hero-split"
+    distributionMode="half"
+    verticalAlignment="stretch"
+    gap="none"
+    minSplitWidth={0}
   >
-    <Fragment slot="first">
-      <SimpleText
-        class="eyebrow"
-        data-prop="eyebrow"
-        text={eyebrow}
-      />
+    <Card
+      slot="first"
+      colorScheme="dark"
+      backgroundColor="base"
+      paddingHorizontal="2xl"
+      paddingVertical="2xl"
+      class="hero-split__card"
+    >
       <Heading
-        level="h1"
-        size="2xl"
-        data-prop="heading"
-        >{heading}</Heading
+        level="h3"
+        size="xs"
+        class="hero-split__eyebrow"
+        data-prop="eyebrow"
       >
-      <Text
-        class="subtext"
-        data-prop="subtext"
-        text={subtext}
-      />
+        {eyebrow}
+      </Heading>
+      <Heading level="h1" size="2xl" data-prop="heading">{heading}</Heading>
+      <Text data-prop="description" text={description} />
       <ButtonGroup
-        class="buttons-container"
+        alignX="start"
         buttonSections={buttonSections}
-        data-children-prop="buttonSections"
       />
-    </Fragment>
-    <Fragment slot="second">
-      <Image
-        source={imageSource}
-        alt={imageAlt}
-        rounded={true}
-        aspectRatio={imageAspectRatio}
-        data-prop-src="imageSource"
-        data-prop-alt="imageAlt"
-        priority={true}
-      />
-    </Fragment>
+    </Card>
+    <Image
+      slot="second"
+      source={image.source}
+      alt={image.alt}
+      background={true}
+    />
   </Split>
 </CustomSection>
+
+<style is:global>
+  @layer page-sections {
+    .hero-split {
+      > .outer-content > .content > .split {
+        margin-top: 0;
+      }
+
+      .hero-split__card {
+        margin-top: 0;
+
+        > .card-inner > .card-outer-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          min-height: calc(100svh - var(--nav-height));
+
+          > .card-content {
+            width: 100%;
+          }
+        }
+      }
+
+      .hero-split__eyebrow {
+        > .heading-inner {
+          text-transform: uppercase;
+          letter-spacing: 4px;
+          font-weight: var(--font-weight-semibold);
+        }
+      }
+
+      .split-inner .pane.second {
+        position: relative;
+        min-height: 500px;
+      }
+    }
+  }
+</style>

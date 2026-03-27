@@ -1,0 +1,53 @@
+eyebrow:
+  type: text
+  comment: Small uppercase text above the heading.
+
+heading:
+  type: text
+  comment: Main section heading.
+
+description:
+  type: markdown
+  comment: Supporting text below the heading.
+  options:
+    bold: true
+    italic: true
+    link: true
+
+groups:
+  type: array
+  comment: Groups of services or products, each with a heading and list of items.
+  options:
+    structures: _structures.serviceGroup
+
+buttonText:
+  type: text
+  comment: CTA button label text.
+
+buttonLink:
+  type: text
+  comment: CTA button link URL.
+
+colorScheme:
+  type: select
+  options:
+    values:
+      - id: inherit
+        name: Inherit
+      - id: dark
+        name: Dark
+
+backgroundColor:
+  type: select
+  options:
+    values:
+      - id: none
+        name: None
+      - id: base
+        name: Base
+      - id: surface
+        name: Surface
+      - id: accent
+        name: Accent
+      - id: highlight
+        name: Highlight

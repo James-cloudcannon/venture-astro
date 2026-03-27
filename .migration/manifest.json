@@ -1,0 +1,1034 @@
+{
+  "site": "venture",
+  "source_dir": "apps/backend/outputs/venture",
+  "template_dir": "data/templates/venture",
+  "migration_dir": "data/templates/venture/.migration",
+  "status": "complete",
+  "strategy": {
+    "scale": "medium",
+    "total_components": 18,
+    "total_pages": 4,
+    "content_pages": [
+      "index",
+      "terms-and-conditions",
+      "contact",
+      "booking"
+    ],
+    "collection_pages": [],
+    "pre_grouped": true,
+    "block_count": 14,
+    "coverage_percent": 100
+  },
+  "colors": {
+    "extracted": true,
+    "palette": {
+      "primary": "#1b1b1d",
+      "secondary": "#3b3b3d",
+      "accent": "#0078a8",
+      "text": "#d9d9dc",
+      "text_strong": "#f9f9fb",
+      "text_light": "#f9f9fb",
+      "link": "#d9d9dc",
+      "background_light": "#dddddd"
+    }
+  },
+  "components": {
+    "component-1774568778080-172": {
+      "id": "component-1774568778080-172",
+      "page": "index",
+      "name": "Empower your business with ...",
+      "screenshot": "index/screenshots/component-1774568778080-172.png",
+      "json_file": "index/component-1774568778080-172.json",
+      "skeleton": {
+        "layout": "hero-image",
+        "background": {
+          "type": "image",
+          "darkness": "dark"
+        },
+        "elements": [
+          {
+            "type": "heading",
+            "level": "h2",
+            "note": "eyebrow"
+          },
+          {
+            "type": "heading",
+            "level": "h1"
+          },
+          {
+            "type": "button",
+            "style": "outline"
+          }
+        ],
+        "repeating": null,
+        "split": null,
+        "grid": null,
+        "interactive": null
+      },
+      "visual_notes": "Full-bleed background photo of barista with dark overlay, white text left-aligned over bottom half, white outline CTA button with arrow icon",
+      "group": "hero",
+      "skip_reason": null,
+      "status": "analyzed"
+    },
+    "component-1774568782999-293": {
+      "id": "component-1774568782999-293",
+      "page": "index",
+      "name": "A component to showcase you...",
+      "screenshot": "index/screenshots/component-1774568782999-293.png",
+      "json_file": "index/component-1774568782999-293.json",
+      "skeleton": {
+        "layout": "split",
+        "background": {
+          "type": "solid",
+          "darkness": "dark"
+        },
+        "elements": [
+          {
+            "type": "heading",
+            "level": "h3",
+            "note": "eyebrow"
+          },
+          {
+            "type": "heading",
+            "level": "h2"
+          },
+          {
+            "type": "text"
+          },
+          {
+            "type": "button",
+            "style": "outline"
+          }
+        ],
+        "repeating": null,
+        "split": {
+          "ratio": "50/50",
+          "left": "image",
+          "right": "content"
+        },
+        "grid": null,
+        "interactive": null
+      },
+      "visual_notes": "Dark background split layout, left side has moody photo of woman with sparkler/lights, right side has eyebrow, heading, description text and outline button with arrow",
+      "group": "feature-split",
+      "skip_reason": null,
+      "status": "analyzed"
+    },
+    "component-1774568785406-861": {
+      "id": "component-1774568785406-861",
+      "page": "index",
+      "name": "List your services or products",
+      "screenshot": "index/screenshots/component-1774568785406-861.png",
+      "json_file": "index/component-1774568785406-861.json",
+      "skeleton": {
+        "layout": "full-width-centered",
+        "background": {
+          "type": "solid",
+          "darkness": "dark"
+        },
+        "elements": [
+          {
+            "type": "heading",
+            "level": "h3",
+            "note": "eyebrow"
+          },
+          {
+            "type": "heading",
+            "level": "h2"
+          },
+          {
+            "type": "text"
+          }
+        ],
+        "repeating": {
+          "count": 2,
+          "item_elements": [
+            {
+              "type": "heading",
+              "level": "h4",
+              "note": "subheading"
+            },
+            {
+              "type": "text",
+              "note": "price-list-items with dotted separator lines, 3 items per group"
+            }
+          ]
+        },
+        "split": null,
+        "grid": null,
+        "interactive": null
+      },
+      "visual_notes": "Centered price list with eyebrow, heading, description, then two groups of 3 line items each showing product/service name with dotted leader and price, outline CTA button at bottom",
+      "group": "services-list",
+      "skip_reason": null,
+      "status": "analyzed"
+    },
+    "component-1774568787663-170": {
+      "id": "component-1774568787663-170",
+      "page": "index",
+      "name": "“Their customer service is ...",
+      "screenshot": "index/screenshots/component-1774568787663-170.png",
+      "json_file": "index/component-1774568787663-170.json",
+      "skeleton": {
+        "layout": "split",
+        "background": {
+          "type": "solid",
+          "darkness": "dark"
+        },
+        "elements": [
+          {
+            "type": "heading",
+            "level": "h3",
+            "note": "eyebrow"
+          },
+          {
+            "type": "heading",
+            "level": "h2",
+            "note": "testimonial quote"
+          },
+          {
+            "type": "text",
+            "note": "attribution name"
+          },
+          {
+            "type": "button",
+            "style": "outline"
+          }
+        ],
+        "repeating": null,
+        "split": {
+          "ratio": "50/50",
+          "left": "content",
+          "right": "image"
+        },
+        "grid": null,
+        "interactive": null
+      },
+      "visual_notes": "Split layout with dark solid background on left containing testimonial quote and attribution, right side has photo of woman at desk, white outline button with arrow",
+      "group": "feature-split",
+      "skip_reason": null,
+      "status": "analyzed"
+    },
+    "component-1774569016914-23": {
+      "id": "component-1774569016914-23",
+      "page": "index",
+      "name": "Image Gallery",
+      "screenshot": "index/screenshots/component-1774569016914-23.png",
+      "json_file": "index/component-1774569016914-23.json",
+      "skeleton": {
+        "layout": "full-width-centered",
+        "background": {
+          "type": "solid",
+          "darkness": "dark"
+        },
+        "elements": [
+          {
+            "type": "heading",
+            "level": "h3",
+            "note": "eyebrow"
+          },
+          {
+            "type": "heading",
+            "level": "h2"
+          }
+        ],
+        "repeating": {
+          "count": 6,
+          "item_elements": [
+            {
+              "type": "image"
+            }
+          ]
+        },
+        "split": null,
+        "grid": {
+          "columns": 3,
+          "item_style": "image"
+        },
+        "interactive": null
+      },
+      "visual_notes": "3-column 2-row image gallery with rounded corners on images, eyebrow and heading centered above, outline 'Load more' button below the grid",
+      "group": "image-gallery",
+      "skip_reason": null,
+      "status": "analyzed"
+    },
+    "component-1774569027180-267": {
+      "id": "component-1774569027180-267",
+      "page": "index",
+      "name": "A featured icons block",
+      "screenshot": "index/screenshots/component-1774569027180-267.png",
+      "json_file": "index/component-1774569027180-267.json",
+      "skeleton": {
+        "layout": "split",
+        "background": {
+          "type": "solid",
+          "darkness": "dark"
+        },
+        "elements": [
+          {
+            "type": "heading",
+            "level": "h3",
+            "note": "eyebrow"
+          },
+          {
+            "type": "heading",
+            "level": "h2"
+          }
+        ],
+        "repeating": {
+          "count": 3,
+          "item_elements": [
+            {
+              "type": "icon"
+            },
+            {
+              "type": "text"
+            }
+          ]
+        },
+        "split": {
+          "ratio": "50/50",
+          "left": "content",
+          "right": "image"
+        },
+        "grid": null,
+        "interactive": null
+      },
+      "visual_notes": "Split with left side dark background containing eyebrow, heading, 3 outline circle icons with labels arranged horizontally, and outline CTA button; right side has full-height barber shop photo",
+      "group": "split-image-text-icon-grid",
+      "skip_reason": null,
+      "status": "analyzed"
+    },
+    "component-1774569072945-771": {
+      "id": "component-1774569072945-771",
+      "page": "index",
+      "name": "A contact block",
+      "screenshot": "index/screenshots/component-1774569072945-771.png",
+      "json_file": "index/component-1774569072945-771.json",
+      "skeleton": {
+        "layout": "split",
+        "background": {
+          "type": "solid",
+          "darkness": "dark"
+        },
+        "elements": [
+          {
+            "type": "icon",
+            "note": "social media icons row"
+          },
+          {
+            "type": "heading",
+            "level": "h2"
+          },
+          {
+            "type": "text"
+          }
+        ],
+        "repeating": {
+          "count": 4,
+          "item_elements": [
+            {
+              "type": "icon"
+            },
+            {
+              "type": "text"
+            }
+          ]
+        },
+        "split": {
+          "ratio": "50/50",
+          "left": "map",
+          "right": "content"
+        },
+        "grid": null,
+        "interactive": null
+      },
+      "visual_notes": "Split layout with map embed on left (grey placeholder visible) and contact details on right with social icons row (YouTube, Facebook, LinkedIn, X, Instagram), heading, description, and 4 icon+text contact info items (email, phone, address, hours)",
+      "group": "split-contact-map",
+      "skip_reason": null,
+      "status": "analyzed"
+    },
+    "component-1774569159482-93": {
+      "id": "component-1774569159482-93",
+      "page": "terms-and-conditions",
+      "name": "Terms and conditions",
+      "screenshot": "terms-and-conditions/screenshots/component-1774569159482-93.png",
+      "json_file": "terms-and-conditions/component-1774569159482-93.json",
+      "skeleton": {
+        "layout": "full-width-centered",
+        "background": {
+          "type": "solid",
+          "darkness": "dark"
+        },
+        "elements": [
+          {
+            "type": "heading",
+            "level": "h3",
+            "note": "eyebrow"
+          },
+          {
+            "type": "heading",
+            "level": "h1"
+          },
+          {
+            "type": "text"
+          }
+        ],
+        "repeating": null,
+        "split": null,
+        "grid": null,
+        "interactive": null
+      },
+      "visual_notes": "Simple centered banner with eyebrow heading, large h1 title, and short description text on dark background, generous vertical padding",
+      "group": "hero-banner",
+      "skip_reason": null,
+      "status": "analyzed"
+    },
+    "component-1774569160918-607": {
+      "id": "component-1774569160918-607",
+      "page": "terms-and-conditions",
+      "name": "Provide all the necessary i...",
+      "screenshot": "terms-and-conditions/screenshots/component-1774569160918-607.png",
+      "json_file": "terms-and-conditions/component-1774569160918-607.json",
+      "skeleton": {
+        "layout": "full-width-centered",
+        "background": {
+          "type": "solid",
+          "darkness": "dark"
+        },
+        "elements": [
+          {
+            "type": "heading",
+            "level": "h2"
+          },
+          {
+            "type": "text",
+            "note": "long-form rich text content with multiple sections, subheadings, and paragraphs"
+          }
+        ],
+        "repeating": null,
+        "split": null,
+        "grid": null,
+        "interactive": null
+      },
+      "visual_notes": "Long-form text content block with heading and extensive rich text body containing multiple sections with sub-headings and paragraphs, dark background, light text",
+      "group": "open-text",
+      "skip_reason": null,
+      "status": "analyzed"
+    },
+    "component-1774569181162-11": {
+      "id": "component-1774569181162-11",
+      "page": "contact",
+      "name": "Contact us",
+      "screenshot": "contact/screenshots/component-1774569181162-11.png",
+      "json_file": "contact/component-1774569181162-11.json",
+      "skeleton": {
+        "layout": "split",
+        "background": {
+          "type": "solid",
+          "darkness": "dark"
+        },
+        "elements": [
+          {
+            "type": "heading",
+            "level": "h3",
+            "note": "eyebrow"
+          },
+          {
+            "type": "heading",
+            "level": "h1"
+          },
+          {
+            "type": "text"
+          },
+          {
+            "type": "button",
+            "style": "outline"
+          }
+        ],
+        "repeating": null,
+        "split": {
+          "ratio": "50/50",
+          "left": "content",
+          "right": "image"
+        },
+        "grid": null,
+        "interactive": null
+      },
+      "visual_notes": "Split hero with dark solid left side containing eyebrow, large heading, description text, and outline CTA button; right side has full-height barber shop mirror photo",
+      "group": "hero-split",
+      "skip_reason": null,
+      "status": "analyzed"
+    },
+    "component-1774569185588-352": {
+      "id": "component-1774569185588-352",
+      "page": "contact",
+      "name": "Contact us",
+      "screenshot": "contact/screenshots/component-1774569185588-352.png",
+      "json_file": "contact/component-1774569185588-352.json",
+      "skeleton": {
+        "layout": "full-width-centered",
+        "background": {
+          "type": "solid",
+          "darkness": "dark"
+        },
+        "elements": [
+          {
+            "type": "heading",
+            "level": "h3",
+            "note": "eyebrow"
+          },
+          {
+            "type": "heading",
+            "level": "h2"
+          },
+          {
+            "type": "text"
+          },
+          {
+            "type": "form"
+          }
+        ],
+        "repeating": null,
+        "split": null,
+        "grid": null,
+        "interactive": "form"
+      },
+      "visual_notes": "Centered contact form with eyebrow, heading, description, then form fields (full name, email address, message textarea, and a white bar element), white outline submit button below",
+      "group": "centre-form",
+      "skip_reason": null,
+      "status": "analyzed"
+    },
+    "component-1774569189282-132": {
+      "id": "component-1774569189282-132",
+      "page": "contact",
+      "name": "An image card grid",
+      "screenshot": "contact/screenshots/component-1774569189282-132.png",
+      "json_file": "contact/component-1774569189282-132.json",
+      "skeleton": {
+        "layout": "full-width-centered",
+        "background": {
+          "type": "solid",
+          "darkness": "dark"
+        },
+        "elements": [
+          {
+            "type": "heading",
+            "level": "h3",
+            "note": "eyebrow"
+          },
+          {
+            "type": "heading",
+            "level": "h2"
+          },
+          {
+            "type": "text"
+          }
+        ],
+        "repeating": {
+          "count": 3,
+          "item_elements": [
+            {
+              "type": "image"
+            },
+            {
+              "type": "heading",
+              "level": "h4",
+              "note": "eyebrow"
+            },
+            {
+              "type": "heading",
+              "level": "h3"
+            },
+            {
+              "type": "text"
+            }
+          ]
+        },
+        "split": null,
+        "grid": {
+          "columns": 3,
+          "item_style": "card"
+        },
+        "interactive": null
+      },
+      "visual_notes": "3-column image card grid, each card has a photo on top, then eyebrow, heading, and description text below in a darker card body, section heading with eyebrow and description above the grid",
+      "group": "feature-image-card-grid",
+      "skip_reason": null,
+      "status": "analyzed"
+    },
+    "component-1774569191877-581": {
+      "id": "component-1774569191877-581",
+      "page": "contact",
+      "name": "A contact block",
+      "screenshot": "contact/screenshots/component-1774569191877-581.png",
+      "json_file": "contact/component-1774569191877-581.json",
+      "skeleton": {
+        "layout": "split",
+        "background": {
+          "type": "solid",
+          "darkness": "dark"
+        },
+        "elements": [
+          {
+            "type": "icon",
+            "note": "social media icons row"
+          },
+          {
+            "type": "heading",
+            "level": "h2"
+          },
+          {
+            "type": "text"
+          }
+        ],
+        "repeating": {
+          "count": 4,
+          "item_elements": [
+            {
+              "type": "icon"
+            },
+            {
+              "type": "text"
+            }
+          ]
+        },
+        "split": {
+          "ratio": "50/50",
+          "left": "map",
+          "right": "content"
+        },
+        "grid": null,
+        "interactive": null
+      },
+      "visual_notes": "Same layout as index contact block but with an additional outline CTA button at the bottom. Split with map placeholder left, contact info right including social icons, heading, description, 4 icon+text items, and 'Contact us' button",
+      "group": "split-contact-map",
+      "skip_reason": null,
+      "status": "analyzed"
+    },
+    "component-1774569201469-591": {
+      "id": "component-1774569201469-591",
+      "page": "booking",
+      "name": "A hero for a booking form page",
+      "screenshot": "booking/screenshots/component-1774569201469-591.png",
+      "json_file": "booking/component-1774569201469-591.json",
+      "skeleton": {
+        "layout": "split",
+        "background": {
+          "type": "solid",
+          "darkness": "dark"
+        },
+        "elements": [
+          {
+            "type": "heading",
+            "level": "h3",
+            "note": "eyebrow"
+          },
+          {
+            "type": "heading",
+            "level": "h1"
+          },
+          {
+            "type": "text"
+          },
+          {
+            "type": "button",
+            "style": "outline"
+          }
+        ],
+        "repeating": null,
+        "split": {
+          "ratio": "50/50",
+          "left": "content",
+          "right": "image"
+        },
+        "grid": null,
+        "interactive": null
+      },
+      "visual_notes": "Split hero with dark solid left side containing eyebrow label, large italic heading, description paragraph, and outline button; right side has close-up portrait photo on dark background",
+      "group": "hero-split",
+      "skip_reason": null,
+      "status": "analyzed"
+    },
+    "component-1774569204907-698": {
+      "id": "component-1774569204907-698",
+      "page": "booking",
+      "name": "Booking form",
+      "screenshot": "booking/screenshots/component-1774569204907-698.png",
+      "json_file": "booking/component-1774569204907-698.json",
+      "skeleton": {
+        "layout": "full-width-centered",
+        "background": {
+          "type": "solid",
+          "darkness": "dark"
+        },
+        "elements": [
+          {
+            "type": "heading",
+            "level": "h3",
+            "note": "eyebrow"
+          },
+          {
+            "type": "heading",
+            "level": "h2"
+          },
+          {
+            "type": "form"
+          }
+        ],
+        "repeating": null,
+        "split": null,
+        "grid": null,
+        "interactive": "form"
+      },
+      "visual_notes": "Centered booking form with eyebrow and heading, then 5 form fields (full name, email, phone, date picker with calendar icon, message textarea), white bar element, and outline 'Book Now' submit button",
+      "group": "centre-form",
+      "skip_reason": null,
+      "status": "analyzed"
+    },
+    "component-1774569207217-73": {
+      "id": "component-1774569207217-73",
+      "page": "booking",
+      "name": "A simple text block for you...",
+      "screenshot": "booking/screenshots/component-1774569207217-73.png",
+      "json_file": "booking/component-1774569207217-73.json",
+      "skeleton": {
+        "layout": "full-width-centered",
+        "background": {
+          "type": "solid",
+          "darkness": "dark"
+        },
+        "elements": [
+          {
+            "type": "heading",
+            "level": "h3",
+            "note": "eyebrow"
+          },
+          {
+            "type": "heading",
+            "level": "h2"
+          }
+        ],
+        "repeating": {
+          "count": 2,
+          "item_elements": [
+            {
+              "type": "heading",
+              "level": "h3"
+            },
+            {
+              "type": "text"
+            }
+          ]
+        },
+        "split": null,
+        "grid": null,
+        "interactive": null
+      },
+      "visual_notes": "FAQ section with eyebrow and large heading, followed by 2 question-answer pairs each with h3 question and paragraph answer, all left-aligned on dark background",
+      "group": "feature-faq",
+      "skip_reason": null,
+      "status": "analyzed"
+    },
+    "component-1774569210444-812": {
+      "id": "component-1774569210444-812",
+      "page": "booking",
+      "name": "An icon card grid",
+      "screenshot": "booking/screenshots/component-1774569210444-812.png",
+      "json_file": "booking/component-1774569210444-812.json",
+      "skeleton": {
+        "layout": "full-width-centered",
+        "background": {
+          "type": "solid",
+          "darkness": "dark"
+        },
+        "elements": [
+          {
+            "type": "heading",
+            "level": "h3",
+            "note": "eyebrow"
+          },
+          {
+            "type": "heading",
+            "level": "h2"
+          },
+          {
+            "type": "text"
+          }
+        ],
+        "repeating": {
+          "count": 3,
+          "item_elements": [
+            {
+              "type": "icon"
+            },
+            {
+              "type": "heading",
+              "level": "h4",
+              "note": "eyebrow"
+            },
+            {
+              "type": "heading",
+              "level": "h3"
+            },
+            {
+              "type": "text"
+            }
+          ]
+        },
+        "split": null,
+        "grid": {
+          "columns": 3,
+          "item_style": "card"
+        },
+        "interactive": null
+      },
+      "visual_notes": "3-column icon card grid with section eyebrow, heading, and description above. Each card has puzzle-piece icon, eyebrow label, heading, and description text on slightly darker card background. Centered outline CTA button below the grid",
+      "group": "feature-icon-card-grid",
+      "skip_reason": null,
+      "status": "analyzed"
+    },
+    "component-1774569214208-821": {
+      "id": "component-1774569214208-821",
+      "page": "booking",
+      "name": "Large image or video block",
+      "screenshot": "booking/screenshots/component-1774569214208-821.png",
+      "json_file": "booking/component-1774569214208-821.json",
+      "skeleton": {
+        "layout": "full-width-centered",
+        "background": {
+          "type": "solid",
+          "darkness": "dark"
+        },
+        "elements": [
+          {
+            "type": "heading",
+            "level": "h3",
+            "note": "eyebrow"
+          },
+          {
+            "type": "heading",
+            "level": "h2"
+          },
+          {
+            "type": "text"
+          },
+          {
+            "type": "video"
+          },
+          {
+            "type": "button",
+            "style": "outline"
+          }
+        ],
+        "repeating": null,
+        "split": null,
+        "grid": null,
+        "interactive": null
+      },
+      "visual_notes": "Centered section with eyebrow, heading, description text, then a large YouTube video embed (showing unavailable placeholder), and outline 'Book Now' CTA button below",
+      "group": "feature-large-centre-media",
+      "skip_reason": null,
+      "status": "analyzed"
+    }
+  },
+  "groups": {
+    "hero": {
+      "category": "heroes",
+      "description": "Full-width hero with background image, dark overlay, eyebrow, h1 heading, and outline CTA button",
+      "source_components": [
+        "component-1774568778080-172"
+      ],
+      "block_id": "01887e8a-db61-4e36-995a-1625f2341a10",
+      "primary_component_id": "component-1774568778080-172",
+      "design_spec": "done",
+      "design_spec_path": "design-specs/hero.md",
+      "built": true,
+      "verified": true
+    },
+    "feature-split": {
+      "category": "features",
+      "description": "Split layout with content (eyebrow, heading, text, button) on one side and image on the other",
+      "source_components": [
+        "component-1774568782999-293",
+        "component-1774568787663-170"
+      ],
+      "block_id": "7e888ae7-10df-4425-a12e-658394a6e820",
+      "primary_component_id": "component-1774568782999-293",
+      "design_spec": "done",
+      "design_spec_path": "design-specs/feature-split.md",
+      "built": true,
+      "verified": true
+    },
+    "image-gallery": {
+      "category": "features",
+      "description": "Centered section with eyebrow, heading, and 3-column grid of rounded images with Load more button",
+      "source_components": [
+        "component-1774569016914-23"
+      ],
+      "block_id": "02c501b2-066a-4d25-b1ea-dc84a447fb74",
+      "primary_component_id": "component-1774569016914-23",
+      "design_spec": "done",
+      "design_spec_path": "design-specs/image-gallery.md",
+      "built": true,
+      "verified": true
+    },
+    "services-list": {
+      "category": "features",
+      "description": "Centered price list with eyebrow, heading, grouped items with dotted separators, and CTA button",
+      "source_components": [
+        "component-1774568785406-861"
+      ],
+      "block_id": "4ac95b28-5ebb-4d09-82d5-2b8d01a64cd2",
+      "primary_component_id": "component-1774568785406-861",
+      "design_spec": "done",
+      "design_spec_path": "design-specs/services-list.md",
+      "built": true,
+      "verified": true
+    },
+    "hero-split": {
+      "category": "heroes",
+      "description": "Split hero with content (eyebrow, h1, text, button) on left and full-height image on right",
+      "source_components": [
+        "component-1774569201469-591",
+        "component-1774569181162-11"
+      ],
+      "block_id": "19169e95-08cf-45d0-b3cd-61187d187834",
+      "primary_component_id": "component-1774569201469-591",
+      "design_spec": "done",
+      "design_spec_path": "design-specs/hero-split.md",
+      "built": true,
+      "verified": true
+    },
+    "feature-image-card-grid": {
+      "category": "features",
+      "description": "Centered section with eyebrow, heading, description, and 3-column grid of image cards with text content",
+      "source_components": [
+        "component-1774569189282-132"
+      ],
+      "block_id": "07a3990b-7e3f-4e33-b14d-1fe6e751de7b",
+      "primary_component_id": "component-1774569189282-132",
+      "design_spec": "done",
+      "design_spec_path": "design-specs/feature-image-card-grid.md",
+      "built": true,
+      "verified": true
+    },
+    "split-contact-map": {
+      "category": "features",
+      "description": "Split layout with map embed on left and contact details (social icons, heading, icon+text items, optional button) on right",
+      "source_components": [
+        "component-1774569072945-771",
+        "component-1774569191877-581"
+      ],
+      "block_id": "ce271bbd-15e5-474a-9faf-aa8bbe7a1bd2",
+      "primary_component_id": "component-1774569072945-771",
+      "design_spec": "done",
+      "design_spec_path": "design-specs/split-contact-map.md",
+      "built": true,
+      "verified": true
+    },
+    "hero-banner": {
+      "category": "heroes",
+      "description": "Simple centered banner with eyebrow, h1, and description text on dark background",
+      "source_components": [
+        "component-1774569159482-93"
+      ],
+      "block_id": "3a70fb51-ee27-4034-8fa5-c3fcb56e3944",
+      "primary_component_id": "component-1774569159482-93",
+      "design_spec": "done",
+      "design_spec_path": "design-specs/hero-banner.md",
+      "built": true,
+      "verified": true
+    },
+    "open-text": {
+      "category": "info-blocks",
+      "description": "Full-width section with heading and long-form rich text content for legal/policy pages",
+      "source_components": [
+        "component-1774569160918-607"
+      ],
+      "block_id": "cb718d94-d41e-40b9-81ff-cf78eea18adb",
+      "primary_component_id": "component-1774569160918-607",
+      "design_spec": "done",
+      "design_spec_path": "design-specs/open-text.md",
+      "built": true,
+      "verified": true
+    },
+    "split-image-text-icon-grid": {
+      "category": "features",
+      "description": "Split layout with content (eyebrow, heading, icon feature items, button) on left and image on right",
+      "source_components": [
+        "component-1774569027180-267"
+      ],
+      "block_id": "8db9617f-85e3-462f-99f0-532e189651e2",
+      "primary_component_id": "component-1774569027180-267",
+      "design_spec": "done",
+      "design_spec_path": "design-specs/split-image-text-icon-grid.md",
+      "built": true,
+      "verified": true
+    },
+    "centre-form": {
+      "category": "info-blocks",
+      "description": "Centered section with eyebrow, heading, optional description, and contact/booking form with submit button",
+      "source_components": [
+        "component-1774569185588-352",
+        "component-1774569204907-698"
+      ],
+      "block_id": "90beccda-594b-4412-b943-6d33238bba62",
+      "primary_component_id": "component-1774569185588-352",
+      "design_spec": "done",
+      "design_spec_path": "design-specs/centre-form.md",
+      "built": true,
+      "verified": true
+    },
+    "feature-icon-card-grid": {
+      "category": "features",
+      "description": "Centered section with eyebrow, heading, description, 3-column icon card grid, and CTA button",
+      "source_components": [
+        "component-1774569210444-812"
+      ],
+      "block_id": "37c9b037-517d-455b-af2f-72c314626dbf",
+      "primary_component_id": "component-1774569210444-812",
+      "design_spec": "done",
+      "design_spec_path": "design-specs/feature-icon-card-grid.md",
+      "built": true,
+      "verified": true
+    },
+    "feature-large-centre-media": {
+      "category": "features",
+      "description": "Centered section with eyebrow, heading, description, large video/image embed, and CTA button",
+      "source_components": [
+        "component-1774569214208-821"
+      ],
+      "block_id": "2cdebdf0-71be-4dd5-b49d-0296928bb31c",
+      "primary_component_id": "component-1774569214208-821",
+      "design_spec": "done",
+      "design_spec_path": "design-specs/feature-large-centre-media.md",
+      "built": true,
+      "verified": true
+    },
+    "feature-faq": {
+      "category": "features",
+      "description": "Section with eyebrow, heading, and repeating Q&A pairs (h3 question + paragraph answer)",
+      "source_components": [
+        "component-1774569207217-73"
+      ],
+      "block_id": "44c719a9-ec9c-44ac-b058-05fdb167b83a",
+      "primary_component_id": "component-1774569207217-73",
+      "design_spec": "done",
+      "design_spec_path": "design-specs/feature-faq.md",
+      "built": true,
+      "verified": true
+    }
+  },
+  "tracking": {
+    "total_components": 18,
+    "skeletons_extracted": 18,
+    "assigned": 18,
+    "skipped": 0,
+    "unassigned": 0,
+    "total_groups": 14,
+    "groups_designed": 14,
+    "groups_built": 14,
+    "groups_verified": 14
+  }
+}

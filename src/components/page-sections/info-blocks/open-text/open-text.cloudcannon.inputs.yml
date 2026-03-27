@@ -1,0 +1,39 @@
+heading:
+  type: text
+  comment: Main heading for the text section.
+
+bodyContent:
+  type: markdown
+  comment: Long-form rich text content. Supports headings, paragraphs, lists, and links.
+  options:
+    bold: true
+    italic: true
+    link: true
+    heading: true
+    bulletedlist: true
+    numberedlist: true
+    blockquote: true
+
+colorScheme:
+  type: select
+  options:
+    values:
+      - id: inherit
+        name: Inherit
+      - id: dark
+        name: Dark
+
+backgroundColor:
+  type: select
+  options:
+    values:
+      - id: none
+        name: None
+      - id: base
+        name: Base
+      - id: surface
+        name: Surface
+      - id: accent
+        name: Accent
+      - id: highlight
+        name: Highlight

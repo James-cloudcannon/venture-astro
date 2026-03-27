@@ -1,0 +1,24 @@
+label: Hero
+icon: panorama_wide_angle
+description: Full-width hero with background image, dark overlay, eyebrow, heading, and CTA button.
+value:
+  _component: page-sections/heroes/hero
+  eyebrow: "A Small Business Template"
+  heading: "Empower your business with this brilliant template"
+  backgroundImage:
+    source: ""
+    alt: ""
+  buttonText: "Our services"
+  buttonLink: "/"
+  colorScheme: dark
+preview:
+  text:
+    - Hero
+  subtext:
+    - key: heading
+  icon: panorama_wide_angle
+picker_preview:
+  text: Hero
+  subtext: Full-width hero with background image, dark overlay, and CTA button.
+_inputs_from_glob:
+  - /src/components/page-sections/heroes/hero/hero.cloudcannon.inputs.yml

@@ -1,77 +1,54 @@
 eyebrow:
   type: text
-  comment: Optional eyebrow text displayed above the heading.
+  comment: Small uppercase label above the heading.
+
 heading:
   type: text
-  comment: Main heading for the split section.
-subtext:
+  comment: Main heading text for the content side.
+
+description:
   type: markdown
-  comment: Supporting body copy beneath the heading.
+  comment: Supporting description text below the heading.
   options:
-    blockquote: false
     bold: true
-    format:
     italic: true
     link: true
-    strike: false
-    subscript: true
-    superscript: true
-    underline: false
-    bulletedlist: false
-    numberedlist: false
-buttonSections:
-  type: array
-  comment: Calls-to-action shown beneath the copy block.
-  options:
-    structures: _structures.buttonSections
-imageSource:
-  type: image
-  comment: Optional image displayed above the feature list.
-  options:
-    paths:
-      uploads: src/assets/images
-      static: ""
-    resize_style: contain
-    width: 1920
-    height: 1280
-imageAlt:
+
+buttonText:
   type: text
-  comment: Alt text describing the image content.
-imageAspectRatio:
-  type: select
-  comment: Aspect ratio applied to the image.
-  options:
-    values:
-      - id: none
-        name: None
-      - id: portrait
-        name: Portrait
-      - id: square
-        name: Square
-      - id: landscape
-        name: Landscape
-      - id: widescreen
-        name: Widescreen
-imageRounded:
-  type: switch
-  comment: Toggles rounded corners on the image.
+  comment: Text label for the CTA button.
+
+buttonLink:
+  type: text
+  comment: URL the CTA button links to.
+
+image:
+  type: object
+  comment: Image displayed on the opposite side of the content.
+
+image.source:
+  type: image
+  comment: Image file path.
+
+image.alt:
+  type: text
+  comment: Alt text for the image.
+
 reverse:
   type: switch
-  comment: Flips the layout so the feature list appears before the copy.
+  comment: Swap content and image sides. Off = content left / image right. On = image left / content right.
+
 colorScheme:
   type: select
-  comment: Color scheme theme applied to the section wrapper.
   options:
     values:
       - id: inherit
         name: Inherit
-      - id: light
-        name: Light
       - id: dark
         name: Dark
+
 backgroundColor:
   type: select
-  comment: Background color for the section.
   options:
     values:
       - id: none

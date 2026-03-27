@@ -1,0 +1,51 @@
+eyebrow:
+  type: text
+  comment: Small text above the heading (e.g., "BITE-SIZED INFORMATION").
+
+heading:
+  type: text
+  comment: Section heading text.
+
+description:
+  type: markdown
+  comment: Supporting text below the heading.
+  options:
+    bold: true
+    italic: true
+    link: true
+
+cards:
+  type: array
+  comment: Icon cards to display (recommended 3 items).
+  options:
+    structures: _structures.cardItem
+
+buttonSections:
+  type: array
+  comment: CTA buttons below the card grid.
+  options:
+    structures: _structures.buttonSections
+
+colorScheme:
+  type: select
+  options:
+    values:
+      - id: inherit
+        name: Inherit
+      - id: dark
+        name: Dark
+
+backgroundColor:
+  type: select
+  options:
+    values:
+      - id: none
+        name: None
+      - id: base
+        name: Base
+      - id: surface
+        name: Surface
+      - id: accent
+        name: Accent
+      - id: highlight
+        name: Highlight

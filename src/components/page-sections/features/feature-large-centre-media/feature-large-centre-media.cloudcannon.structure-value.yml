@@ -1,0 +1,26 @@
+label: Feature Large Centre Media
+icon: smart_display
+description: Centered section with eyebrow, heading, description, large video embed, and CTA button.
+value:
+  _component: page-sections/features/feature-large-centre-media
+  eyebrow: Eyebrow Heading
+  heading: Large image or video block
+  description: Have a strong visual element you want to share? This component gives you the flexibility to either add a YouTube video or an image.
+  videoType: youtube
+  videoId: ""
+  videoTitle: ""
+  buttonText: Book Now
+  buttonLink: /booking/
+  colorScheme: inherit
+  backgroundColor:
+preview:
+  text:
+    - Feature Large Centre Media
+  subtext:
+    - key: heading
+  icon: smart_display
+picker_preview:
+  text: Feature Large Centre Media
+  subtext: Centered section with eyebrow, heading, description, large video embed, and CTA button.
+_inputs_from_glob:
+  - /src/components/page-sections/features/feature-large-centre-media/feature-large-centre-media.cloudcannon.inputs.yml

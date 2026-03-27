@@ -1,0 +1,75 @@
+label: Feature Icon Card Grid
+icon: grid_view
+description: Centered section with eyebrow, heading, description, and a 3-column grid of icon cards with a CTA button.
+value:
+  _component: page-sections/features/feature-icon-card-grid
+  eyebrow: Bite-Sized Information
+  heading: An icon card grid
+  description: Sometimes you only need a small amount of text. An icon section within a card grid is a great option to showcase your content.
+  cards:
+    - iconName: puzzle-piece
+      cardEyebrow: Icon Card
+      cardHeading: Heading
+      cardDescription: These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience.
+    - iconName: puzzle-piece
+      cardEyebrow: Icon Card
+      cardHeading: Heading
+      cardDescription: These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience.
+    - iconName: puzzle-piece
+      cardEyebrow: Icon Card
+      cardHeading: Heading
+      cardDescription: These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience.
+  buttonSections:
+    - _component: building-blocks/core-elements/button
+      text: Another optional button!
+      hideText: false
+      link: "#"
+      iconName: arrow-right
+      iconPosition: after
+      variant: tertiary
+      size: md
+  colorScheme: dark
+  backgroundColor: surface
+preview:
+  text:
+    - Feature Icon Card Grid
+  subtext:
+    - key: heading
+  icon: grid_view
+picker_preview:
+  text: Feature Icon Card Grid
+  subtext: Centered section with icon cards in a 3-column grid.
+_inputs_from_glob:
+  - /src/components/page-sections/features/feature-icon-card-grid/feature-icon-card-grid.cloudcannon.inputs.yml
+_structures:
+  cardItem:
+    values:
+      - label: Icon Card
+        value:
+          iconName: puzzle-piece
+          cardEyebrow: Icon Card
+          cardHeading: Heading
+          cardDescription: ""
+        preview:
+          text:
+            - key: cardHeading
+          subtext:
+            - key: cardEyebrow
+          icon: extension
+        _inputs:
+          iconName:
+            type: text
+            comment: Icon name from the icon library.
+          cardEyebrow:
+            type: text
+            comment: Small uppercase label above the card heading.
+          cardHeading:
+            type: text
+            comment: Card heading text.
+          cardDescription:
+            type: markdown
+            comment: Card description text.
+            options:
+              bold: true
+              italic: true
+              link: true

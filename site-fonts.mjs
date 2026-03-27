@@ -10,17 +10,17 @@ import { fontProviders } from "astro/config";
 
 export const siteFonts = [
   {
-    name: "Inter",
+    name: "Lato",
     cssVariable: "--font-body",
     provider: fontProviders.google(),
-    weights: [400, 600, 700],
-    styles: ["normal"],
+    weights: [400, 700],
+    styles: ["normal", "italic"],
   },
   {
-    name: "Raleway",
+    name: "Lato",
     cssVariable: "--font-headings",
     provider: fontProviders.google(),
-    weights: [400, 600, 700],
-    styles: ["normal"],
+    weights: [400, 700],
+    styles: ["normal", "italic"],
   },
 ];

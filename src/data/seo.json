@@ -1,8 +1,8 @@
 {
-  "name": "Astro Component Starter",
-  "url": "https://example.com",
-  "description": "",
+  "name": "Venture",
+  "url": "https://spiky-polar.cloudvent.net",
+  "description": "An Eleventy template for businesses.",
   "logoSource": "/images/logo.svg",
-  "titleFormat": "{title} | Astro Component Starter",
-  "twitterHandle": "@yourusername"
+  "titleFormat": "{title} | Venture",
+  "twitterHandle": ""
 }

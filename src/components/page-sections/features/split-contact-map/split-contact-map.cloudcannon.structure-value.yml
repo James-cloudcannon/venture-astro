@@ -1,0 +1,79 @@
+label: Split Contact Map
+icon: contact_mail
+description: Split layout with an embedded map and contact details including social links and icon+text items.
+value:
+  _component: page-sections/features/split-contact-map
+  heading: "A contact block"
+  description: "This is a simple yet powerful block to display not only your location by using OpenStreetMaps, but also any other contact details you wish to share with your customers."
+  mapEmbed: ""
+  socialLinks:
+    - iconName: social/youtube
+      link: "https://www.youtube.com/"
+    - iconName: social/facebook
+      link: "https://www.facebook.com/"
+    - iconName: social/linkedin
+      link: "https://www.linkedin.com/"
+    - iconName: social/x
+      link: "https://www.twitter.com/"
+    - iconName: social/instagram
+      link: "https://www.instagram.com/"
+  contactItems:
+    - iconName: envelope
+      text: "Email address: mybusiness@example.com"
+    - iconName: phone
+      text: "Phone number: 312 325 326"
+    - iconName: map-pin
+      text: "Address: 1 Fake St, Faketown"
+    - iconName: clock
+      text: "Opening hours: 9-5pm, Monday to Friday"
+  buttonSections: []
+  colorScheme: dark
+  backgroundColor: surface
+preview:
+  text:
+    - Split Contact Map
+  subtext:
+    - key: heading
+  icon: contact_mail
+picker_preview:
+  text: Split Contact Map
+  subtext: Map embed with contact details, social links, and icon+text items.
+_inputs_from_glob:
+  - /src/components/page-sections/features/split-contact-map/split-contact-map.cloudcannon.inputs.yml
+_structures:
+  socialLink:
+    values:
+      - label: Social Link
+        value:
+          iconName: ""
+          link: ""
+        preview:
+          text:
+            - key: iconName
+          subtext:
+            - key: link
+        _inputs:
+          iconName:
+            type: text
+            comment: Icon name for the social platform (e.g., social/facebook, social/instagram).
+          link:
+            type: url
+            comment: URL for the social media profile.
+  contactItem:
+    values:
+      - label: Contact Item
+        value:
+          iconName: ""
+          text: ""
+        preview:
+          text:
+            - key: text
+          subtext:
+            - key: iconName
+        _inputs:
+          iconName:
+            type: text
+            comment: Icon name for the contact item (e.g., envelope, phone, map-pin, clock).
+          text:
+            type: text
+            comment: Contact detail text displayed next to the icon.

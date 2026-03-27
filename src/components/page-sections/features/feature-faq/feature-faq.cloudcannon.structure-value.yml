@@ -1,0 +1,46 @@
+label: Feature FAQ
+icon: help_outline
+description: FAQ section with eyebrow, heading, and question-answer pairs.
+value:
+  _component: page-sections/features/feature-faq
+  eyebrow: Eyebrow Heading
+  heading: A simple text block for your FAQs
+  items:
+    - question: How do I use the service?
+      answer: Customers want to know all the information before making a final decision. Make sure you provide it to them.
+    - question: How do I pay for the service?
+      answer: Let your customers know if they can pay by EFTPOS or credit card.
+  colorScheme: dark
+  backgroundColor: base
+preview:
+  text:
+    - Feature FAQ
+  subtext:
+    - key: heading
+  icon: help_outline
+picker_preview:
+  text: Feature FAQ
+  subtext: FAQ section with eyebrow, heading, and question-answer pairs.
+_inputs_from_glob:
+  - /src/components/page-sections/features/feature-faq/feature-faq.cloudcannon.inputs.yml
+_structures:
+  faqItem:
+    values:
+      - label: FAQ Item
+        value:
+          question: ""
+          answer: ""
+        preview:
+          text:
+            - key: question
+        _inputs:
+          question:
+            type: text
+            comment: The question text.
+          answer:
+            type: markdown
+            comment: The answer text.
+            options:
+              bold: true
+              italic: true
+              link: true

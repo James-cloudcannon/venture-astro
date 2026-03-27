@@ -1,0 +1,81 @@
+label: Image Card Grid
+icon: grid_view
+description: Section with eyebrow, heading, description, and a grid of image cards.
+value:
+  _component: page-sections/features/feature-image-card-grid
+  eyebrow: Bite-Sized Information
+  heading: An image card grid
+  description: These image cards combine a short written message and a strong visual image.
+  cards:
+    - image:
+        source: ""
+        alt: ""
+      cardEyebrow: Eyebrow Heading
+      cardHeading: Primary Heading
+      cardDescription: These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience.
+    - image:
+        source: ""
+        alt: ""
+      cardEyebrow: Eyebrow Heading
+      cardHeading: Primary Heading
+      cardDescription: These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience.
+    - image:
+        source: ""
+        alt: ""
+      cardEyebrow: Eyebrow Heading
+      cardHeading: Primary Heading
+      cardDescription: These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience.
+  colorScheme: dark
+  backgroundColor: base
+preview:
+  text:
+    - Image Card Grid
+  subtext:
+    - key: heading
+  icon: grid_view
+picker_preview:
+  text: Image Card Grid
+  subtext: Section with eyebrow, heading, description, and a grid of image cards.
+_inputs_from_glob:
+  - /src/components/page-sections/features/feature-image-card-grid/feature-image-card-grid.cloudcannon.inputs.yml
+_structures:
+  cardItem:
+    values:
+      - label: Card
+        value:
+          image:
+            source: ""
+            alt: ""
+          cardEyebrow: Eyebrow Heading
+          cardHeading: Primary Heading
+          cardDescription: ""
+        preview:
+          text:
+            - key: cardHeading
+          subtext:
+            - key: cardEyebrow
+          image:
+            - key: image.source
+        _inputs:
+          image:
+            type: object
+            comment: Card image.
+          image.source:
+            type: image
+            comment: Image file path.
+          image.alt:
+            type: text
+            comment: Alt text for the image.
+          cardEyebrow:
+            type: text
+            comment: Small uppercase label above the card heading.
+          cardHeading:
+            type: text
+            comment: Card heading text.
+          cardDescription:
+            type: markdown
+            comment: Card description text.
+            options:
+              bold: true
+              italic: true
+              link: true

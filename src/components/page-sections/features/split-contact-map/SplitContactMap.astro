@@ -1,0 +1,194 @@
+---
+import CustomSection from "@builders/custom-section/CustomSection.astro";
+import Split from "@wrappers/split/Split.astro";
+import Embed from "@core-elements/embed/Embed.astro";
+import Heading from "@core-elements/heading/Heading.astro";
+import Text from "@core-elements/text/Text.astro";
+import Icon from "@core-elements/icon/Icon.astro";
+import ButtonGroup from "@wrappers/button-group/ButtonGroup.astro";
+
+const {
+  heading = "A contact block",
+  description = "This is a simple yet powerful block to display not only your location by using OpenStreetMaps, but also any other contact details you wish to share with your customers.",
+  mapEmbed = "",
+  socialLinks = [],
+  contactItems = [],
+  buttonSections = [],
+
+  colorScheme = "inherit",
+  backgroundColor,
+  class: className,
+  useDefaultEditableBinding = false,
+  _component,
+  ...htmlAttributes
+} = Astro.props;
+
+const hasButton = buttonSections && buttonSections.length > 0;
+---
+
+<CustomSection
+  class:list={["split-contact-map", className]}
+  maxContentWidth="2xl"
+  paddingHorizontal="lg"
+  paddingVertical="4xl"
+  colorScheme={colorScheme}
+  backgroundColor={backgroundColor}
+  useDefaultEditableBinding={useDefaultEditableBinding}
+  {...htmlAttributes}
+>
+  <Split
+    distributionMode="half"
+    verticalAlignment="center"
+    gap="2xl"
+  >
+    <div slot="first" class="split-contact-map__map">
+      <Embed html={mapEmbed} aspectRatio="square" data-prop="mapEmbed" />
+    </div>
+
+    <div slot="second" class="split-contact-map__info">
+      <div class="split-contact-map__socials" data-editable="array" data-prop="socialLinks">
+        {socialLinks.map((social) => (
+          <a
+            class="split-contact-map__social-link"
+            href={social.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-editable="array-item"
+            data-id="page-sections/features/split-contact-map/socialLink"
+          >
+            <Icon name={social.iconName} size="none" aria-hidden="true" />
+          </a>
+        ))}
+      </div>
+
+      <Heading level="h2" data-prop="heading">{heading}</Heading>
+      <Text data-prop="description" text={description} />
+
+      <div class="split-contact-map__contact-items" data-editable="array" data-prop="contactItems">
+        {contactItems.map((item) => (
+          <div
+            class="split-contact-map__contact-item"
+            data-editable="array-item"
+            data-id="page-sections/features/split-contact-map/contactItem"
+          >
+            <span class="split-contact-map__contact-icon">
+              <Icon name={item.iconName} size="none" aria-hidden="true" />
+            </span>
+            <p class="split-contact-map__contact-text" data-prop="text">{item.text}</p>
+          </div>
+        ))}
+      </div>
+
+      {hasButton && (
+        <ButtonGroup
+          alignX="start"
+          buttonSections={buttonSections}
+          data-children-prop="buttonSections"
+        />
+      )}
+    </div>
+  </Split>
+</CustomSection>
+
+<style is:global>
+  @layer page-sections {
+    .split-contact-map .split {
+      margin-top: 0;
+    }
+
+    .split-contact-map__map {
+      min-height: 400px;
+    }
+
+    .split-contact-map__map .embed-wrapper {
+      margin-top: 0;
+      height: 100%;
+    }
+
+    .split-contact-map__map .embed-content {
+      background-color: var(--color-bg-surface);
+      height: 100%;
+    }
+
+    .split-contact-map__info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .split-contact-map__socials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--spacing-md);
+      align-items: center;
+    }
+
+    .split-contact-map__social-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.75rem;
+      height: 1.75rem;
+      color: var(--color-text);
+      text-decoration: none;
+      transition: color 200ms ease-in-out;
+    }
+
+    .split-contact-map__social-link:hover {
+      color: var(--color-text-strong);
+    }
+
+    .split-contact-map__social-link .icon {
+      margin-top: 0;
+    }
+
+    .split-contact-map__social-link .icon-inner {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+
+    .split-contact-map__contact-items {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-lg);
+      margin-top: var(--spacing-xl);
+    }
+
+    .split-contact-map__contact-item {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-md);
+    }
+
+    .split-contact-map__contact-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      width: 2.5rem;
+      height: 2.5rem;
+      border: 1px solid var(--color-border);
+      border-radius: 50%;
+      color: var(--color-text);
+    }
+
+    .split-contact-map__contact-icon .icon {
+      margin-top: 0;
+    }
+
+    .split-contact-map__contact-icon .icon-inner {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+
+    .split-contact-map__contact-text {
+      margin: 0;
+      font-size: var(--font-size-md);
+      line-height: 1.6;
+    }
+
+    .split-contact-map__contact-text a {
+      color: var(--color-text);
+      text-decoration: underline;
+    }
+  }
+</style>

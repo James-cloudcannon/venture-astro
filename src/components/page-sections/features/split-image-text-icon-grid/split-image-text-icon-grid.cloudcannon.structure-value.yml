@@ -1,0 +1,50 @@
+label: Split Image Text Icon Grid
+icon: auto_awesome
+description: Split layout with icon features on one side and an image on the other.
+value:
+  _component: page-sections/features/split-image-text-icon-grid
+  eyebrow: Let your features shine
+  heading: A featured icons block
+  items:
+    - iconName: face-smile
+      label: 100% Happy customer reviews
+    - iconName: heart
+      label: Great customer service
+    - iconName: star
+      label: Outstanding product reviews
+  buttonText: Book Now
+  buttonLink: /booking/
+  image:
+    source: ""
+    alt: ""
+  colorScheme: inherit
+  backgroundColor:
+preview:
+  text:
+    - Split Image Text Icon Grid
+  subtext:
+    - key: heading
+  icon: auto_awesome
+picker_preview:
+  text: Split Image Text Icon Grid
+  subtext: Split layout with icon features on one side and an image on the other.
+_inputs_from_glob:
+  - /src/components/page-sections/features/split-image-text-icon-grid/split-image-text-icon-grid.cloudcannon.inputs.yml
+_structures:
+  featureItem:
+    values:
+      - label: Feature Item
+        value:
+          iconName: face-smile
+          label: Feature label
+        preview:
+          text:
+            - key: label
+          icon: category
+        _inputs:
+          iconName:
+            type: text
+            comment: Icon name from the icon library.
+          label:
+            type: text
+            comment: Short label displayed below the icon.

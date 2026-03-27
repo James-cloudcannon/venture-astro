@@ -1,0 +1,127 @@
+---
+import CustomSection from "@builders/custom-section/CustomSection.astro";
+import Heading from "@core-elements/heading/Heading.astro";
+import Text from "@core-elements/text/Text.astro";
+import ButtonGroup from "@wrappers/button-group/ButtonGroup.astro";
+import Button from "@core-elements/button/Button.astro";
+
+const {
+  eyebrow = "Eyebrow Heading",
+  heading = "List your services or products",
+  description = "Whether your business is a restaurant, a barber shop, a gym, a cafe, or anything else, our template has you covered. Add your services and prices to the list below.",
+  groups = [],
+  buttonText = "Book now",
+  buttonLink = "/booking/",
+
+  colorScheme = "inherit",
+  backgroundColor,
+  class: className,
+  useDefaultEditableBinding = false,
+  _component,
+  ...htmlAttributes
+} = Astro.props;
+---
+
+<CustomSection
+  class:list={["services-list", className]}
+  maxContentWidth="lg"
+  paddingHorizontal="xl"
+  paddingVertical="5xl"
+  colorScheme={colorScheme}
+  backgroundColor={backgroundColor}
+  useDefaultEditableBinding={useDefaultEditableBinding}
+  {...htmlAttributes}
+>
+  <Heading level="h3" size="xs" alignX="center" data-prop="eyebrow" text={eyebrow} />
+  <Heading level="h2" alignX="center" data-prop="heading" text={heading} />
+  <Text alignX="center" data-prop="description" text={description} />
+
+  <div class="services-list__groups" data-editable="array" data-prop="groups">
+    {groups.map((group) => (
+      <div class="services-list__group" data-editable="array-item" data-id="page-sections/features/services-list/serviceGroup">
+        <Heading level="h4" size="sm" alignX="center" data-prop="heading" text={group.heading} />
+        <ul class="services-list__items" data-editable="array" data-prop="items">
+          {(group.items || []).map((item) => (
+            <li class="services-list__item" data-editable="array-item" data-id="page-sections/features/services-list/serviceItem">
+              <span class="services-list__label" data-prop="label">{item.label}</span>
+              <span class="services-list__separator"></span>
+              <span class="services-list__price" data-prop="price">{item.price}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+
+  <ButtonGroup alignX="center">
+    <Button
+      text={buttonText}
+      link={buttonLink}
+      variant="tertiary"
+      iconName="arrow-right"
+      iconPosition="after"
+      data-prop="buttonText"
+    />
+  </ButtonGroup>
+</CustomSection>
+
+<style is:global>
+  @layer page-sections {
+    .services-list .heading {
+      text-wrap: balance;
+    }
+
+    .services-list__groups {
+      margin-top: var(--spacing-2xl);
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-2xl);
+      width: 100%;
+    }
+
+    .services-list__group > .heading {
+      margin-top: 0;
+      margin-bottom: var(--spacing-lg);
+    }
+
+    .services-list__items {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-xl);
+    }
+
+    .services-list__item {
+      display: flex;
+      align-items: baseline;
+      gap: var(--spacing-md);
+      font-size: var(--font-size-lg);
+    }
+
+    .services-list__label {
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+
+    .services-list__separator {
+      flex: 1;
+      border-bottom: 1px dotted var(--color-border);
+      min-width: 2rem;
+      position: relative;
+      top: -0.25em;
+    }
+
+    .services-list__price {
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 480px) {
+      .services-list__item {
+        font-size: var(--font-size-md);
+      }
+    }
+  }
+</style>

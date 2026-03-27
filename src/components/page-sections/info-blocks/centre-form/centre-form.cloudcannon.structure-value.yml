@@ -1,0 +1,55 @@
+label: Centre Form
+icon: contact_mail
+description: Centered section with heading and contact/booking form.
+value:
+  _component: page-sections/info-blocks/centre-form
+  eyebrow: Eyebrow Heading
+  heading: Contact us
+  description: Invite your customers to get in touch with you.
+  formFields:
+    - _component: building-blocks/forms/input
+      label: Full name
+      name: full_name
+      type: text
+      placeholder: John Smith
+      required: true
+      value:
+      iconName:
+      iconPosition: before
+    - _component: building-blocks/forms/input
+      label: Email address
+      name: email
+      type: email
+      placeholder: mybusiness@example.com
+      required: true
+      value:
+      iconName:
+      iconPosition: before
+    - _component: building-blocks/forms/textarea
+      label: Message
+      name: message
+      placeholder: Leave your message here
+      required: false
+      value:
+    - _component: building-blocks/forms/submit
+      text: Submit
+      variant: tertiary
+      size: md
+      iconName: arrow-right
+      iconPosition: after
+      hideText: false
+      disabled: false
+  formAction: /
+  colorScheme: dark
+  backgroundColor: surface
+preview:
+  text:
+    - Centre Form
+  subtext:
+    - key: heading
+  icon: contact_mail
+picker_preview:
+  text: Centre Form
+  subtext: Centered section with heading and contact/booking form.
+_inputs_from_glob:
+  - /src/components/page-sections/info-blocks/centre-form/centre-form.cloudcannon.inputs.yml

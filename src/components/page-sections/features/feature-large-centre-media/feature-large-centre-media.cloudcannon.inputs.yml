@@ -1,0 +1,65 @@
+eyebrow:
+  type: text
+  comment: Small uppercase text above the heading.
+
+heading:
+  type: text
+  comment: Main section heading.
+
+description:
+  type: markdown
+  comment: Supporting text below the heading.
+  options:
+    bold: true
+    italic: true
+    link: true
+
+videoType:
+  type: select
+  comment: Type of video to embed.
+  options:
+    values:
+      - id: youtube
+        name: YouTube
+      - id: vimeo
+        name: Vimeo
+
+videoId:
+  type: text
+  comment: Video ID from YouTube or Vimeo URL.
+
+videoTitle:
+  type: text
+  comment: Video title for accessibility.
+
+buttonText:
+  type: text
+  comment: CTA button label text.
+
+buttonLink:
+  type: url
+  comment: CTA button link URL.
+
+colorScheme:
+  type: select
+  options:
+    values:
+      - id: inherit
+        name: Inherit
+      - id: dark
+        name: Dark
+
+backgroundColor:
+  type: select
+  options:
+    values:
+      - id: none
+        name: None
+      - id: base
+        name: Base
+      - id: surface
+        name: Surface
+      - id: accent
+        name: Accent
+      - id: highlight
+        name: Highlight

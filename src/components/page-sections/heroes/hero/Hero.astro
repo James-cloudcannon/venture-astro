@@ -1,0 +1,110 @@
+---
+import CustomSection from "@builders/custom-section/CustomSection.astro";
+import Heading from "@core-elements/heading/Heading.astro";
+import ButtonGroup from "@wrappers/button-group/ButtonGroup.astro";
+import Button from "@core-elements/button/Button.astro";
+
+const {
+  eyebrow = "A Small Business Template",
+  heading = "Empower your business with this brilliant template",
+  backgroundImage = {},
+  buttonText = "Our services",
+  buttonLink = "/",
+
+  colorScheme = "dark",
+  backgroundColor,
+  class: className,
+  useDefaultEditableBinding = false,
+  _component,
+  ...htmlAttributes
+} = Astro.props;
+---
+
+<CustomSection
+  class:list={["hero", className]}
+  maxContentWidth="2xl"
+  paddingHorizontal="3xl"
+  paddingVertical="5xl"
+  colorScheme={colorScheme}
+  backgroundColor={backgroundColor}
+  backgroundImage={backgroundImage}
+  useDefaultEditableBinding={useDefaultEditableBinding}
+  {...htmlAttributes}
+>
+  <div class="hero__content">
+    {eyebrow && (
+      <Heading
+        level="h3"
+        size="xs"
+        alignX="start"
+        class="hero__eyebrow"
+        data-prop="eyebrow"
+        text={eyebrow}
+      />
+    )}
+    <Heading
+      level="h1"
+      size="2xl"
+      alignX="start"
+      data-prop="heading"
+      text={heading}
+    />
+    <ButtonGroup alignX="start">
+      <Button
+        text={buttonText}
+        link={buttonLink}
+        variant="tertiary"
+        iconName="arrow-right"
+        iconPosition="after"
+        data-prop="buttonText"
+      />
+    </ButtonGroup>
+  </div>
+</CustomSection>
+
+<style is:global>
+  @layer page-sections {
+    .hero {
+      min-height: calc(100svh - var(--nav-height));
+
+      > .outer-content {
+        min-height: inherit;
+        display: flex;
+        flex-direction: column;
+      }
+
+      > .outer-content::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.45);
+        z-index: 11;
+        pointer-events: none;
+      }
+
+      > .outer-content > .content {
+        position: relative;
+        z-index: 12;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        flex: 1;
+      }
+
+      .hero__content {
+        max-width: 566px;
+      }
+
+      .hero__eyebrow .heading-inner {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-weight: 400;
+      }
+
+      .heading {
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+</style>

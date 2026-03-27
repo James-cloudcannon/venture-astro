@@ -1,160 +1,130 @@
 ---
-_schema: default
-title: Astro Component Starter
-description: Build fast, customizable Astro sites with a modern component starter that is easy to edit and maintain.
+title: Home | Venture
 pageSections:
-  - _component: page-sections/heroes/hero-center
-    eyebrow:
-    heading: The Astro Component Starter for building any site
-    subtext: >-
-      Built on web fundamentals. Easy to customize, fast to use, and simple to
-      maintain.
+  - _component: page-sections/heroes/hero
+    colorScheme: inherit
+    eyebrow: A small business template
+    heading: Empower your business with this brilliant template
+    backgroundImage:
+      source: /src/assets/images/9ZcIxSL2gw-1280.jpeg
+      alt: Person wearing glasses and a beanie using a coffee machine
+  - _component: page-sections/features/feature-split
+    colorScheme: inherit
+    backgroundColor: none
+    eyebrow: tag or label headline
+    heading: A component to showcase your brand
+    description: Description text to complement the block.
+    image:
+      source: /src/assets/images/E5xaQhEixf-400.jpeg
+      alt: Person wearing glasses and holding fairy lights
+    buttonText: Book now
+    buttonLink: /booking/
+    reverse: true
+  - _component: page-sections/features/services-list
+    colorScheme: inherit
+    backgroundColor: none
+    eyebrow: Eyebrow Heading
+    heading: List your services or products
+    description: Whether your business is a restaurant, a barber shop, a gym, a café, or anything else, our template has you covered. Add your services and prices to the list below.
+    groups:
+      - heading: Subheadings available
+        items:
+          - label: Product 1
+            price: $40
+          - label: Product 2
+            price: $75.99
+          - label: Product 3
+            price: Price on application
+      - heading: Subheadings available
+        items:
+          - label: Service 1
+            price: $34
+          - label: Service 2
+            price: $95 per month
+          - label: Service 3
+            price: $79 annually
+    buttonText: Book now
+    buttonLink: /booking/
+  - _component: page-sections/features/feature-split
+    colorScheme: inherit
+    backgroundColor: none
+    eyebrow: What your customers say
+    heading: “Their customer service is second to none.”
+    description: John Smith
+    image:
+      source: /src/assets/images/LyS_nfLQ31-1600.jpeg
+      alt: Person holding notebook and pencil smiling
+    buttonText: Book now
+    buttonLink: /booking/
+  - _component: page-sections/features/image-gallery
+    colorScheme: inherit
+    backgroundColor: none
+    eyebrow: a simple gallery
+    heading: Image Gallery
+    images:
+      - source: /src/assets/images/24wk6smwSc-400.jpeg
+        alt: three people laughing while working on laptops
+      - source: /src/assets/images/NW1Yy2Ujuv-400.jpeg
+        alt: People in a busy café
+      - source: /src/assets/images/kwLhxDdvFt-400.jpeg
+        alt: Person making a drink at a bar
+      - source: /src/assets/images/p1QmOm45eu-400.jpeg
+        alt: Person smiling and wearing glasses making a coffee
+      - source: /src/assets/images/zKYozt5NEm-400.jpeg
+        alt: Person sitting getting a haircut
+      - source: /src/assets/images/YFM_NmeWPi-400.jpeg
+        alt: Milk being poured into a coffee in a café
     buttonSections:
       - _component: building-blocks/core-elements/button
-        text: Explore Components
+        text: Load more
         hideText: false
-        link: /component-docs/
-        iconName: ''
-        iconPosition: before
-        variant: primary
-        size: md
-      - _component: building-blocks/core-elements/button
-        text: View in GitHub
-        hideText: false
-        link: https://github.com/CloudCannon/astro-component-starter
-        iconName: ''
-        iconPosition: before
-        variant: secondary
-        size: md
-    colorScheme: inherit
-    backgroundColor: base
-  - _component: page-sections/features/feature-split
-    eyebrow: Built for Astro
-    heading: Fast, modern, and easy to work with
-    subtext: >-
-      The Component Starter takes full advantage of Astro's zero-JS-by-default
-      approach. You get fast pages, simple routing, and a component system that
-      stays easy to use as your site grows.
-    buttonSections: []
-    imageSource: /src/assets/images/component-docs/website-feature.svg
-    imageAlt: Website Feature
-    imageAspectRatio: none
-    imageRounded: false
-    reverse: false
-    colorScheme: inherit
-    backgroundColor: base
-  - _component: page-sections/features/feature-split
-    eyebrow: CloudCannon Ready
-    heading: Easy visual editing
-    subtext: >-
-      Every component is built to work seamlessly in CloudCannon's Visual
-      Editor. Developers can create and style custom Page Sections with Astro.
-      Editors can click, change, and rearrange content right on the page without
-      touching the code or guessing where anything lives.
-    buttonSections: []
-    imageSource: /src/assets/images/component-docs/website-split.svg
-    imageAlt: Website Split
-    imageAspectRatio: none
-    imageRounded: false
-    reverse: true
-    colorScheme: inherit
-    backgroundColor:
-    paddingVertical: lg
-  - _component: page-sections/features/feature-split
-    eyebrow: Performance
-    heading: Fast by architecture, not by accident
-    subtext: >-
-      Your components render to static HTML, keeping bundles lean and pages
-      instant. Your users get instant page loads. You get a modern developer
-      experience.
-    buttonSections: []
-    imageSource: /src/assets/images/component-docs/website-hero.svg
-    imageAlt: Website Hero
-    imageAspectRatio: none
-    imageRounded: false
-    reverse: false
-    colorScheme: inherit
-    backgroundColor: base
-  - _component: page-sections/features/feature-split
-    eyebrow: Documentation
-    heading: Every component, clearly documented
-    subtext: >-
-      Each component comes with straightforward docs, real examples, full
-      descriptions of every property, and clear guidance without having to dig
-      through source files.
-    buttonSections: []
-    imageSource: /src/assets/images/component-docs/website-documented.svg
-    imageAlt: Website Hero
-    imageAspectRatio: none
-    imageRounded: false
-    reverse: true
-    colorScheme: inherit
-    backgroundColor: base
-  - _component: page-sections/features/feature-grid
-    eyebrow: Principles
-    heading: Built for real-world web projects
-    subtext: No trends. No noise. Just reliability.
-    gap: xl
-    minItemWidth: 280
-    maxItemWidth: 360
-    features:
-      - title: Web fundamentals
-        description: >-
-          Semantic HTML. Lean CSS. JavaScript only when it's needed. The stack
-          is boring by design, and that’s exactly why it works.
-        iconName: cube
-        iconColor: blue
-      - title: Built for speed
-        description: >-
-          Static-rendered, minimal payloads, zero waste. Built to be extremely
-          fast from the first byte.
-        iconName: bolt
-        iconColor: yellow
-      - title: Everything just fits
-        description: >-
-          Simple, predictable components that play nice together. Build bigger
-          pieces without creating a maintenance mess.
-        iconName: puzzle-piece
-        iconColor: green
-      - title: Controlled editing
-        description: >-
-          Enough freedom for editors to move fast. Enough structure for
-          developers to sleep at night.
-        iconName: pencil
-        iconColor: purple
-      - title: Adaptable
-        description: >-
-          Purposefully plain styling. The whole component starter adapts to your
-          designs without a fight.
-        iconName: paint-brush
-        iconColor: pink
-    colorScheme: inherit
-    backgroundColor: surface
-    align: center
-  - _component: page-sections/ctas/cta-center
-    heading: Ready to start building?
-    subtext: >-
-      Browse the complete Astro Component Starter and see live examples of every
-      component in action. All components are ready to use in CloudCannon and
-      are fully customizable.
-    buttonSections:
-      - _component: building-blocks/core-elements/button
-        text: Explore Components
-        hideText: false
-        link: /component-docs/
-        iconName: ''
-        iconPosition: before
-        variant: primary
-        size: md
-      - _component: building-blocks/core-elements/button
-        text: View in GitHub
-        hideText: false
-        link: https://github.com/CloudCannon/astro-component-starter
-        iconName: ''
-        iconPosition: before
+        link: ""
+        iconName: arrow-down
+        iconPosition: after
         variant: tertiary
         size: md
-    colorScheme: dark
-    backgroundColor: surface
-    rounded: false
+  - _component: page-sections/features/split-image-text-icon-grid
+    colorScheme: inherit
+    backgroundColor: none
+    eyebrow: let your features shine
+    heading: A featured icons block
+    items:
+      - iconName: face-smile
+        label: 100% Happy customer reviews
+      - iconName: heart
+        label: Great customer service
+      - iconName: star
+        label: Outstanding product reviews
+    buttonText: Book Now
+    buttonLink: /booking/
+    image:
+      source: /src/assets/images/a-rhUUAz0z-400.jpeg
+      alt: Barber shop bench with many hairdresser tools sitting on it
+  - _component: page-sections/features/split-contact-map
+    colorScheme: inherit
+    backgroundColor: none
+    heading: A contact block
+    description: This is a simple yet powerful block to display not only your location by using OpenStreetMaps, but also any other contact details you wish to share with your customers.
+    mapEmbed: ""
+    socialLinks:
+      - iconName: social/youtube
+        link: https://www.youtube.com/
+      - iconName: social/facebook
+        link: https://www.facebook.com/
+      - iconName: social/linkedin
+        link: https://www.linkedin.com/
+      - iconName: social/x
+        link: https://www.twitter.com/
+      - iconName: social/instagram
+        link: https://www.instagram.com/
+    contactItems:
+      - iconName: envelope
+        text: "Email address: mybusiness@example.com"
+      - iconName: phone
+        text: "Phone number: 312 325 326"
+      - iconName: map-pin
+        text: "Address: 1 Fake St, Faketown"
+      - iconName: clock
+        text: "Opening hours: 9-5pm, Monday to Friday"
+    buttonSections: []
 ---

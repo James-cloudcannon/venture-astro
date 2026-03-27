@@ -1,0 +1,20 @@
+label: Open Text
+icon: article
+description: Full-width section with heading and long-form rich text content for legal or policy pages.
+value:
+  _component: page-sections/info-blocks/open-text
+  heading: ""
+  bodyContent: ""
+  colorScheme: inherit
+  backgroundColor: base
+preview:
+  text:
+    - Open Text
+  subtext:
+    - key: heading
+  icon: article
+picker_preview:
+  text: Open Text
+  subtext: Full-width section with heading and long-form rich text content.
+_inputs_from_glob:
+  - /src/components/page-sections/info-blocks/open-text/open-text.cloudcannon.inputs.yml
