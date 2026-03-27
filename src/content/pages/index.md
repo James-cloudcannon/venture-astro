@@ -1,31 +1,36 @@
 ---
+_schema: default
 title: Home | Venture
+description: ''
 pageSections:
   - _component: page-sections/heroes/hero
-    colorScheme: inherit
     eyebrow: A small business template
     heading: Empower your business with this brilliant template
     backgroundImage:
       source: /src/assets/images/9ZcIxSL2gw-1280.jpeg
       alt: Person wearing glasses and a beanie using a coffee machine
-  - _component: page-sections/features/feature-split
+    buttonText: Our services
+    buttonLink: /
     colorScheme: inherit
-    backgroundColor: none
+  - _component: page-sections/features/feature-split
     eyebrow: tag or label headline
     heading: A component to showcase your brand
     description: Description text to complement the block.
+    buttonText: Book now
+    buttonLink: /booking/
     image:
       source: /src/assets/images/E5xaQhEixf-400.jpeg
       alt: Person wearing glasses and holding fairy lights
-    buttonText: Book now
-    buttonLink: /booking/
     reverse: true
-  - _component: page-sections/features/services-list
     colorScheme: inherit
     backgroundColor: none
+  - _component: page-sections/features/services-list
     eyebrow: Eyebrow Heading
     heading: List your services or products
-    description: Whether your business is a restaurant, a barber shop, a gym, a café, or anything else, our template has you covered. Add your services and prices to the list below.
+    description: >-
+      Whether your business is a restaurant, a barber shop, a gym, a café, or
+      anything else, our template has you covered. Add your services and prices
+      to the list below.
     groups:
       - heading: Subheadings available
         items:
@@ -45,20 +50,21 @@ pageSections:
             price: $79 annually
     buttonText: Book now
     buttonLink: /booking/
-  - _component: page-sections/features/feature-split
     colorScheme: inherit
-    backgroundColor: none
+    backgroundColor: surface
+  - _component: page-sections/features/feature-split
     eyebrow: What your customers say
     heading: “Their customer service is second to none.”
     description: John Smith
+    buttonText: Book now
+    buttonLink: /booking/
     image:
       source: /src/assets/images/LyS_nfLQ31-1600.jpeg
       alt: Person holding notebook and pencil smiling
-    buttonText: Book now
-    buttonLink: /booking/
-  - _component: page-sections/features/image-gallery
+    reverse: false
     colorScheme: inherit
     backgroundColor: none
+  - _component: page-sections/features/image-gallery
     eyebrow: a simple gallery
     heading: Image Gallery
     images:
@@ -74,18 +80,10 @@ pageSections:
         alt: Person sitting getting a haircut
       - source: /src/assets/images/YFM_NmeWPi-400.jpeg
         alt: Milk being poured into a coffee in a café
-    buttonSections:
-      - _component: building-blocks/core-elements/button
-        text: Load more
-        hideText: false
-        link: ""
-        iconName: arrow-down
-        iconPosition: after
-        variant: tertiary
-        size: md
-  - _component: page-sections/features/split-image-text-icon-grid
+    buttonSections: []
     colorScheme: inherit
-    backgroundColor: none
+    backgroundColor: surface
+  - _component: page-sections/features/split-image-text-icon-grid
     eyebrow: let your features shine
     heading: A featured icons block
     items:
@@ -100,12 +98,15 @@ pageSections:
     image:
       source: /src/assets/images/a-rhUUAz0z-400.jpeg
       alt: Barber shop bench with many hairdresser tools sitting on it
-  - _component: page-sections/features/split-contact-map
     colorScheme: inherit
     backgroundColor: none
+  - _component: page-sections/features/split-contact-map
     heading: A contact block
-    description: This is a simple yet powerful block to display not only your location by using OpenStreetMaps, but also any other contact details you wish to share with your customers.
-    mapEmbed: ""
+    description: >-
+      This is a simple yet powerful block to display not only your location by
+      using OpenStreetMaps, but also any other contact details you wish to share
+      with your customers.
+    mapEmbed: ''
     socialLinks:
       - iconName: social/youtube
         link: https://www.youtube.com/
@@ -119,12 +120,14 @@ pageSections:
         link: https://www.instagram.com/
     contactItems:
       - iconName: envelope
-        text: "Email address: mybusiness@example.com"
+        text: 'Email address: mybusiness@example.com'
       - iconName: phone
-        text: "Phone number: 312 325 326"
+        text: 'Phone number: 312 325 326'
       - iconName: map-pin
-        text: "Address: 1 Fake St, Faketown"
+        text: 'Address: 1 Fake St, Faketown'
       - iconName: clock
-        text: "Opening hours: 9-5pm, Monday to Friday"
+        text: 'Opening hours: 9-5pm, Monday to Friday'
     buttonSections: []
+    colorScheme: inherit
+    backgroundColor: surface
 ---
